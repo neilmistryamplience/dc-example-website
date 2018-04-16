@@ -53,3 +53,31 @@
 {{#if (test this.[@type] (toRegex ".*/slider.json")) }}
     {{> slider }}
 {{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/card.json")) }}
+    {{> card }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/cardList.json")) }}
+    {{> cardList }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/externalBlock.json")) }}
+    {{> externalBlock }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/promoList.json")) }}
+    {{> promoList }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/blogSnippet.json")) }}
+    {{> blogSnippet }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/blog.json")) }}
+    {{> blog }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/blogList.json")) }}
+    {{> blogList }}
+{{/if}}

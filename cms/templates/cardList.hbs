@@ -1,0 +1,12 @@
+<div class="amp-ca-card-list
+{{#compare cards.length '<' 6}}amp-ca-prod-{{cards.length}}-rows{{/compare}}
+{{#compare cards.length '>=' 6}}amp-ca-prod-3-rows{{/compare}}
+{{#compare cards.length '==' 3}}{{#if heroList}}amp-ca-cards-hero{{/if}}{{/compare}}
+">
+    <div class="amp-ca-card-title">
+        {{ header }}
+    </div>
+    <div class="amp-ca-card-list-wrap">
+        {{#each cards}} {{> card this index=@index }} {{/each}}
+    </div>
+</div>
