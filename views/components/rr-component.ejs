@@ -1,0 +1,55 @@
+<div class="dc-rr slot" data-host="c1.adis.ws" data-store="dcdemo" data-slot="" data-segment="">
+</div>
+<script>
+if (!window.amp) window.amp = {};
+if (!window.amp.rr_cb) {
+    window.amp.rr_cb = function(rrobj) {
+        // This will be the data from RR about what to display. Single Record
+
+        // Function removes the RR click url callback
+        var clickurl = rrobj[0].click_url;
+        var list = clickurl.split('&')
+        var newclickurl = "";
+        for (var i = 0; i < list.length; i++) {
+            if (list[i].indexOf('ct=') !== 0) {
+                if (i > 0) {
+                    newclickurl += '&';
+                }
+                newclickurl += list[i];
+            }
+        }
+        
+
+        var contenturl = 'https://c1.adis.ws/v1/content/dcdemo/content-item/' + rrobj[0].amplience_id + '?template=image-block';
+        $.get(contenturl, function(body) {
+            $('.dc-rr').html(body);
+            // changes all href's to go through the RR click URL
+            var links = $('.dc-rr a');
+            for (var i = 0; i < links.length; i++) {
+                var currenthref = links[i].href;
+                var newhref = newclickurl + '&ct=' + currenthref;
+                links[i].href = newhref;
+            }
+        })
+    }
+}
+</script>
+<!-- RR Scripts -->
+<script src="//media.richrelevance.com/rrserver/js/1.2/p13n.js"></script>
+<script charset="utf-8" type="text/javascript">
+var R3_COMMON = new r3_common();
+R3_COMMON.setApiKey('showcasedemo');
+R3_COMMON.setBaseUrl(window.location.protocol + '//recs.richrelevance.com/rrserver/');
+R3_COMMON.setClickthruServer(window.location.protocol + "//" + window.location.host);
+R3_COMMON.setSessionId('6B4D397B');
+R3_COMMON.setUserId('10987'); // keep both session/user the same  
+
+R3_COMMON.addPlacementType('home_page.amplience_1');
+/*
+future use 
+R3_COMMON.addPlacementType('home_page.amplience_2');
+R3_COMMON.addPlacementType('home_page.amplience_3');*/
+var R3_HOME = new r3_home();
+rr_flush_onload();
+r3();
+</script>

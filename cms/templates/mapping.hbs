@@ -29,3 +29,27 @@
 {{#if (test this.[@type] (toRegex ".*/stack.json")) }}
     {{> stack }}
 {{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/text.json")) }}
+    {{> text }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/image.json")) }}
+    {{> image }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/banner.json")) }}
+    {{> banner }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/video.json")) }}
+    {{> video }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/splitBlock.json")) }}
+    {{> splitBlock }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/slider.json")) }}
+    {{> slider }}
+{{/if}}

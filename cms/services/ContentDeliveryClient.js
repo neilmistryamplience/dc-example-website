@@ -18,7 +18,6 @@ ContentDeliveryClient.prototype.getById = function(id) {
 };
 
 ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
-
     if(scope === undefined) {
         scope = "tree";
     }
@@ -31,12 +30,14 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
             '&store=' + encodeURIComponent(this.account) +
             '&scope=' + encodeURIComponent(scope) +
             '&fullBodyObject=' + encodeURIComponent(fullBodyObject);
+    console.log(url)
 
     return new Promise(function(resolve, reject) {
         request(url, function (error, response, body) {
             if(error) {
                 reject(error);
             }else{
+                console.log(body)
                 resolve(JSON.parse(body));
             }
         });

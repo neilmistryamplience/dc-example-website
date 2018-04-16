@@ -29,13 +29,27 @@ function registerHelpers(Handlebars){
             'object',
             'regex',
             'string',
-            'url'
+            'url',
+            'markdown'
         ],
         {
             handlebars: Handlebars
         }
     );
 }
+
+Handlebars.registerHelper('splitBlock', function (index, split) {
+                if (typeof split === 'undefined') {
+                    return ''
+                }
+                var id = parseInt(index, 10);
+                var splitter = split.split('/');
+                if (id === 0) {
+                    return 'amp-ca-size-' + splitter[0];
+                }
+
+                return 'amp-ca-size-' + splitter[1];
+            });
 
 function patchResolvePartial(Handlebars){
     Handlebars.VM.resolvePartial = function(partial, context, options){
