@@ -1,0 +1,68 @@
+.amp-ca-promo-block {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: visible;
+}
+
+.amp-ca-promo-wrap {
+    margin-left: 50px;
+    &>a {
+        display: inline-block;
+        text-decoration: none;
+
+        & :hover {
+            * {
+                opacity: 0.8;
+            }
+        }
+    }
+    .amp-ca-promo-ico {
+        float: left;
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .amp-ca-promo-text-wrap {
+        overflow: hidden;
+    }
+
+    .amp-ca-promo-head-text {
+        font-weight: bold;
+        font-size: 16px;
+        color: #424242;
+    }
+
+    .amp-ca-promo-content-text {
+        font-size: 14px;
+        color: #9b9b9b;
+        margin-top: 3px;
+    }
+
+    .amp-ca-image-img {
+        width: 100%;
+        font-size: 14px;
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 845px) {
+    .amp-ca-promo-banner {
+        .amp-ca-promo-block {
+            width: 50%;
+        }
+        .amp-ca-2 {
+            display: none;
+        }
+        .amp-ca-3 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {}

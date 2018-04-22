@@ -66,12 +66,20 @@
     {{> externalBlock }}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/promo.json")) }}
+    {{> promo }}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/promoList.json")) }}
     {{> promoList }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/blogSnippet.json")) }}
     {{> blogSnippet }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/container.json")) }}
+    {{> container }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/blog.json")) }}
