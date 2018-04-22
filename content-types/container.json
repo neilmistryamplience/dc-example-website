@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/container/content-type/container.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/container.json",
   "title": "Container",
   "description": "A re-usable container for all content types",
   "allOf": [
