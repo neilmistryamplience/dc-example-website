@@ -1,7 +1,6 @@
 module.exports = {
     cms: "https://dc9dj9jdjpdd1dhbkupnfcird.staging.bigcontent.io",
     cmsAccount: "dcdemo",
-
     sitemap: [
         {
             route: "/",

@@ -1,0 +1,47 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/slots/flexible-slot.json",
+  "title": "Flexible Slot",
+  "description": "Slot that allows a number of any content type",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "contentTypes": {
+      "type": "array",
+      "title": "Content Type",
+      "description": "Select and order content to display in the page",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "",
+                "enum": [
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/dixonsCarousel/content-type/dixonsCarousel.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/dixonsQuicklinkHolder/content-type/dixonsQuicklinkHolder.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/dixonsDealblockHolder/content-type/dixonsDealblockHolder.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/dixonsInspireblockHolder/content-type/dixonsInspireblockHolder.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/slider/content-type/slider.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/video/content-type/video.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/text/content-type/text.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/externalBlock/content-type/externalBlock.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/splitBlock/content-type/splitBlock.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/image/content-type/image.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/cardList/content-type/cardList.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/banner/content-type/banner.json"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

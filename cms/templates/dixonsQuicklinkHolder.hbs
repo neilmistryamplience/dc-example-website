@@ -1,0 +1,9 @@
+<section class="homepage-wrapper quick-links"> 
+<ul>
+	{{#each quicklinks}}
+		<li class="link-{{@index}}">
+			{{> dixonsQuicklink this index=@index }}
+		</li>
+	{{/each}}
+</ul>
+</section>
