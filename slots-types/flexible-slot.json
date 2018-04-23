@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/slots/flexible-slot.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/slots-types/flexible-slot.json",
   "title": "Flexible Slot",
   "description": "Slot that allows a number of any content type",
   "allOf": [

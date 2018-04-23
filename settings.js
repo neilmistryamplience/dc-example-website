@@ -1,13 +1,19 @@
 module.exports = {
-    cms: "https://dc9dj9jdjpdd1dhbkupnfcird.staging.bigcontent.io",
-    cmsAccount: "dcdemo",
+    cms: "https://c1.adis.ws",
+    cmsAccount: "nmdemo",
     sitemap: [
         {
             route: "/",
-            layout: "homepage",
+            layout: "landing",
             slots: {
-                "hero": "35b725b4-1ba7-498e-bbe1-fbe685f48354",
-                "body": "15350b10-8ecf-4678-b9f9-0f1f2e1c8e12"
+                "content": "3cbba4da-f90e-47f5-9457-cb70a6cd7770"
+            }
+        },
+         {
+            route: "/mens",
+            layout: "landing",
+            slots: {
+                "content": "3cbba4da-f90e-47f5-9457-cb70a6cd7770"
             }
         }
     ]
