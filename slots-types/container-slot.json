@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/slot-types/container-slot.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/slots-types/container-slot.json",
   "title": "Container Slot",
   "description": "A Slot that can accept a container (full page)",
   "allOf": [
