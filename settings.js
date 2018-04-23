@@ -10,10 +10,10 @@ module.exports = {
             }
         },
          {
-            route: "/mens",
+            route: "/mac",
             layout: "landing",
             slots: {
-                "content": "3cbba4da-f90e-47f5-9457-cb70a6cd7770"
+                "content": "f1acfa8f-1fde-42ea-912f-d8e786bb71cd"
             }
         }
     ]
