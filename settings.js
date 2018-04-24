@@ -1,15 +1,21 @@
 module.exports = {
     cms: "https://c1.adis.ws",
     cmsAccount: "nmdemo",
-    sitemap: [
-        {
+    sitemap: [{
             route: "/",
             layout: "landing",
             slots: {
                 "content": "3cbba4da-f90e-47f5-9457-cb70a6cd7770"
             }
         },
-         {
+        {
+            route: "/bose",
+            layout: "landing",
+            slots: {
+                "content": "8e5a7412-ad68-4125-a350-3e35d0c9d1ee"
+            }
+        },
+        {
             route: "/mac",
             layout: "landing",
             slots: {
