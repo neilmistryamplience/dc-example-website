@@ -16,6 +16,13 @@ module.exports = {
             }
         },
         {
+            route: "/kitchen",
+            layout: "landing",
+            slots: {
+                "content": "2695b577-f0a0-458f-b516-d3a1bde5ea71"
+            }
+        },
+        {
             route: "/mac",
             layout: "landing",
             slots: {

@@ -130,6 +130,10 @@
     {{> container-slot }}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/flexible-slot.json")) }}
+    {{> flexible-slot }}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/banner-slot.json")) }}
     {{> banner-slot }}
 {{/if}}

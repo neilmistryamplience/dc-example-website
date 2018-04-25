@@ -1,54 +1,4 @@
 </div>
-                <!-- Amplience Script -->
-                <script>
-
-                    function loadScript(url, callback) {
-
-        var script = document.createElement("script")
-        script.type = "text/javascript";
-
-        if (script.readyState) { //IE
-            script.onreadystatechange = function() {
-                if (script.readyState == "loaded" ||
-                    script.readyState == "complete") {
-                    script.onreadystatechange = null;
-                    callback();
-                }
-            };
-        } else { //Others
-            script.onload = function() {
-                callback();
-            };
-        }
-
-        script.src = url;
-        document.getElementsByTagName("head")[0].appendChild(script);
-    }
-
-                Handlebars.partials = AmpCa.templates;
-                AmpCa.utils = new AmpCa.Utils();
-
-                AmpCa.utils.getCaData({
-                    auth: {
-                        baseUrl: 'https://c1.adis.ws',
-                        id: 'e4a3b44d-25be-4af7-ad03-d799e9e94df2', // '8877c626-c431-4b78-bae1-cb4ae4758d70',//'aeef66c6-8ddb-4825-b515-289d9c7268be'
-                        store: 'nmdemo'
-                    },
-                    callback: function(data) {
-
-                        var template = Handlebars.template(AmpCa.templates.page);
-                        document.querySelectorAll(".js_page_wrap")[0].innerHTML = template(data);
-
-                        loryHelpers.initSliders(document.querySelectorAll(".js_slider"));
-                        AmpCa.utils.postProcessing.exec('page', {});
-                        loadScript('https://currys-ssl.cdn.dixons.com/js/othersIndex.js?v=1521817445')
-
-                    },
-                    formatData: function(data) {
-                        return amp.inlineContent(JSON.parse(data));
-                    }
-                });
-                </script>
                 <!-- End DSP -->
             </div>
             <div id="footer" role="complementary">
@@ -131,7 +81,7 @@
     <script>
     var GMAPKEY = '_V3VCnnza7z2fVceYbpOVLxedss=';
 
-    DCG.serverTimezoneOffset = -60;
+    //DCG.serverTimezoneOffset = -60;
 
 
     window.jQuery(document).ready(function() {
