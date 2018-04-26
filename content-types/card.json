@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/card/content-type/card.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/card.json",
   "title": "Card",
   "description": "A single card of content",
   "allOf": [
@@ -23,7 +23,7 @@
             "contentType": {
               "title": "Image",
               "enum": [
-                "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/image/content-type/image.json"
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/image.json"
               ]
             }
           }
@@ -51,7 +51,7 @@
       "title": "Links",
       "description": "Links for the card",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/link/content-type/link.json"
+        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/link.json"
       },
       "minItems": 0,
       "maxItems": 4
