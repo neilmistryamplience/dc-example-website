@@ -21,7 +21,7 @@
             "contentType": {
               "title": "contentType",
               "enum": [
-                "https://raw.githubusercontent.com/neilmistryamplience/ca-frontend-renders/master/src/renders/banner/content-type/banner.json"
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/banner.json"
               ]
             }
           }
