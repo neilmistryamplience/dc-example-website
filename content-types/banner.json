@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/banner.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/banner.json",
   "title": "Banner",
   "description": "A reusable content type for banner content",
   "allOf": [
@@ -16,7 +16,7 @@
       "description": "Meta data related to this content",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/metadata.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/metadata.json"
         }
       ]
     },
@@ -26,7 +26,7 @@
       "description": "The background image for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
         }
       ]
     },
@@ -76,7 +76,7 @@
       "description": "The action link / button for the banner",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/master/content-types/link.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/link.json"
         }
       ],
       "_interpolate": true
