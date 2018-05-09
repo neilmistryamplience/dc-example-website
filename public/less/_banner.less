@@ -78,7 +78,23 @@
 
         .amp-ca-banner-info-wrap{
             width:100%;
-            left:0 !important;
+
+
+            &[data-align='left'] {
+                left: 10px;
+                margin: 0;
+            }
+
+            &[data-align='right'] {
+                right: 10px;
+                margin: 0;
+            }
+
+            &[data-align='center'] {
+                right:0;
+                left:0;
+                margin: auto;
+            }
         }
 
         .amp-ca-banner-info-wrap.amp-ca-info-bottom{
