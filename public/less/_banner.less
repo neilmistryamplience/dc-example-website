@@ -34,6 +34,8 @@
         text-align: center;
     }
 
+    
+
     .amp-ca-banner-info-wrap {
         color: #fff;
         width: 40%;
@@ -69,6 +71,36 @@
             vertical-align: middle;
             margin-right: -1em;
             /* Adjusts for spacing */
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .amp-ca-banner-info-wrap{
+            width:100%;
+            left:0 !important;
+        }
+
+        .amp-ca-banner-info-wrap.amp-ca-info-bottom{
+                position: relative;
+                top: 0;
+                left: 0;
+                right: auto;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 0 15px 10px 15px;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    height: auto;
+                    vertical-align: middle;
+                    margin-right: -1em;
+                    /* Adjusts for spacing */
+                }
         }
     }
 
