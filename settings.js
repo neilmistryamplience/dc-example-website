@@ -5,42 +5,42 @@ module.exports = {
             route: "/",
             layout: "landing",
             slots: {
-                "content": "8d9bf95a-f0df-4a72-871a-59411ef0d9ec"
+                "content": "63113fc1-741c-425e-afc0-0ce861618808"
             }
         },
         {
             route: "/womens",
             layout: "landing",
             slots: {
-                "content": "31e910c1-66bf-4d49-addd-f3c2a83b3612"
+                "content": "ede4c53e-12a0-40e8-882f-ab292f60a900"
             }
         },
         {
             route: "/mens",
             layout: "landing",
             slots: {
-                "content": "63bc2b2a-87ac-48a2-89fc-5f66be2d82b3"
+                "content": "04b17fa1-f492-401a-bc49-68b66ccbb6a9"
             }
         },
         {
             route: "/beauty",
             layout: "landing",
             slots: {
-                "content": "b65dc0d6-3bdd-4874-9d55-70508809f560"
+                "content": "7e952515-8f2a-4535-a863-7b96ccb1e626"
             }
         },
         {
             route: "/lighting",
             layout: "landing",
             slots: {
-                "content": "56b081e0-b225-4c78-8162-c6fc7007702f"
+                "content": "76f6ef64-6fb2-4a65-b510-eb3e80374264"
             }
         },
         {
             route: "/furniture",
             layout: "landing",
             slots: {
-                "content": "6aeb8278-6620-4286-96c6-7b8d9fcfcee4"
+                "content": "5db62a63-00dc-4fe4-8083-11f5941135be"
             }
         },
         ,
@@ -48,14 +48,14 @@ module.exports = {
             route: "/electricals",
             layout: "landing",
             slots: {
-                "content": "ccc0338f-8e11-42e6-83f7-6c8ee09626fc"
+                "content": "7e6e0cc9-e103-4d85-97fa-0dcce6240a9d"
             }
         },
         {
             route: "/inspiration",
             layout: "landing",
             slots: {
-                "content": "83c6e4c9-7e30-4db2-8f6c-3ffefd0bca2f"
+                "content": "f5c8e533-f6d9-4e01-afeb-7ef9c558ff7d"
             }
         }
     ]
