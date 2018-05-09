@@ -12,21 +12,11 @@
   "properties": {
     "image": {
       "type": "object",
-      "title": "image",
+      "title": "Image",
       "description": "Image used in the card",
       "allOf": [
         {
-          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-        },
-        {
-          "properties": {
-            "contentType": {
-              "title": "Image",
-              "enum": [
-                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
-              ]
-            }
-          }
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
         }
       ]
     },

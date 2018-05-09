@@ -42,8 +42,8 @@
         top: 0;
         white-space: normal;
         display: inline-block;
-        left: 0;
-        right: 0;
+        //left: 0;
+        //right: 0;
         margin: auto;
 
         &[data-align='left'] {
@@ -54,6 +54,12 @@
         &[data-align='right'] {
             right: 65px;
             margin: 0;
+        }
+
+        &[data-align='center'] {
+            right:0;
+            left:0;
+            margin: auto;
         }
 
         &:before {
