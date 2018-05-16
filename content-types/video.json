@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/video.json",
+  "id": "https://raw.githubusercontent.com/emilygodfrey/dc-example-website/emily/content-types/video.json",
   "title": "Video",
   "description": "A reusable component to display a video",
   "allOf": [
