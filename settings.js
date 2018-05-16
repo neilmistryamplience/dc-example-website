@@ -1,25 +1,25 @@
 module.exports = {
     cms: "https://c1.adis.ws",
-    cmsAccount: "nmdemo",
+    cmsAccount: "presales",
     sitemap: [{
             route: "/",
             layout: "landing",
             slots: {
-                "content": "63113fc1-741c-425e-afc0-0ce861618808"
+                "content": "70a2dc02-c774-4d57-89d8-cd23afa04192"
             }
         },
         {
             route: "/womens",
             layout: "landing",
             slots: {
-                "content": "ede4c53e-12a0-40e8-882f-ab292f60a900"
+                "content": "77b984af-43fd-4806-b823-9b9a6a56b8c1"
             }
         },
         {
             route: "/mens",
             layout: "landing",
             slots: {
-                "content": "04b17fa1-f492-401a-bc49-68b66ccbb6a9"
+                "content": "63d92da3-6e56-4ff1-ac13-5a839d0ab0ca"
             }
         },
         {
@@ -55,7 +55,7 @@ module.exports = {
             route: "/inspiration",
             layout: "landing",
             slots: {
-                "content": "f5c8e533-f6d9-4e01-afeb-7ef9c558ff7d"
+                "content": "b4b6b213-79bd-4533-bef7-b10aa9393780"
             }
         }
     ]
