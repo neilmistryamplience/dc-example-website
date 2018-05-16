@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/emilygodfrey/dc-example-website/emily/slot-types/banner-slot.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/slot-types/banner-slot.json",
   "title": "Banner Slot",
   "description": "A Slot that can accept a single banner",
   "allOf": [
@@ -21,7 +21,7 @@
             "contentType": {
               "title": "contentType",
               "enum": [
-                "https://raw.githubusercontent.com/emilygodfrey/dc-example-website/emily/content-types/banner.json"
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/banner.json"
               ]
             }
           }
