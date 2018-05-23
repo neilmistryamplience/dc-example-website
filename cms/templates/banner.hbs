@@ -17,7 +17,7 @@
         {{/unless}}"
          data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
 
-        <div class="amp-ca-banner-info" style="">
+        <div class="amp-ca-banner-info {{#if style}}{{style}}{{else}}black{{/if}}" style="">
             {{#if header}}
                 <div class="amp-ca-banner-header">{{header}}</div>
             {{/if}}
@@ -29,7 +29,7 @@
             {{/if}}
             {{#if button.label}}
                 <a href="{{button.url}}"
-                   class="amp-ca-banner-button readMore {{#if style}}{{style}}{{/if}}">{{button.label}}</a>
+                   class="amp-ca-banner-button readMore {{#if style}}{{style}}{{else}}black{{/if}}">{{button.label}}</a>
             {{/if}}
         </div>
     </div>
