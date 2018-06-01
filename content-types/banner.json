@@ -30,6 +30,16 @@
         }
       ]
     },
+      "contentImg": {
+      "type": "object",
+      "title": "Content Image",
+      "description": "The image to display with the textual content for this banner",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/image.json"
+        }
+      ]
+    },
     "header": {
       "type": "string",
       "title": "Header",
@@ -91,6 +101,20 @@
         "center"
       ]
     },
+ 	"precH": {
+      "title": "Horizontal alignment percentage",
+      "description": "A value between -100 and 100 (e.g. 30) Default is 0",
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
+    "percV": {
+      "title": "Vertical alignment percentage",
+      "description": "A value between -100 and 100 (e.g. 30) Default is 0",
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
     "style": {
       "type": "string",
       "title": "Style",
@@ -106,8 +130,9 @@
     }
   },
   "propertyOrder": [
-    "metadata",
+ "metadata",
     "img",
+    "contentImg",
     "header",
     "header_fr-FR",
     "header_de-DE",
@@ -115,6 +140,8 @@
     "description",
     "button",
     "alignment",
+    "precH",
+    "precV",
     "style",
     "stackMobileLayout"
   ]

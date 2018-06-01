@@ -33,7 +33,9 @@
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/cardList.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/banner.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/blogList.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/promoList.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/promoList.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/ugc.json"
+
                 ]
               }
             }
