@@ -8728,3 +8728,7 @@ amp-video-block {
   transform: translateX(-250px);
   overflow: hidden;
 }
+
+.amp-modal-grey-out{
+  z-index: 100 !important;
+}
