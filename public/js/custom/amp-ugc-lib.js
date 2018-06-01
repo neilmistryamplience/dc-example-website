@@ -1,12 +1,12 @@
 drawAmpUGC = function() {
-    var ecommBridge = {
+    window.ecommBridge = {
         capability: {
             getProduct: function(data, callback) {}
         }
     };
     var ugcs = document.querySelectorAll("[data-amp-stream-name]");
     for (var i = 0; i < ugcs.length; i++) {
-        var ugc = ugcs[i];
+        var ugc = ugcs[i].getAttribute("data-amp-stream-name");
 
         $(function() {
             var viewerConfig = {
