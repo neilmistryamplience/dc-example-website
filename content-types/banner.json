@@ -91,6 +91,20 @@
         "center"
       ]
     },
+    "precH": {
+      "title": "Horizontal alignment percentage",
+      "description": "A value between -100 and 100 (e.g. 30) Default is 0",
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
+    "percV": {
+      "title": "Vertical alignment percentage",
+      "description": "A value between -100 and 100 (e.g. 30) Default is 0",
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
     "style": {
       "type": "string",
       "title": "Style",
@@ -115,6 +129,8 @@
     "description",
     "button",
     "alignment",
+    "left",
+    "right",
     "style",
     "stackMobileLayout"
   ]
