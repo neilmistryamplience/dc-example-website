@@ -7,11 +7,13 @@ drawAmpUGC = function() {
     var ugcs = document.querySelectorAll("[data-amp-stream-name]");
     for (var i = 0; i < ugcs.length; i++) {
         var ugc = ugcs[i].getAttribute("data-amp-stream-name");
+        var hashtag = ugcs[i].getAttribute("data-amp-hashtag");
+        var clientName = ugcs[i].getAttribute("data-amp-clientName");
 
         $(function() {
             var viewerConfig = {
                 stream: ugc,
-                clientName: ugc,
+                clientName: clientName,
                 autoplay: true,
                 autoRotationSpeed: 4,
                 numShow: 6,
@@ -39,8 +41,8 @@ drawAmpUGC = function() {
             var uploadConfig = {
                 endpoint: "https://social-live-api.adis.ws/upload",
                 stream: ugc,
-                hashtag: "#Primark",
-                tags: ["primark"],
+                hashtag: "#"+hashtag,
+                tags: [hashtag],
                 client: "presales",
                 area: "#amp-upload-section",
                 tcsLink: "<yoursite.com/terms>",
@@ -50,7 +52,7 @@ drawAmpUGC = function() {
             var instagramUploadConfig = {
                 client: "presales",
                 stream: ugc,
-                tags: ["primark"],
+                tags: [hashtag],
                 clientId: "e721d5f2d1a94438a64a42a0c8c4002a",
                 callbackUrl: "https://s1.adis.ws/instagram/router.html?localCallback=<yoursite.com/instagram.html>",
                 basepath: "https://social-live-api.adis.ws/upload",
