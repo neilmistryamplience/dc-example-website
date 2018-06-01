@@ -15,7 +15,18 @@
                 {{/unless}}
             {{/unless}}
         {{/unless}}"
-         data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+         data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}"
+
+         {{#compare alignment '==' 'left'}}
+            style="left:{{precH}}%;top:{{percV}}%";
+         {{/compare}}
+         {{#compare alignment '==' 'right'}}
+            style="right:{{precH}}%;top:{{percV}}%";
+         {{/compare}}
+         {{#compare alignment '==' 'center'}}
+            style="left:{{precH}}%;top:{{percV}}%";
+         {{/compare}}
+         >
 
         <div class="amp-ca-banner-info {{#if style}}{{style}}{{else}}black{{/if}}" style="">
             {{#if header}}
