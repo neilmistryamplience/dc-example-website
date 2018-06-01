@@ -30,6 +30,16 @@
         }
       ]
     },
+    "contentImg": {
+      "type": "object",
+      "title": "Content Image",
+      "description": "The image to display with the textual content for this banner",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
+        }
+      ]
+    },
     "header": {
       "type": "string",
       "title": "Header",
@@ -122,6 +132,7 @@
   "propertyOrder": [
     "metadata",
     "img",
+    "contentImg",
     "header",
     "header_fr-FR",
     "header_de-DE",
@@ -129,8 +140,8 @@
     "description",
     "button",
     "alignment",
-    "left",
-    "right",
+    "precH",
+    "precV",
     "style",
     "stackMobileLayout"
   ]
