@@ -90,6 +90,10 @@
     {{> blogList }}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/ugc.json")) }}
+    {{> ugc }}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/container-slot.json")) }}
     {{> container-slot }}
 {{/if}}
