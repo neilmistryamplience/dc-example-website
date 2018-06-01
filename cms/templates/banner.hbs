@@ -29,6 +29,12 @@
          >
 
         <div class="amp-ca-banner-info {{#if style}}{{style}}{{else}}black{{/if}}" style="">
+            {{#with contentImg}}
+                <div class="amp-ca-banner-pic-wrap">
+                    {{> image this }}
+                </div>
+            {{/with}}
+
             {{#if header}}
                 <div class="amp-ca-banner-header">{{header}}</div>
             {{/if}}
