@@ -42,7 +42,14 @@
         "media-wall",
         "carousel"
       ]
-    }
+    },
+    "total": {
+      "title": "Number of posts to display at one time",
+      "description": "A value between 1 and 10",
+      "type": "number",
+      "minimum": -100,
+      "maximum": 100
+    },
   },
   "propertyOrder": [
     "stream",
