@@ -45,14 +45,36 @@
     },
     "total": {
       "title": "Number of posts to display at one time",
-      "description": "A value between 1 and 10",
+      "description": "A value between 1 and 10. Default is 5",
       "type": "number",
-      "minimum": -100,
-      "maximum": 100
+      "minimum": 1,
+      "maximum": 10
+    },
+    "header": {
+      "type": "string",
+      "title": "Header",
+      "description": "The header for this UGC content",
+      "validation": "Please enter less than 255 characters",
+      "minLength": 0,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "The description for this UGC content",
+      "validation": "Please enter less than 255 characters",
+      "minLength": 0,
+      "maxLength": 255
     },
   },
   "propertyOrder": [
+    "header",
+    "description",
     "stream",
-    "type"
+    "type",
+    "hashtag",
+    "clientName",
+    "type",
+    "total"
   ]
 }

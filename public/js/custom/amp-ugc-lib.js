@@ -9,6 +9,8 @@ drawAmpUGC = function() {
         var ugc = ugcs[i].getAttribute("data-amp-stream-name");
         var hashtag = ugcs[i].getAttribute("data-amp-hashtag");
         var clientName = ugcs[i].getAttribute("data-amp-clientName");
+        var totalToShow = ugcs[i].getAttribute("data-amp-total");
+        if(totalToShow < 1) totalToShow = 5
 
         $(function() {
             var viewerConfig = {
@@ -16,7 +18,7 @@ drawAmpUGC = function() {
                 clientName: clientName,
                 autoplay: true,
                 autoRotationSpeed: 4,
-                numShow: 6,
+                numShow: totalToShow,
                 spacing: 10,
                 diOptions: "qlt=95&w=640&h=640",
                 appendTo: $("#my-carousel"),
