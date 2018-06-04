@@ -26,7 +26,7 @@
     "slider":{
       "type": "boolean",
       "title": "Slider",
-      "description": "Does the card list display as a slider?"
+      "description": "Does the card list display as a slider? If so it will show a maximum of 3 at one time and no hero list"
     },
     "cards": {
       "type": "array",
