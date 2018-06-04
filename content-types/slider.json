@@ -45,11 +45,6 @@
       "type": "boolean",
       "title": "Navigation Dots",
       "description": "Display Navigation dots?"
-    },
-    "slider":{
-      "type": "boolean",
-      "title": "Slider",
-      "description": "Does the card list display as a slider?"
     }
   }
 }
