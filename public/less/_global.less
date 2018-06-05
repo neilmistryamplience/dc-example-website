@@ -1,3 +1,8 @@
+@font-face {
+  font-family: LustScript;
+  src: url("../fonts/LustScript.otf");
+}
+
 html.disable-scroll,
 body.disable-scroll{
   height: 100%;
@@ -405,6 +410,25 @@ section{
   }
 }
 
+.amp-ca-slider-next,
+.amp-ca-slider-prev {
+    svg {
+        width: 60px !important;
+        height: 60px !important;
+        fill: #ec86a4 !important;
+        background: rgba(255, 255, 255, 0) !important;
+    }
+
+    &.ctrl-disabled {
+        opacity: 0.3;
+        -webkit-tap-highlight-color: transparent;
+        cursor: default;
+        svg {
+            cursor: default;
+        }
+    }
+}
+
 .amp-ca-banner-button {
         font-size: 18px;
         margin-top: 15px;
@@ -439,3 +463,42 @@ section{
             border: solid 2px white;
         }
     }
+
+.amp-ca-card-link.amp-ca-banner-button{
+  margin-bottom: 4em;
+}
+
+.amp-ca-card-list{
+  max-width: 1140px;
+  margin: 0 auto !important;
+}
+.amp-ca-banner-button.black {
+  background: #ec86a4 !important;
+}
+.amp-ca-ugc-title{
+  font-family: Raleway, sans-serif;
+  font-weight: 100;
+  font-size: 2.7em !important;
+}
+.amp-ca-card-title{
+  font-weight: 600;
+}
+.amp-ca-card-description{
+  color:#000000 !important;
+}
+
+.amp-ca-ugc-description{
+  font-family: LustScript, sans-serif;
+  font-size: 1.6em !important;
+  font-style: italic;
+}
+
+.amp-ca-card-list .amp-ca-slider-next.js_next{
+  right: -15px !important
+}
+.amp-ca-card-list .amp-ca-slider-prev.js_prev{
+  left: -15px !important
+}
+#amp-upload-section{
+  height:auto !important;
+}

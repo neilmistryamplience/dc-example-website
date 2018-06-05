@@ -1,0 +1,507 @@
+<div class="headerblock">
+    <div class="logo">
+        <h1 class="logoh1"><a href="/"><img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/redfish/template/logo.gif" alt="Quiz Clothing" class="img-responsive"></a></h1></div>
+    <div id="topnav">
+        <div id="topnavleft">
+            <ul>
+                <li class="currencyListItem">
+                    <ul id="currency-nav">
+                        <li>
+                            <a id="currency-changer">
+                    <span class="header_flag"><img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/redfish/template/flag_gbp.gif" alt="GBP"></span>
+                    GBP
+                </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="storeFinder"><a href="/google/store-locator"><span class="finder-icon">e</span><span class="finder-label">Store Finder
+</span></a></li>
+            </ul>
+        </div>
+        <div id="topnavright">
+            <ul>
+                <li class="hidden-xs mainSearch">
+                    <form method="get" action="/products/search" class="template_search_form">
+                        <input type="search" placeholder="Search by keyword:" name="q" class="template_search_input">
+                        <a href="" onclick="document.forms[0].submit();return false;"><span class="glyphicon glyphicon-search" style="color:#000; padding-left:5px"></span></a>
+                    </form>
+                </li>
+                <li class="mobileSearch hidden-sm hidden-md hidden-lg">
+                    <a href="#" data-toggle="modal" data-target="#searchModal"><span class="glyphicon glyphicon-search"></span></a>
+                </li>
+                <li class="hidden-xs myAccountDropDown">
+                    <ul id="account-nav">
+                        <li>
+                            <a href="/members">
+                                <div class="account-icon">a</div>My Account
+                            </a>
+                            <ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <!-- esi-enabled -->
+                <li class="loveList"><span class="wishlist_count">0</span>
+                    <a href="/wishlist">
+                        <div class="lovelist-icon">c</div>Love List</a>
+                </li>
+                <li class="topnavbag mini_basket_pod generic_view_mini_basket_dropdown" data-display-delay="300"><span class="mini_basket_pod_items">0</span>
+                    <a href="/basket" rel="nofollow">
+                        <div class="bag-icon">b</div>My Bag</a>
+                </li>
+                <li class="hidden-xs topnavbagPrice mini_basket_pod generic_view_mini_basket_dropdown" data-display-delay="300"><a class="mini_basket_pod_totals_price" href="/basket" rel="nofollow">£0.00</a></li>
+                <div class="mini_basket_complete_container" style="display: none;"></div>
+            </ul>
+        </div>
+        <div class="template_quicksearch_container"></div>
+    </div>
+    <!-- Navbar1 -->
+    <!-- END navbar1 -->
+    <style>
+    #lowernav .nav>li>a[href*="clearance"] {
+        color: #D90000;
+    }
+
+    #lowernav .nav>li>a[href*="clearance"]:hover,
+    #lowernav .nav>li>a[href*="clearance"].highlighted {
+        color: #D90000;
+    }
+
+    .megamenu_banner2,
+    .megamenu_banner3,
+    .megamenu_banner1 {
+        margin: 20px;
+    }
+
+    @media (max-width: 767px) {
+        #lowernav .navigation .navbar-collapse.collapse .nav.navbar-nav>.open>a[href*="clearance"].highlighted {
+            color: #D90000;
+        }
+    }
+    /* Remove black line above USPs */
+
+    .template1 div img,
+    .template2 div img,
+    .template3 div img {
+        border-top: none !important;
+    }
+
+    img[src*="quiztowie.png"] {
+        transform: rotate(0deg);
+        height: auto;
+        width: 28px;
+        position: relative;
+    }
+
+    img[src*="10-off.png"],
+    img[src*="5-off.png"] {
+        transform: rotate(0deg);
+        position: relative;
+        height: 50px;
+        left: 7px;
+    }
+    </style>
+    <!-- navbar2 -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="lowernav">
+        <div class="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav sm" data-smartmenus-id="15282066480661843">
+                    <li><a href="/just-in/" title="" class="has-submenu">New In<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/just-in/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/just-in/">View All New In</a></li>
+                                    <li><a href="/just-in/clothing/">Clothing</a></li>
+                                    <li><a href="/just-in/clothing/plus-size/">Curve</a></li>
+                                    <li><a href="/just-in/footwear/">Shoes</a></li>
+                                    <li><a href="/just-in/accessories/">Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Trend<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/just-in/tr:white-out/">White Out</a></li>
+                                    <li><a href="/just-in/tr:suits-you/">Suits You</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Occasion<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/just-in/oc:prom-and-ball/">Prom and Ball</a></li>
+                                    <li><a href="/just-in/oc:wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/just-in/oc:races/">Races</a></li>
+                                    <li><a href="/just-in/oc:bridesmaid/">Bridesmaid</a></li>
+                                    <li><a href="/just-in/oc:holiday-shop/">Holiday Shop</a></li>
+                                    <li><a href="/just-in/oc:going-out-out/">Going Out-Out</a></li>
+                                    <li><a href="/just-in/oc:festival/">Festival</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/just-in/">View All</a></li>
+                            <div class="megamenu_banner3">
+                                <a href="just-in/clothing/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_1.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_1.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/clothes/dresses/" title="" class="has-submenu">Dresses<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/clothes/dresses/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/dresses/">View All Dresses</a></li>
+                                    <li><a href="/plus-size/dresses/">Curve Dresses</a></li>
+                                    <li><a href="/clothes/dresses/dip-hem-dresses/">Dip Hem Dresses</a></li>
+                                    <li><a href="/clothes/dresses/sequin-dresses/">Sequin Dresses</a></li>
+                                    <li><a href="/clothes/dresses/lace-dresses/">Lace Dresses</a></li>
+                                    <li><a href="/clothes/dresses/bardot-dresses/">Bardot Dresses</a></li>
+                                    <li><a href="/clothes/dresses/bridesmaid-dresses/">Bridesmaid Dresses</a></li>
+                                    <li><a href="/clothes/dresses/day-dresses/">Day Dresses</a></li>
+                                    <li><a href="/clothes/dresses/evening-dresses/">Evening &amp; Party Dresses</a></li>
+                                    <li><a href="/clothes/dresses/prom-dresses/">Prom Dresses</a></li>
+                                    <li><a href="/clothes/dresses/bodycon-dresses/">Bodycon Dresses</a></li>
+                                    <li><a href="/clothes/dresses/midi-dresses/">Midi Dresses</a></li>
+                                    <li><a href="/clothes/dresses/skater-dresses/">Skater Dresses</a></li>
+                                    <li><a href="/clothes/dresses/maxi-dresses/">Maxi Dresses</a></li>
+                                    <li><a href="/clothes/dresses/tunics/">Tunics &amp; Shifts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Trend<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/dresses/tr:white-out/">White Out</a></li>
+                                    <li><a href="/clothes/dresses/tr:suits-you/">Suits You</a></li>
+                                    <li><a href="/clothes/dresses/tr:luxe-in-lace/">Luxe In Lace</a></li>
+                                    <li><a href="/clothes/dresses/tr:tropi-cool/">Tropi-Cool</a></li>
+                                    <li><a href="/clothes/dresses/tr:miami-reign/">Miami Reign</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Occasion<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/dresses/oc:prom-and-ball/">Prom and Ball</a></li>
+                                    <li><a href="/clothes/dresses/oc:wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/clothes/dresses/oc:races/">Races</a></li>
+                                    <li><a href="/clothes/dresses/oc:bridesmaid/">Bridesmaid</a></li>
+                                    <li><a href="/clothes/dresses/oc:holiday-shop/">Holiday Shop</a></li>
+                                    <li><a href="/clothes/dresses/oc:going-out-out/">Going Out-Out</a></li>
+                                    <li><a href="/clothes/dresses/oc:festival/">Festival</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/clothes/dresses/">View All</a></li>
+                            <div class="megamenu_banner3">
+                                <a href=" https://www.quizclothing.co.uk/clothes/dresses/maxi-dresses/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_2.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_2.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/clothes/tops/" title="" class="has-submenu">Tops<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/clothes/tops/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/tops/">View All Tops</a></li>
+                                    <li><a href="/clothes/bodysuits/">Bodysuits</a></li>
+                                    <li><a href="/clothes/tops/crop-tops/">Bralets &amp; Crop Tops</a></li>
+                                    <li><a href="/clothes/tops/cold-shoulder-tops/">Cold Shoulder Tops</a></li>
+                                    <li><a href="/clothes/tops/bardot-tops/">Bardot Tops</a></li>
+                                    <li><a href="/clothes/tops/day-tops/">Day Tops</a></li>
+                                    <li><a href="/clothes/tops/evening-tops/">Evening Tops</a></li>
+                                    <li><a href="/clothes/tops/going-out-tops/">Going Out Tops</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Trend<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/tops/tr:white-out/">White Out</a></li>
+                                    <li><a href="/clothes/tops/tr:suits-you/">Suits You</a></li>
+                                    <li><a href="/clothes/tops/tr:luxe-in-lace/">Luxe In Lace</a></li>
+                                    <li><a href="/clothes/tops/tr:stripe-out/">Stripe Out</a></li>
+                                    <li><a href="/clothes/tops/tr:tropi-cool/">Tropi-Cool</a></li>
+                                    <li><a href="/clothes/tops/tr:miami-reign/">Miami Reign</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Occasion<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/tops/oc:wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/clothes/tops/oc:races/">Races</a></li>
+                                    <li><a href="/clothes/tops/oc:holiday-shop/">Holiday Shop</a></li>
+                                    <li><a href="/clothes/tops/oc:going-out-out/">Going Out-Out</a></li>
+                                    <li><a href="/clothes/tops/oc:festival/">Festival</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/clothes/tops/">View All</a></li>
+                            <div class="megamenu_banner3">
+                                <a href="https://www.quizclothing.co.uk/clothes/tops/going-out-tops/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_3.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_3.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/clothes/" title="" class="has-submenu">Clothing<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/clothes/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/">View All Clothes</a></li>
+                                    <li><a href="/clothes/towie-collection/">QUIZ x TOWIE</a></li>
+                                    <li><a href="/clothes/miami-collection/">Miami Collection</a></li>
+                                    <li><a href="/clothes/dresses/">Dresses</a></li>
+                                    <li><a href="/clothes/tops/">Tops</a></li>
+                                    <li><a href="/clothes/jackets-coats/">Jackets &amp; Coats</a></li>
+                                    <li><a href="/clothes/jeans/">Jeans</a></li>
+                                    <li><a href="/clothes/knitwear/">Knitwear</a></li>
+                                    <li><a href="/clothes/shorts/">Shorts</a></li>
+                                    <li><a href="/clothes/skirts/">Skirts</a></li>
+                                    <li><a href="/clothes/trousers/">Trousers</a></li>
+                                    <li><a href="/clothes/playsuits/">Jumpsuits &amp; Playsuits</a></li>
+                                    <li><a href="/clothes/web-exclusive/">Exclusive Collection</a></li>
+                                    <li><a href="/clothes/kimonos/">Kimonos</a></li>
+                                    <li><a href="/clothes/coordinates/">Coordinates</a></li>
+                                    <li><a href="/clothes/occasion-wear/">Occasion Wear</a></li>
+                                    <li><a href="/clothes/bodysuits/">Bodysuits</a></li>
+                                    <li><a href="/clothes/bardot/">Bardot</a></li>
+                                    <li><a href="/clothes/schoolwear/">Schoolwear</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Trend<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/tr:white-out/">White Out</a></li>
+                                    <li><a href="/clothes/tr:suits-you/">Suits You</a></li>
+                                    <li><a href="/clothes/tr:luxe-in-lace/">Luxe In Lace</a></li>
+                                    <li><a href="/clothes/tr:stripe-out/">Stripe Out</a></li>
+                                    <li><a href="/clothes/tr:tropi-cool/">Tropi-Cool</a></li>
+                                    <li><a href="/clothes/tr:miami-reign/">Miami Reign</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Occasion<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clothes/oc:prom-and-ball/">Prom and Ball</a></li>
+                                    <li><a href="/clothes/oc:wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/clothes/oc:races/">Races</a></li>
+                                    <li><a href="/clothes/oc:bridesmaid/">Bridesmaid</a></li>
+                                    <li><a href="/clothes/oc:holiday-shop/">Holiday Shop</a></li>
+                                    <li><a href="/clothes/oc:going-out-out/">Going Out-Out</a></li>
+                                    <li><a href="/clothes/oc:festival/">Festival</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/clothes/">View All</a></li>
+                            <div class="megamenu_banner2">
+                                <a href="/clothes/playsuits/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_4.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_4.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/occasionwear/" title="" class="has-submenu">Occasionwear<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/occasionwear/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/occasionwear/">View All Occasionwear</a></li>
+                                    <li><a href="/occasionwear/bridal/">Bridal Wear</a></li>
+                                    <li><a href="/occasionwear/bridesmaid/">Bridesmaid</a></li>
+                                    <li><a href="/occasionwear/mother-of-the-bride/">Mother of the Bride</a></li>
+                                    <li><a href="/occasionwear/wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/clothes/dresses/ball-dresses/">Prom &amp; Ball Dresses</a></li>
+                                    <li><a href="/plus-size/occasionwear/">Curve Occasionwear</a></li>
+                                    <li><a href="/footwear/wedding-shoes/">Wedding Shoes</a></li>
+                                    <li><a href="/accessories/wedding-accessories/">Wedding Accessories</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/occasionwear/">View All</a></li>
+                            <div class="megamenu_banner2">
+                                <a href="https://www.quizclothing.co.uk/occasionwear/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_5.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_5.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/plus-size/" title="" class="has-submenu">Curve<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/plus-size/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/plus-size/">View All Curve</a></li>
+                                    <li><a href="/plus-size/dresses/">Dresses</a></li>
+                                    <li><a href="/plus-size/jumpsuits/">Jumpsuits</a></li>
+                                    <li><a href="/plus-size/tops/">Tops</a></li>
+                                    <li><a href="/plus-size/jackets-coats/">Jackets &amp; Coats</a></li>
+                                    <li><a href="/plus-size/trousers/">Trousers</a></li>
+                                    <li><a href="/plus-size/occasionwear/">Curve Occasionwear</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/plus-size/">View All</a></li>
+                            <div class="megamenu_banner2">
+                                <a href="/plus-size/dresses/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_6.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_6.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/footwear/" title="" class="has-submenu">Shoes<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/footwear/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/footwear/">View All Shoes</a></li>
+                                    <li><a href="/footwear/towie-collection/">QUIZ x TOWIE</a></li>
+                                    <li><a href="/footwear/party-shoes/">Party Shoes</a></li>
+                                    <li><a href="/footwear/shoe-bag-sets/">Shoe &amp; Bag Sets</a></li>
+                                    <li><a href="/footwear/wider-fit-shoes/">Wider Fit Shoes</a></li>
+                                    <li><a href="/footwear/courts/">Heels</a></li>
+                                    <li><a href="/footwear/boots/">Boots</a></li>
+                                    <li><a href="/footwear/trainers/">Trainers</a></li>
+                                    <li><a href="/footwear/platforms/">Platforms</a></li>
+                                    <li><a href="/footwear/flat-shoes/">Flats</a></li>
+                                    <li><a href="/footwear/wedge/">Wedges</a></li>
+                                    <li><a href="/footwear/wedding-shoes/">Wedding Shoes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Occasion<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/footwear/oc:prom-and-ball/">Prom and Ball</a></li>
+                                    <li><a href="/footwear/oc:wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/footwear/oc:bridesmaid/">Bridesmaid</a></li>
+                                    <li><a href="/footwear/oc:holiday-shop/">Holiday Shop</a></li>
+                                    <li><a href="/footwear/oc:going-out-out/">Going Out-Out</a></li>
+                                    <li><a href="/footwear/oc:festival/">Festival</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/footwear/">View All</a></li>
+                            <div class="megamenu_banner2">
+                                <a href="https://www.quizclothing.co.uk/footwear/party-shoes/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_8.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_8.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/accessories/" title="" class="has-submenu">Accessories<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/accessories/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/accessories/">View All Accessories</a></li>
+                                    <li><a href="/accessories/jewellery/">Jewellery</a></li>
+                                    <li><a href="/accessories/towie-collection/">QUIZ x TOWIE</a></li>
+                                    <li><a href="/accessories/scarves/">Scarves, Hats &amp; Gloves</a></li>
+                                    <li><a href="/accessories/tights/">Bras, Hosiery &amp; Tights</a></li>
+                                    <li><a href="/accessories/bags/">Bags</a></li>
+                                    <li><a href="/accessories/capes-ponchos/">Capes &amp; Ponchos</a></li>
+                                    <li><a href="/accessories/belts/">Belts</a></li>
+                                    <li><a href="/accessories/hair-and-beauty/">Hair Accessories</a></li>
+                                    <li><a href="/accessories/sunglasses/">Sunglasses</a></li>
+                                    <li><a href="/accessories/fascinators/">Fascinators</a></li>
+                                    <li><a href="/accessories/wedding-accessories/">Wedding Accessories</a></li>
+                                    <li><a href="/accessories/chokers/">Chokers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/" class="has-submenu">Shop by Occasion<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/accessories/oc:prom-and-ball/">Prom and Ball</a></li>
+                                    <li><a href="/accessories/oc:wedding-guest/">Wedding Guest</a></li>
+                                    <li><a href="/accessories/oc:bridesmaid/">Bridesmaid</a></li>
+                                    <li><a href="/accessories/oc:holiday-shop/">Holiday Shop</a></li>
+                                    <li><a href="/accessories/oc:going-out-out/">Going Out-Out</a></li>
+                                    <li><a href="/accessories/oc:festival/">Festival</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/accessories/">View All</a></li>
+                            <div class="megamenu_banner2">
+                                <a href="/accessories/jewellery/earrings/">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_7.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/campaigns/towie/nav/UK_Nav_TOWIE_7.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/clearance/" title="" class="has-submenu">Sale<span class="sub-arrow">...</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/clearance/" title="" class="has-submenu">Shop by Category<hr style="margin-top: 5px; margin-bottom: 0px; border-top-width: 1px; margin-right: 20px; border-color: rgba(0,0,0,0.3);" class="hidden-xs"><span class="sub-arrow">...</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/clearance/">View All Sale</a></li>
+                                    <li><a href="/clearance/plus-size/">Curve</a></li>
+                                    <li><a href="/clearance/accessories/">Accessories</a></li>
+                                    <li><a href="/clearance/clothing/">Clothing</a></li>
+                                    <li><a href="/clearance/footwear/">Shoes</a></li>
+                                    <li><a href="/clearance/occasion-wear/">Occasion Wear</a></li>
+                                    <li><a href="/clearance/jewellery/">Jewellery</a></li>
+                                </ul>
+                            </li>
+                            <li class="desktopmegahide"><a href="/clearance/">View All</a></li>
+                            <div class="megamenu_banner2">
+                                <a href="/clearance/clothing/#esp_cf=ESP_Rational_Level1Nav&amp;esp_filter_ESP_Rational_Level1Nav=Tops">
+                                    <picture>
+                                        <source media="(max-width: 767px)" srcset="/templates/quiz.co.uk.new/_images/spacer.gif">
+                                        <source media="(min-width: 768px)" srcset="/templates/quiz.co.uk.new/_images/marketing/2018/02May/nav/UK_Nav_0205_9.jpg">
+                                        <img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/marketing/2018/02May/nav/UK_Nav_0205_9.jpg" alt="" width="500" height="336">
+                                    </picture>
+                                </a>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                <span id="mobilemenulinks">
+          <li id="downloadAppiPhone" style="display: none;"><a href="https://itunes.apple.com/gb/app/quiz-clothing/id582961539?mt=8"><img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/redfish/template/qlogo.png" alt="DOWNLOAD THE NEW APP"> Download the NEW APP</a></li>
+      <li id="downloadAppAndroid"><a href="https://play.google.com/store/apps/details?id=com.poqstudio.app.platform.quiz&amp;hl=en"><img src="https://cdn.quizclothing.co.uk/version68/templates/quiz.co.uk.new/_images/redfish/template/qlogo.png"> Download the NEW APP</a></li>
+    <li><span class="glyphicon glyphicon-user"></span><a href="/members">Login/Register
+</a> </li>
+                <li><span class="glyphicon glyphicon-map-marker"></span><a href="/google/store-locator">Store Finder
+</a></li>
+                <li><span class="glyphicon glyphicon-heart"></span><a href="/wishlist">Loved Items
+</a></li>
+                <li><span class="glyphicon glyphicon-credit-card"></span><a href="/check-giftcard-balance">Giftcard
+</a></li>
+                </span>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- LF REMOVE START -->
+    <!--
+  <div class="desktop_search">
+        <form method="get" action="/products/search">
+    -->
+    <!-- modal -->
+    <div class="modal" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="z-index:20000;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form method="get" action="/products/search" class="template_search_form">
+                        <input type="search" placeholder="Search by keyword:" name="q" class="template_search_input"><a href="" onclick="document.forms[1].submit();return false;"><span class="glyphicon glyphicon-search" style="color:#000; padding-left:5px"></span></a>
+                    </form>
+                </div>
+                <button type="button" class="btn btn-sm" data-dismiss="modal" id="searchcloser"><span class="glyphicon glyphicon-remove" style="color:#888;"></span></button>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+</div>

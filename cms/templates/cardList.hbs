@@ -1,4 +1,5 @@
 {{#if slider}}
+	<div class="amp-ca-card-list">
 	<div class="amp-ca-slider js_slider" data-infinite="true" data-autoplay="true" data-navigation="false" data-sliderlength="{{cards.length}}">
 	    <div class="amp-ca-slider-frame js_frame {{#if navigationDots}}dots{{/if}}">
 	        <ul class="amp-ca-slider-slides js_slides">
@@ -23,6 +24,7 @@
 	                </svg>
 	            </span>
 	    </div>
+	</div>
 	</div>
 	<script>
 	if (loryHelpers && loryHelpers.initSliders) {
