@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/ugc.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ugc.json",
   "title": "UGC",
   "description": "A reusable content type UGC content",
   "allOf": [
@@ -34,7 +34,7 @@
       "minLength": 0,
       "maxLength": 255
     },
-    "type": {
+    "displayType": {
       "type": "string",
       "title": "Display type",
       "description": "The display type for this UGC component",
@@ -42,10 +42,39 @@
         "media-wall",
         "carousel"
       ]
+    },
+    "total": {
+      "title": "Number of posts to display at one time",
+      "description": "A value between 1 and 10. Default is 5",
+      "type": "number",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "header": {
+      "type": "string",
+      "title": "Header",
+      "description": "The header for this UGC content",
+      "validation": "Please enter less than 255 characters",
+      "minLength": 0,
+      "maxLength": 255
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "The description for this UGC content",
+      "validation": "Please enter less than 255 characters",
+      "minLength": 0,
+      "maxLength": 255
     }
   },
   "propertyOrder": [
+    "header",
+    "description",
     "stream",
-    "type"
+    "type",
+    "hashtag",
+    "clientName",
+    "type",
+    "total"
   ]
 }
