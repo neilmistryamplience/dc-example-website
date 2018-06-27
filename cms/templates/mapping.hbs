@@ -94,6 +94,10 @@
     {{> ugc }}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/product.json")) }}
+    {{> product }}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/container-slot.json")) }}
     {{> container-slot }}
 {{/if}}
