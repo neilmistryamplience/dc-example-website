@@ -1,6 +1,25 @@
 .amp-ca-product-image-holder {
     position: relative;
     width: auto;
+
+    @media screen and (min-width: 320px) {
+         height: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+         height: 768px;
+    }
+
+    @media screen and (min-width: 1024px) {
+         height: 1024px;
+    }
+
+    @media screen and (min-width: 1280px) {
+         height: 1280px;
+    }
+    
+    
+    
 }
 
 .amp-ca-product-image {
@@ -18,10 +37,10 @@
 }
 
 .amp-ca-product-attribute-holder {
+
     width: 20%;
     height: 100%;
     float: left;
-
     display: flex;
 
     -webkit-writing-mode: vertical-lr;
@@ -32,9 +51,7 @@
     writing-mode:sideways-lr; would be the one , but not avalaible everywhere so, let's transform */
     transform: scale(-1, -1);
     text-align: center; //width: 1.5em;
-    //line-height: 1.5em;
-    //font-weight: bold;
-    //font-variant: small-caps;
+
     .amp-ca-product-category-holder {
 
         .amp-ca-product-category-text-holder {
@@ -77,57 +94,5 @@
             margin: auto;
             line-height: 1em;
           }
-    }
-}
-
-.amp-ca-spot {
-    position: absolute;
-    cursor: pointer;
-    line-height: initial;
-}
-
-.amp-ca-poly {
-    position: absolute;
-    cursor: pointer;
-}
-
-.amp-ca-image-actions {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.amp-ca-spot-btn {
-    border: 2px solid #ffffff;
-    background: #000000;
-    -webkit-border-radius: 16;
-    -moz-border-radius: 16;
-    -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.75);
-    border-radius: 16px;
-    border-color: #ffffff;
-    font-family: "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-    font-size: 18px;
-    font-style: italic;
-    font-variant: normal;
-    font-weight: bold;
-    color: #ffffff;
-    padding: 5px 10px 5px 10px !important;
-    text-decoration: none;
-    opacity: 1;
-    position: absolute;
-    left: -8px;
-    top: -8px;
-    &:hover {
-        background: #000000;
-        border: 2px solid #b01c4d;
-        color: #b01c4d;
-        text-decoration: none;
-        opacity: 1;
-        font-size: 18px;
     }
 }
