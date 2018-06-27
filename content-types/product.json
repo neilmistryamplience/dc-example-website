@@ -61,16 +61,13 @@
       "maxLength": 255
     },
     "unit": {
-      "type": "array",
+      "type": "string",
       "title": "Volume Unit",
       "description": "The unit of measurement for the volume",
-      "items": {
-        "type": "string",
-        "enum": [
-          "ml",
-          "fl.oz"
-        ]
-      }
+      "enum": [
+        "ml",
+        "fl.oz"
+      ]
     },
     "catColor": {
       "type": "string",
