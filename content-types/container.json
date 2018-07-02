@@ -33,7 +33,8 @@
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/cardList.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/banner.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/blogList.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ugc.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ugc.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/promoList.json"
                 ]
               }
             }
