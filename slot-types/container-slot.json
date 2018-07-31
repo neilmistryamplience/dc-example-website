@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/slot-types/container-slot.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/wittweiden/slot-types/container-slot.json",
   "title": "Container Slot",
   "description": "A Slot that can accept a container (full page)",
   "allOf": [
@@ -21,7 +21,7 @@
             "contentType": {
               "title": "contentType",
               "enum": [
-                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/container.json"
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/wittweiden/content-types/container.json"
               ]
             }
           }
