@@ -1,46 +1,46 @@
 module.exports = {
     cms: "https://c1.adis.ws",
-    cmsAccount: "nmdemo",
+    cmsAccount: "wittweiden",
     sitemap: [{
             route: "/",
             layout: "landing",
             slots: {
-                "content": "63113fc1-741c-425e-afc0-0ce861618808"
+                "content": "2049a648-db2f-4dfa-ad3a-cb06c0e7d781"
             }
         },
         {
             route: "/womens",
             layout: "landing",
             slots: {
-                "content": "ede4c53e-12a0-40e8-882f-ab292f60a900"
+                "content": "5ade21d2-d9e6-4783-8fa9-47385655fdce"
             }
         },
         {
             route: "/mens",
             layout: "landing",
             slots: {
-                "content": "04b17fa1-f492-401a-bc49-68b66ccbb6a9"
+                "content": "848987cb-42b0-4c8e-b2c1-847257615b6a"
             }
         },
         {
             route: "/beauty",
             layout: "landing",
             slots: {
-                "content": "7e952515-8f2a-4535-a863-7b96ccb1e626"
+                "content": "d5932e97-8a59-4821-804a-7433e9dd8b04"
             }
         },
         {
             route: "/lighting",
             layout: "landing",
             slots: {
-                "content": "76f6ef64-6fb2-4a65-b510-eb3e80374264"
+                "content": "647b1200-3299-4fb1-b92d-f47b8840efcd"
             }
         },
         {
             route: "/furniture",
             layout: "landing",
             slots: {
-                "content": "5db62a63-00dc-4fe4-8083-11f5941135be"
+                "content": "59df9d33-ea0c-4778-a7a0-46eeff35f8ba"
             }
         },
         ,
@@ -48,14 +48,14 @@ module.exports = {
             route: "/electricals",
             layout: "landing",
             slots: {
-                "content": "7e6e0cc9-e103-4d85-97fa-0dcce6240a9d"
+                "content": "fb1b6c07-2e8c-47bc-8811-26ee946f6d9c"
             }
         },
         {
             route: "/inspiration",
             layout: "landing",
             slots: {
-                "content": "f5c8e533-f6d9-4e01-afeb-7ef9c558ff7d"
+                "content": "7c61eeb5-d345-4d1a-9916-26fccc0187e0"
             }
         }
     ]
