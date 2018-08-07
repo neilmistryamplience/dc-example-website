@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/slot-types/flexible-slot.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/slot-types/flexible-slot.json",
   "title": "Flexible Slot",
   "description": "Slot that allows a number of any content type",
   "allOf": [
@@ -24,15 +24,15 @@
               "contentType": {
                 "title": "",
                 "enum": [
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/slider.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/video.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/text.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/externalBlock.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/splitBlock.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/cardList.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/banner.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ugc.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/slider.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/video.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/text.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/externalBlock.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/splitBlock.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/cardList.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/banner.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/ugc.json"
                 ]
               }
             }
