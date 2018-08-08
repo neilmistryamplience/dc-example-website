@@ -10,6 +10,9 @@
   ],
   "type": "object",
   "properties": {
+    "_environment": {
+      "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/slot-types/sfccenv.json"
+    },
     "content": {
       "title": "Content",
       "allOf": [
