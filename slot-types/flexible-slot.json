@@ -10,6 +10,9 @@
   ],
   "type": "object",
   "properties": {
+    "_environment": {
+      "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/slot-types/sfccenv.json"
+    },
     "contentTypes": {
       "type": "array",
       "title": "Content Type",
@@ -32,7 +35,11 @@
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/image.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/cardList.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/banner.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/ugc.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/blogList.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/blog.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/container.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/ugc.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/promoList.json"
                 ]
               }
             }
