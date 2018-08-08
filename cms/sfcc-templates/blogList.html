@@ -1,0 +1,10 @@
+<div class="amp-ca-blog-list">
+    <div class="amp-ca-blog-list-wrap">
+        {{#each blogs}} {{#compare @index '<' 3}}
+        		<div class="amp-ca-bloglist-item-container {{#compare @index '==' 2}}blog-clear{{/compare}}">
+        			{{>blogSnippet snippet id=[@id] viewType='list'}}
+        		</div>
+        	{{/compare}}
+        {{/each}}
+    </div>
+</div>

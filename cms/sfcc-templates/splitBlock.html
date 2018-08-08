@@ -1,0 +1,7 @@
+<div class="amp-ca-splitBlock{{#if split}}{{else}} full-size{{/if}}">
+    {{#each content as |item|}}
+        <div class="amp-ca-split-part {{splitBlock @index ../split}}">
+            {{> mapping item }}
+        </div>
+    {{/each}}
+</div>
