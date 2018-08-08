@@ -1,0 +1,30 @@
+{  
+   "$schema":"http://bigcontent.io/cms/schema/v1/schema#",
+   "allOf":[  
+      {  
+         "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      }
+   ],
+   "id":"https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/slot-types/sfccenv.json",
+   "title":"SFCC",
+   "description":"sfcc.env description",
+   "type":"object",
+   "properties":{  
+      "sfcc_slot":{  
+         "type":"object",
+         "properties":{  
+            "slot_id":{  
+               "type":"string"
+            }
+         }
+      },
+      "sfcc_category_slot":{  
+         "type":"object",
+         "properties":{  
+            "category_id":{  
+               "type":"string"
+            }
+         }
+      }
+   }
+}
