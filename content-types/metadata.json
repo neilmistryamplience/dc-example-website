@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/metadata.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/metadata.json",
   "title": "Meta Data",
   "description": "Meta data to be associated to content",
   "allOf": [

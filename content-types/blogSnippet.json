@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/blogSnippet.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/blogSnippet.json",
   "title": "Blog Snippet",
   "description": "Key information for indexing and displaying a blog post",
   "allOf": [
@@ -16,7 +16,7 @@
       "description": "Image to show in the snippet",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/image.json"
         }
       ]
     },
@@ -42,7 +42,7 @@
       "description": "The location of the blog post",
       "anyOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/link.json"
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/link.json"
         }
       ],
       "_interpolate": true

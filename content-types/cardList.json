@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/cardList.json",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/cardList.json",
   "title": "Card List",
   "description": "A list of cards",
   "allOf": [
@@ -42,7 +42,7 @@
               "contentType": {
                 "title": "",
                 "enum": [
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/card.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/Essilor/content-types/card.json"
                 ]
               }
             }
