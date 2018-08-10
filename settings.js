@@ -1,11 +1,12 @@
 module.exports = {
     cms: "https://c1.adis.ws",
-    cmsAccount: "nmdemo",
+    cmsAccount: "willow",
     sitemap: [{
             route: "/",
-            layout: "landing",
+            layout: "homepage",
             slots: {
-                "content": "63113fc1-741c-425e-afc0-0ce861618808"
+                "hero": "d55b27e8-23b3-4a70-b78f-a5d6112452b5",
+                "body": "786fdfe5-738b-436c-9af0-76a7f7696e98"
             }
         },
         {
