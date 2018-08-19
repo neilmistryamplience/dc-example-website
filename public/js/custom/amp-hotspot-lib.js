@@ -68,4 +68,15 @@ drawAmpImageMeta = function() {
 
     }
 }
-drawAmpImageMeta();
+
+checkifjqueryloaded = function(){
+	if (window.jQuery) {  
+        // jQuery is loaded  
+        drawAmpImageMeta()
+    } else {
+        // jQuery is not loaded
+        setTimeout(checkifjqueryloaded, 200)
+    }
+	
+}
+checkifjqueryloaded();

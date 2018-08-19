@@ -24,7 +24,7 @@ drawAmpUGC = function() {
                 appendTo: $("#my-carousel"),
                 reportpath: "https://social-live-api.adis.ws/report",
                 xd: "https://social-live-api.adis.ws/crossdomain.xml",
-                callToActionText: "Shop the look"
+                callToActionText: "VIEW"
             };
 
             var modalConfig = {
@@ -45,14 +45,14 @@ drawAmpUGC = function() {
                 stream: ugc,
                 hashtag: "#"+hashtag,
                 tags: [hashtag],
-                client: "nmdemo",
+                client: "essilordemo",
                 area: "#amp-upload-section",
                 tcsLink: "<yoursite.com/terms>",
                 gnipTcsLink: "<gnip.com/terms>"
             };
 
             var instagramUploadConfig = {
-                client: "nmdemo",
+                client: "essilordemo",
                 stream: ugc,
                 tags: [hashtag],
                 clientId: "e721d5f2d1a94438a64a42a0c8c4002a",
@@ -62,7 +62,7 @@ drawAmpUGC = function() {
             };
 
             var accountConfig = {
-                client: "nmdemo",
+                client: "essilordemo",
                 imageBasePath: "https://i1.adis.ws/",
                 contentBasePath: "https://c1.adis.ws/",
                 ampAnalyticsCollectorId: "bdb443d9-d617-4a9f-9984-17f7345ce7e4",
@@ -75,4 +75,14 @@ drawAmpUGC = function() {
 
     }
 }
-drawAmpUGC();
+checkifugcjqueryloaded = function(){
+    if (window.jQuery) {  
+        // jQuery is loaded  
+        drawAmpUGC();
+    } else {
+        // jQuery is not loaded
+        setTimeout(checkifugcjqueryloaded, 200)
+    }
+    
+}
+checkifugcjqueryloaded();
