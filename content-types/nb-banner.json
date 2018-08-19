@@ -1,0 +1,87 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/notebooksbilliger/content-types/nb-banner.json",
+  "title": "NotebooksBilliger Banner",
+  "description": "Notebooks Billiger - Demonstration banner type",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "img": {
+      "type": "object",
+      "title": "Image",
+      "description": "The image for the banner",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
+        }
+      ]
+    },
+    "header": {
+      "type": "string",
+      "title": "Header",
+      "description": "Header text for the banner",
+      "validation": "Please enter less than 255 characters",
+      "minLength": 0,
+      "maxLength": 255
+    },
+    "copy": {
+      "type": "string",
+      "title": "Copy",
+      "description": "Copy text for the banner",
+      "validation": "Please enter less than 2000 characters",
+      "minLength": 0,
+      "maxLength": 2000
+    },
+    "button": {
+      "type": "object",
+      "title": "Link / Button",
+      "description": "The action link / button for the banner",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/link.json"
+        }
+      ],
+      "_interpolate": true
+    },
+    "alignment": {
+      "type": "string",
+      "title": "Alignment",
+      "description": "Alignment of the text content in the banner (left/right). Default is left",
+      "enum": [
+        "left",
+        "right"
+      ]
+    },
+    "style": {
+      "type": "string",
+      "title": "Style",
+      "description": "Add classname for CSS styling",
+      "validation": "Please enter between 0 and 100 characters",
+      "minLength": 0,
+      "maxLength": 100
+    },
+    "hideBG": {
+      "type": "boolean",
+      "title": "Hide Background",
+      "description": "Enable to have no background behind the banner text. Default is false"
+    },
+    "stackMobileLayout": {
+      "type": "boolean",
+      "title": "Stack Mobile Layout",
+      "description": "Enable to allow banner text to stack underneath the image on small screens. Default is false"
+    }
+  },
+  "propertyOrder": [
+    "img",
+    "header",
+    "copy",
+    "button",
+    "alignment",
+    "style",
+    "stackMobileLayout"
+  ]
+}
