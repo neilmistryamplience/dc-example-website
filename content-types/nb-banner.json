@@ -31,6 +31,7 @@
     "copy": {
       "type": "string",
       "title": "Copy",
+      "format": "markdown",
       "description": "Copy text for the banner",
       "validation": "Please enter less than 2000 characters",
       "minLength": 0,
