@@ -1,0 +1,131 @@
+.amp-ca-nb-banner {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    
+
+
+    h2{
+        font-size: 26px;
+        margin-left: 15px;
+        color: #646464;
+        font-family: Roboto-Regular,Tahoma,FreeSans,Verdana,Arial,Helvetica,"Sans Serif","MS Sans Serif",sans-serif;
+        text-align: left;
+    }
+
+    p{
+        margin-left: 15px;
+        font-size: 12px;
+        color: #646464;
+        font-family: Roboto-Regular,Tahoma,FreeSans,Verdana,Arial,Helvetica,"Sans Serif","MS Sans Serif",sans-serif;
+        text-align: left;
+
+        strong{
+            line-height: 2em;
+        }
+    }
+
+    ul,li{
+        margin-left: 15px;
+        font-size: 12px;
+        color: #646464;
+        font-family: Roboto-Regular,Tahoma,FreeSans,Verdana,Arial,Helvetica,"Sans Serif","MS Sans Serif",sans-serif;
+        text-align: left;
+    }
+
+
+    .nb-banner-text{
+        width:60%;
+
+        &[data-align='left'] {
+            right:0;
+            //float:right;
+        }
+
+        &[data-align='right'] {
+            left:0;
+            //float:left;
+        }
+         @media (max-width: 768px) {
+            width:100%;
+            float:left;
+         }
+
+    }
+
+    .nb-button-holder{
+        @media (max-width: 768px) {
+            width:100%;
+            text-align: center;
+         }
+    }
+
+    .nb-banner-image{
+        width:40%;
+        &[data-align='left'] {
+            left:0;
+            //float:left;
+        }
+
+        &[data-align='right'] {
+            right:0;
+            //float:right;
+        }
+         @media (max-width: 768px) {
+            width:100%;
+            float:left;
+         }
+    }
+
+    .amp-ca-banner-pic {
+        max-width: 100%;
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+
+    .amp-ca-banner-img {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .amp-ca-nb-banner-button {
+        font-size: 16px;
+        font-style: italic;
+        margin-top: 15px;
+        margin-left: 15px;
+        display: inline-block;
+        //width: 100%;
+        border: solid 2px white;
+        padding: 8px 16px;
+        background: #d19100;
+        color:#fff;
+        text-decoration: none;
+        //font-weight: bold;
+        box-sizing: border-box;
+        min-width: 120px;
+        font-family: Roboto-Regular,Tahoma,FreeSans,Verdana,Arial,Helvetica,"Sans Serif","MS Sans Serif",sans-serif;
+        &.black {
+            background: #d19100;
+            color: #fff;
+            border: solid 2px white;
+        }
+        &.black:hover {
+            background: #fff;
+            color: #d19100;
+            border: solid 2px #d19100;
+        }
+        &.white {
+            background: #fff;
+            color: #d19100;
+            border: solid 2px #d19100;
+        }
+        &.white:hover {
+            background: #d19100;
+            color: #fff;
+            border: solid 2px white;
+        }
+    }
+}

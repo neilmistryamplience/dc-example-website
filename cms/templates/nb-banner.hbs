@@ -1,0 +1,30 @@
+<div class="amp-ca-nb-banner js_ca_nb_banner">
+    <table>
+        <tbody>
+            <tr>
+                <td class="nb-banner-image" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+                    {{#with img}}
+                        <div class="amp-ca-banner-pic-wrap">
+                            {{> image this }}
+                        </div>
+                    {{/with}}
+                </td>
+                <td class="nb-banner-text" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+                    {{#if header}}
+                        <h2>{{header}}</h2>
+                    {{/if}}
+                    {{#if copy}}
+                        {{#markdown}}{{copy}}{{/markdown}}
+                    {{/if}}
+                    {{#if button.label}}
+                    <div class="nb-button-holder">
+                        <a href="{{button.url}}" class="amp-ca-nb-banner-button readMore {{#if style}}{{style}}{{else}}black{{/if}}">{{button.label}}</a>
+                    </div>
+                    {{/if}}
+                </td>
+                
+            </tr>
+        </tbody>
+    </table>
+    <img src="https://media.nbb-cdn.de/images/misc/LP_HP_Premium_Kampagne_03.png" alt="Trennlinie" width="100%" height="25">
+</div>
