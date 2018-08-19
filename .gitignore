@@ -12,3 +12,4 @@ public/js/app/shared/i18n/lang/*.json
 .idea
 dist
 .DS_Store
+settings-emily.js
