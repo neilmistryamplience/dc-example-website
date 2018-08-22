@@ -2,7 +2,8 @@
     <table>
         <tbody>
             <tr>
-                <td class="nb-banner-image" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+                {{#compare alignment '==' 'left'}}
+                    <td class="nb-banner-image" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
                     {{#with img}}
                         <div class="amp-ca-banner-pic-wrap">
                             {{> image this }}
@@ -22,6 +23,30 @@
                     </div>
                     {{/if}}
                 </td>
+                {{/compare}}
+                {{#compare alignment '!=' 'left'}}
+                <td class="nb-banner-text" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+                    {{#if header}}
+                        <h2>{{header}}</h2>
+                    {{/if}}
+                    {{#if copy}}
+                        {{#markdown}}{{copy}}{{/markdown}}
+                    {{/if}}
+                    {{#if button.label}}
+                    <div class="nb-button-holder">
+                        <a href="{{button.url}}" class="amp-ca-nb-banner-button readMore {{#if style}}{{style}}{{else}}black{{/if}}">{{button.label}}</a>
+                    </div>
+                    {{/if}}
+                </td>
+                <td class="nb-banner-image" data-align="{{#if alignment}}{{alignment}}{{else}}left{{/if}}">
+                    {{#with img}}
+                        <div class="amp-ca-banner-pic-wrap">
+                            {{> image this }}
+                        </div>
+                    {{/with}}
+                </td>
+                {{/compare}}
+                
                 
             </tr>
         </tbody>
