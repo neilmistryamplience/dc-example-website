@@ -11,7 +11,7 @@ module.exports = {
         },
         {
             route: "/womens",
-            layout: "landing",
+            layout: "homepage",
             slots: {
                 "hero": "6e030093-714c-406d-85f1-b942cc93f3b4",
                 "body": "a8d7445c-f94a-43a6-a914-ff462922d192"
