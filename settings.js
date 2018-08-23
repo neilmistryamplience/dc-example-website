@@ -6,8 +6,7 @@ module.exports = {
             layout: "homepage",
             slots: {
                 "hero": "d55b27e8-23b3-4a70-b78f-a5d6112452b5",
-                "body": "786fdfe5-738b-436c-9af0-76a7f7696e98",
-                "body":"c3568665-0fb5-4da5-891f-adc2e8af2779"
+                "body": "786fdfe5-738b-436c-9af0-76a7f7696e98"
             }
         },
         {
@@ -15,9 +14,7 @@ module.exports = {
             layout: "landing",
             slots: {
                 "hero": "6e030093-714c-406d-85f1-b942cc93f3b4",
-                "body": "a8d7445c-f94a-43a6-a914-ff462922d192",
-                "body": "0f55d6f0-de04-4488-8385-91c52eb416b0",
-                "body": "39d245d8-46ff-4321-9528-82f45b6cfb01"
+                "body": "a8d7445c-f94a-43a6-a914-ff462922d192"
             }
         },
         {
