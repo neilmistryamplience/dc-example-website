@@ -24,7 +24,7 @@ drawAmpUGC = function() {
                 appendTo: $("#my-carousel"),
                 reportpath: "https://social-live-api.adis.ws/report",
                 xd: "https://social-live-api.adis.ws/crossdomain.xml",
-                callToActionText: "Shop the look"
+                callToActionText: "Shop Now"
             };
 
             var modalConfig = {
