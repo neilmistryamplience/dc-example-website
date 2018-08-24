@@ -30,10 +30,26 @@
                 "type": "string",
                 "title": "Timestamp (mm:ss)",
                 "pattern": "\\d{1,2}:\\d{1,2}"
+            },
+            "name": {
+                "type": "string",
+                "title": "Product Name"
+            },
+            "image": {
+                "title": "Product Image",
+                "anyOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                    }
+                ]
+            },
+            "price": {
+                "type": "string",
+                "title": "Product Price"
             }
           },
-          "propertyOrder": ["timestamp", "product"],
-          "required": ["timestamp", "product"]
+          "propertyOrder": ["timestamp", "name", "image", "price"],
+          "required": ["timestamp", "name", "image", "price"]
         }
       }
     },
