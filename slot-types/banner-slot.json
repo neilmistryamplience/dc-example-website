@@ -23,7 +23,8 @@
               "enum": [
                 "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/banner.json",
                 "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/slider.json",
-                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/video.json"
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/video.json",
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/shoppableVideo.json"
               ]
             }
           }
