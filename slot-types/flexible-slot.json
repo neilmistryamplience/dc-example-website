@@ -32,7 +32,8 @@
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/cardList.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/externalBlock.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/ugc.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/ugc.json",
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/shoppableVideo.json"
                 ]
               }
             }
