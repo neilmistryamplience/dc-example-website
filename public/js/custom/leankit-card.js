@@ -20,7 +20,6 @@
 
         this.displayStatus = function(contentId) {
             const statusView = card.querySelector('.leankit-card-status');
-            console.log(card);
 
             this.getStatus(contentId)
                 .then(function(cardMetaData) {
