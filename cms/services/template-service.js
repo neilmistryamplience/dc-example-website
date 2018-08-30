@@ -3,9 +3,11 @@ const handlebarsService = require('./handlebars-service');
 const fs = require('fs');
 const path = require('path');
 
-function compileSlots(response) {
+function compileSlots(response, template) {
     var contentItems = amp.inlineContent(response);
-    var compiled = contentItems.map(compile);
+    var compiled = contentItems.map(function(content) {
+        return compile(content, template);
+    });
 
     return Promise.all(compiled)
         .then(function(outputs) {
@@ -19,8 +21,8 @@ function compileSlots(response) {
         });
 }
 
-function compile(content) {
-    return handlebarsService.process('mapping', content, {
+function compile(content, template) {
+    return handlebarsService.process(template || 'mapping', content, {
         getTemplate: getTemplate
     });
 }
