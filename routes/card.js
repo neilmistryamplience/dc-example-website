@@ -17,7 +17,7 @@ router.get('/', function(req, res, next) {
         .then(client.getByIds.bind(client))
         .then(templateService.compileSlots)
         .then(function(slots) {
-            var pageModel = {content: slots[contentId] };
+            var pageModel = {content: slots[contentId], contentId: contentId };
             return pageModel;
         })
         .then(function(pageModel) {
