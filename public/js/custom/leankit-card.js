@@ -24,6 +24,7 @@
             this.getStatus(contentId)
                 .then(function(cardMetaData) {
                     let status = 'not-found';
+                    let statusText = 'No Kanban Card';
 
                     if(cardMetaData) {
                         if(cardMetaData.actualStart) {
