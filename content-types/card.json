@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/card.json",
+  "id": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/card.json",
   "title": "Card",
   "description": "A single card of content",
   "allOf": [
@@ -16,7 +16,7 @@
       "description": "Image used in the card",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
+          "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json"
         }
       ]
     },
@@ -41,7 +41,7 @@
       "title": "Links",
       "description": "Links for the card",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/link.json"
+        "$ref": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/link.json"
       },
       "minItems": 0,
       "maxItems": 4
