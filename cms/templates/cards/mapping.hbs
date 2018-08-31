@@ -98,7 +98,7 @@
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/cardList.json")) }}
-    {{> cards/mapping slider.cards }}
+    {{> cards/mapping cards }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/promoList.json")) }}
