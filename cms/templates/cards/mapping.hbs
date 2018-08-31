@@ -32,7 +32,6 @@
     {{> cards/basic-image image }}
 {{/if}}
 
-
 {{!-- Text based components --}}
 
 {{#if (test this.[@type] (toRegex ".*/text-block")) }}
@@ -67,7 +66,7 @@
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/flexible-slot.json")) }}
-    {{> cards/mapping content }}
+    {{> cards/mapping contentTypes }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/banner-slot.json")) }}
@@ -99,7 +98,7 @@
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/cardList.json")) }}
-    {{> cards/mapping cards }}
+    {{> cards/mapping slider.cards }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/promoList.json")) }}

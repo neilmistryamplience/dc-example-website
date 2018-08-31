@@ -31,14 +31,12 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
             '&scope=' + encodeURIComponent(scope) +
             '&fullBodyObject=' + encodeURIComponent(fullBodyObject) +
             '&locale=en-US';
-    console.log(url)
 
     return new Promise(function(resolve, reject) {
         request(url, function (error, response, body) {
             if(error) {
                 reject(error);
             }else{
-                console.log(body)
                 resolve(JSON.parse(body));
             }
         });

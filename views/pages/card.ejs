@@ -9,4 +9,10 @@
 
 <script language="javascript">
     window.leankitCard.displayStatus('<%- contentId %>', '.leankit-card');
+
+    //lazy load first card images
+    var firstCard = document.querySelector('.dc-card');
+    [].slice.call(firstCard.querySelectorAll('img')).map(image => {
+       image.setAttribute('src', image.getAttribute('data-src'));
+    });
 </script>

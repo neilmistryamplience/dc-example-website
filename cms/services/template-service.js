@@ -27,10 +27,14 @@ function compile(content, template) {
     });
 }
 
+const templateCache = {};
 
 function getTemplate(name) {
-    console.log("getting the template!" + name)
-    return new Promise(function(resolve, reject) {
+    if(templateCache[name]) {
+        return templateCache[name];
+    }
+
+    const result = new Promise(function(resolve, reject) {
         fs.readFile(path.resolve(__dirname, '../templates/' + name + '.hbs'), "utf-8", function (error, data) {
             if(error) {
                 reject(error);
@@ -40,6 +44,11 @@ function getTemplate(name) {
         });
     });
 
+    if(process.env.env == 'production') {
+        templateCache[name] = result;
+    }
+
+    return result;
 }
 
 
