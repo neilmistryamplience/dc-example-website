@@ -151,5 +151,5 @@
     "style",
     "stackMobileLayout"
   ],
-  "required": ["img"]
+  "required": ["header"]
 }
