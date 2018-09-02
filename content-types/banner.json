@@ -64,7 +64,10 @@
                   ]
                }
             }
-         }
+         },
+          "required": [
+            "values"
+          ]
     },
     "subheader": {
       "type": "string",
