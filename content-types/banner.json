@@ -148,6 +148,7 @@
     "stackMobileLayout"
   ],
   "required":[
-    "header"
+    "header",
+    "subheader"
   ]
 }
