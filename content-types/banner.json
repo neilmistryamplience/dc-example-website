@@ -27,9 +27,6 @@
       "allOf": [
         {
           "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
-        },
-        {
-          "required": ["imageAltText"]
         }
       ]
     },
