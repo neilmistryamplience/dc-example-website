@@ -21,12 +21,15 @@
       ]
     },
     "img": {
-    "type": "object",
+      "type": "object",
       "title": "Image",
       "description": "The background image for the banner",
       "allOf": [
         {
           "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
+        },
+        {
+          "required": ["image"]
         }
       ]
     },
@@ -150,6 +153,5 @@
     "percV",
     "style",
     "stackMobileLayout"
-  ],
-  "required": ["img"]
+  ]
 }
