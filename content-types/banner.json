@@ -30,7 +30,6 @@
         }
       ]
     },
-    "required" : ["img"],
     "contentImg": {
       "type": "object",
       "title": "Content Image",
