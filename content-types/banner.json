@@ -138,8 +138,6 @@
     "img",
     "contentImg",
     "header",
-    "header_fr-FR",
-    "header_de-DE",
     "subheader",
     "description",
     "button",
@@ -148,5 +146,8 @@
     "percV",
     "style",
     "stackMobileLayout"
+  ],
+  "required":[
+    "header"
   ]
 }
