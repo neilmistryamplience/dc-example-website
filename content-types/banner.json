@@ -21,7 +21,7 @@
       ]
     },
     "img": {
-    "type": "object",
+      "type": "object",
       "title": "Image",
       "description": "The background image for the banner",
       "allOf": [
@@ -150,6 +150,10 @@
     "percV",
     "style",
     "stackMobileLayout"
+<<<<<<< HEAD
   ],
   "required": ["header"]
+=======
+  ]
+>>>>>>> c3aba90b787e3ce2c858640a34cec8fe61ad6b04
 }
