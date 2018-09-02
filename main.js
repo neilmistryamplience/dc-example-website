@@ -26,8 +26,8 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use('/public/css', expressLess(path.join(__dirname,'public','less')));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public/css', expressLess(path.join(__dirname,'public','less'), { cache: process.env.env == 'production' }));
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: (process.env.env == 'production' ? '5m' : '0m' ) }));
 
 
 //app.use('/settings', settings);
