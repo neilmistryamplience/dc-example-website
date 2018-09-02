@@ -60,7 +60,8 @@
                     "minLength":0,
                     "maxLength":255
                  }
-              }
+              },
+              "required": ["value"]
            }
         }
      }
