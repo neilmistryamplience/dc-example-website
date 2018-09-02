@@ -133,10 +133,16 @@
       "type": "boolean",
       "title": "Stack Mobile Layout",
       "description": "Enable to allow banner text to stack underneath the image on small screens. Default is false"
+    },
+    "analyticsEventLabel": {
+      "type": "string",
+      "title": "Analytics Event Label",
+      "description": "Textual description of the campaign used to group analytics"
     }
   },
   "propertyOrder": [
     "metadata",
+    "analyticsEventLabel",
     "img",
     "contentImg",
     "header",
@@ -150,5 +156,6 @@
     "percV",
     "style",
     "stackMobileLayout"
-  ]
+  ],
+  "required": ["analyticsEventLabel"]
 }
