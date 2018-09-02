@@ -22,7 +22,6 @@
     },
     "img": {
     "type": "object",
-    "properties": {
       "title": "Image",
       "description": "The background image for the banner",
       "validation": "Required",
@@ -31,8 +30,6 @@
           "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
         }
       ]
-    },
-    "required":["img"]
     },
     "contentImg": {
       "type": "object",
@@ -154,5 +151,6 @@
     "percV",
     "style",
     "stackMobileLayout"
-  ]
+  ],
+  "required": ["img"]
 }
