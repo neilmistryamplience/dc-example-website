@@ -22,14 +22,17 @@
     },
     "img": {
       "type": "object",
+      "properties": {
       "title": "Image",
       "description": "The background image for the banner",
-      "validation": "required",
+      "validation": "Required",
       "allOf": [
         {
           "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/image.json"
         }
       ]
+    },
+    "required":["img"]
     },
     "contentImg": {
       "type": "object",
