@@ -6,7 +6,7 @@
         <title>ANYA FINN</title>
 
         <link rel="icon" href="favicon.ico" type="image/x-icon">
-        
+
         <style>
             body {
                 font-family: Roboto Condensed, sans-serif;
@@ -81,6 +81,7 @@
             
             .leankit-card-status-not-found {
                 background-color: darkslategrey;
+                display: none;
             }
         </style>
 
@@ -125,7 +126,7 @@
                                 if(cardMetaData) {
                                     if(cardMetaData.actualStart) {
                                         status = 'in-progress';
-                                        statusText = 'In Progress';
+                                        statusText = (cardMetaData.lane && cardMetaData.lane.title) ? cardMetaData.lane.title : 'In Progress';
                                     }else{
                                         status = 'backlog';
                                         statusText = 'In Backlog';

@@ -10,16 +10,6 @@
   ],
   "type": "object",
   "properties": {
-    "metadata": {
-      "type": "object",
-      "title": "Meta Data",
-      "description": "Meta data related to this content",
-      "allOf": [
-        {
-          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/metadata.json"
-        }
-      ]
-    },
     "img": {
       "type": "object",
       "title": "Image",
@@ -141,14 +131,11 @@
     }
   },
   "propertyOrder": [
-    "metadata",
-    "analyticsEventLabel",
     "img",
     "contentImg",
     "header",
-    "header_fr-FR",
-    "header_de-DE",
     "subheader",
+    "analyticsEventLabel",
     "description",
     "button",
     "alignment",
