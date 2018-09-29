@@ -55,7 +55,7 @@
               {
                 "properties": {
                   "contentType": {
-                    "title": "",
+                    "title": "Main Bar",
                     "enum": [
                       "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
                     ]
@@ -79,7 +79,7 @@
               {
                 "properties": {
                   "contentType": {
-                    "title": "",
+                    "title": "Secondary Bar",
                     "enum": [
                       "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
                     ]
@@ -103,7 +103,7 @@
               {
                 "properties": {
                   "contentType": {
-                    "title": "",
+                    "title": "Tertiary Bar",
                     "enum": [
                       "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
                     ]
