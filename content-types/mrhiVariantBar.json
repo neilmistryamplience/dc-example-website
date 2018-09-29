@@ -48,21 +48,7 @@
           "title": "Main Bar",
           "description": "Main Variant Bar (Flavour, Product Attribute, Category Attribute)",
           "items": {
-            "allOf": [
-              {
-                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-              },
-              {
-                "properties": {
-                  "contentType": {
-                    "title": "Main Bar",
-                    "enum": [
-                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
-                    ]
-                  }
-                }
-              }
-            ]
+            "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
           },
           "minItems": 0,
           "maxItems": 1
