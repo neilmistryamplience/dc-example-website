@@ -43,15 +43,15 @@
                 }
              }
         },
-        "mainBar": {
-          "type": "array",
+         "mainBar": {
+          "type": "object",
           "title": "Main Bar",
           "description": "Main Variant Bar (Flavour, Product Attribute, Category Attribute)",
-          "items": {
-            "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
-          },
-          "minItems": 0,
-          "maxItems": 1
+          "allOf": [
+            {
+              "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
+            }
+          ]
         },
         "secondaryBar": {
           "type": "array",
