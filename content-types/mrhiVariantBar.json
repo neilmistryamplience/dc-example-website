@@ -1,0 +1,126 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBar.json",
+    "title": "Mobile Ready Hero Image (MRHI) - Variant Bar",
+    "description": "A data model for Mobile ready Hero images using the variant bar",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "image":
+        {
+            "type": "object",
+            "title": "Product Image",
+            "description": "The Product Image",
+            "anyOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+            }]
+        },
+        "imageName": {
+          "allOf":[  
+                {  
+                   "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                }
+             ],
+             "properties":{  
+                "values":{  
+                   "items":{  
+                      "properties":{  
+                         "value":{  
+                            "type": "string",
+                            "title": "Image Name",
+                            "description": "SEO Friendly image name for export",
+                            "validation": "Please enter less than 255 characters",
+                            "minLength": 0,
+                            "maxLength": 255
+                         }
+                      }
+                   }
+                }
+             }
+        },
+        "mainBar": {
+          "type": "array",
+          "title": "Main Bar",
+          "description": "Main Variant Bar (Flavour, Product Attribute, Category Attribute)",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "",
+                    "enum": [
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 1
+        },
+        "secondaryBar": {
+          "type": "array",
+          "title": "Secondary Bar",
+          "description": "Secondary Variant Bar (Category Attribute, Product Attribute)",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "",
+                    "enum": [
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 1
+        },
+        "tertiaryBar": {
+          "type": "array",
+          "title": "Tertiary Bar",
+          "description": "Tertiary Variant Bar - Use sparingly (Product Attribute, Flavour)",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "",
+                    "enum": [
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "minItems": 0,
+          "maxItems": 1
+        }
+    },
+    "propertyOrder": [
+        "image",
+        "imageName",
+        "mainBar",
+        "secondaryBar",
+        "tertiaryBar"
+    ]
+}

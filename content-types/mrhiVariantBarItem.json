@@ -1,0 +1,62 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json",
+    "title": "Mobile Ready Hero Image (MRHI) - Variant Bar Item",
+    "description": "A data model for Mobile ready Hero images using the variant bar Item",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "label": {
+          "allOf":[  
+                {  
+                   "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                }
+             ],
+             "properties":{  
+                "values":{  
+                   "items":{  
+                      "properties":{  
+                         "value":{  
+                            "type": "string",
+                            "title": "Label",
+                            "description": "Label text for this variant bar",
+                            "validation": "Please enter less than 255 characters",
+                            "minLength": 0,
+                            "maxLength": 255
+                         }
+                      }
+                   }
+                }
+             }
+        },
+        "barcolor":
+        {
+            "type": "string",
+            "title": "Bar Colour",
+            "description": "The colour of the variant bar",
+            "pattern": "^#([a-fA-F0-9]{6})$",
+            "validation": "Please enter a valid hex code. ie #FF0000",
+            "minLength": 7,
+            "maxLength": 7
+        },
+        "txtcolor":
+        {
+            "type": "string",
+            "title": "Text Colour",
+            "description": "Please select the text colour for this bar. Default is Black",
+            "enum": [
+                "Black",
+                "White"
+            ]
+        }
+    },
+    "propertyOrder": [
+        "label",
+        "barcolor",
+        "txtcolor"
+    ]
+}
