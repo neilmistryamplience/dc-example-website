@@ -43,7 +43,7 @@
                 }
              }
         },
-         "mainBar": {
+        "mainBar": {
           "type": "object",
           "title": "Main Bar",
           "description": "Main Variant Bar (Flavour, Product Attribute, Category Attribute)",
@@ -57,49 +57,21 @@
           "type": "array",
           "title": "Secondary Bar",
           "description": "Secondary Variant Bar (Category Attribute, Product Attribute)",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-              },
-              {
-                "properties": {
-                  "contentType": {
-                    "title": "Secondary Bar",
-                    "enum": [
-                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
-                    ]
-                  }
-                }
-              }
-            ]
-          },
-          "minItems": 0,
-          "maxItems": 1
+          "allOf": [
+            {
+              "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
+            }
+          ]
         },
         "tertiaryBar": {
           "type": "array",
           "title": "Tertiary Bar",
           "description": "Tertiary Variant Bar - Use sparingly (Product Attribute, Flavour)",
-          "items": {
-            "allOf": [
-              {
-                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-              },
-              {
-                "properties": {
-                  "contentType": {
-                    "title": "Tertiary Bar",
-                    "enum": [
-                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
-                    ]
-                  }
-                }
-              }
-            ]
-          },
-          "minItems": 0,
-          "maxItems": 1
+          "allOf": [
+            {
+              "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
+            }
+          ]
         }
     },
     "propertyOrder": [
