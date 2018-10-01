@@ -132,6 +132,7 @@
     "propertyOrder": [
         "image",
         "imageName",
+        "barsperc",
         "mainBar",
         "secondaryBar",
         "tertiaryBar",
