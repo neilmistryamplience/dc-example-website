@@ -54,7 +54,7 @@
           ]
         },
         "secondaryBar": {
-          "type": "array",
+          "type": "object",
           "title": "Secondary Bar",
           "description": "Secondary Variant Bar (Category Attribute, Product Attribute)",
           "allOf": [
@@ -64,7 +64,7 @@
           ]
         },
         "tertiaryBar": {
-          "type": "array",
+          "type": "object",
           "title": "Tertiary Bar",
           "description": "Tertiary Variant Bar - Use sparingly (Product Attribute, Flavour)",
           "allOf": [
