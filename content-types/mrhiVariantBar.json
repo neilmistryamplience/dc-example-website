@@ -43,6 +43,15 @@
                 }
              }
         },
+        "barsperc":
+        {
+            "type": "number",
+            "title": "Bar Percentage",
+            "description": "Location of the variant bars as a percentage down the image",
+            "validation": "Please enter a value between 0 & 100",
+            "minimum": 0,
+            "maximum": 100
+        },
         "mainBar": {
           "type": "object",
           "title": "Main Bar",
@@ -72,13 +81,62 @@
               "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBarItem.json"
             }
           ]
-        }
+        },
+        "size": {
+          "allOf":[  
+                {  
+                   "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                }
+             ],
+             "properties":{  
+                "values":{  
+                   "items":{  
+                      "properties":{  
+                         "value":{  
+                            "type": "string",
+                            "title": "Size",
+                            "description": "Size of this product",
+                            "validation": "Please enter less than 10 characters",
+                            "minLength": 0,
+                            "maxLength": 10
+                         }
+                      }
+                   }
+                }
+             }
+        },
+        "sizeSecondary": {
+          "allOf":[  
+                {  
+                   "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                }
+             ],
+             "properties":{  
+                "values":{  
+                   "items":{  
+                      "properties":{  
+                         "value":{  
+                            "type": "string",
+                            "title": "Secondary Size",
+                            "description": "Seondary size attribuute if required (This will split the size into 2 lines)",
+                            "validation": "Please enter less than 10 characters",
+                            "minLength": 0,
+                            "maxLength": 10
+                         }
+                      }
+                   }
+                }
+             }
+        },
+
     },
     "propertyOrder": [
         "image",
         "imageName",
         "mainBar",
         "secondaryBar",
-        "tertiaryBar"
+        "tertiaryBar",
+        "size",
+        "sizeSecondary"
     ]
 }
