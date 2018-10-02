@@ -22,7 +22,7 @@
           {
             "properties": {
               "contentType": {
-                "title": "",
+                "title": "MRHI image",
                 "enum": [
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBar.json"
                 ]
