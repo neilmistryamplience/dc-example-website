@@ -31,9 +31,9 @@
                    "items":{  
                       "properties":{  
                          "value":{  
-                            "type": "string",
                             "title": "Image Name",
                             "description": "SEO Friendly image name for export",
+                            "type": "string",
                             "validation": "Please enter less than 255 characters",
                             "minLength": 0,
                             "maxLength": 255

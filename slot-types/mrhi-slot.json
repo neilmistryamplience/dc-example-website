@@ -1,0 +1,36 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/slot-types/mrhi-slot.json",
+  "title": "MRHI Slot",
+  "description": "A Slot that can accept Mobile Ready Hero Images",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "contentTypes": {
+      "type": "array",
+      "title": "MRHI images",
+      "description": "The MRHI images for this slot",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "",
+                "enum": [
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/mrhiVariantBat.json"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

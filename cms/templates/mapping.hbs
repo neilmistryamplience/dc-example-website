@@ -98,6 +98,10 @@
     {{> product }}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/mrhiVariantBar.json")) }}
+    {{> mrhiVariantBar }}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/container-slot.json")) }}
     {{> container-slot }}
 {{/if}}
