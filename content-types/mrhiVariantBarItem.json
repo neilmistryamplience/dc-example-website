@@ -52,11 +52,35 @@
                 "Black",
                 "White"
             ]
+        },
+        "padding": {
+          "allOf":[  
+                {  
+                   "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                }
+             ],
+             "properties":{  
+                "values":{  
+                   "items":{  
+                      "properties":{  
+                         "value":{  
+                            "type": "number",
+                            "title": "Bar Padding",
+                            "description": "Padding on a variant bar",
+                            "validation": "Please enter a value between 0 & 100",
+                            "minimum": 0,
+                            "maximum": 100
+                         }
+                      }
+                   }
+                }
+             }
         }
     },
     "propertyOrder": [
         "label",
         "barcolor",
-        "txtcolor"
+        "txtcolor",
+        "padding"
     ]
 }
