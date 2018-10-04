@@ -69,7 +69,7 @@
                             "description": "Padding on a variant bar",
                             "validation": "Please enter a value between 0 & 100",
                             "minimum": 0,
-                            "maximum": 100
+                            "maximum": 1000
                          }
                       }
                    }
