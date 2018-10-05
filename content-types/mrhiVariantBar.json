@@ -127,7 +127,12 @@
                    }
                 }
              }
-        }
+        },
+        "hideSize": {
+            "title": "Hide Size?",
+            "description": "select to hide the size, default is false",
+            "type": "boolean"
+          }
     },
     "propertyOrder": [
         "image",
@@ -137,6 +142,7 @@
         "secondaryBar",
         "tertiaryBar",
         "size",
-        "sizeSecondary"
+        "sizeSecondary",
+        "hideSize"
     ]
 }
