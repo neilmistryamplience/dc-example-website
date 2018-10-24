@@ -49,10 +49,10 @@
           }
         ]
       },
-      "minItems": 1,
+      "minItems": 0,
       "maxItems": 8
     }
   },
   "propertyOrder": ["titleimg","description", "images"],
-  "required":[]
+  "required":["images"]
 }
