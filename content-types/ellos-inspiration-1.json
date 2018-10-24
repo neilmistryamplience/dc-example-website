@@ -67,6 +67,6 @@
       "maxLength": 255
     }
   },
-  "propertyOrder": [],
-  "required":[]
+  "propertyOrder": ["category", "blocks", "articles", "query"],
+  "required":["blocks"]
 }
