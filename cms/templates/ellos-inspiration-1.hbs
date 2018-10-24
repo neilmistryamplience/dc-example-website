@@ -1,0 +1,18 @@
+<div class="amp-ca-ellos-inspiration">
+  {{#if category}}
+      <div class="amp-ca-ellos-category">{{category}}</div>
+  {{/if}}
+
+  {{#each blocks as |item|}}
+      {{> mapping item }}
+  {{/each}}
+
+  {{#each articles}}
+    <div class="amp-ca-ellos-product-no">
+      {{this}}
+    </div>
+  {{/each}}
+  {{#if query}}
+      <div class="amp-ca-ellos-query">{{query}}</div>
+  {{/if}}
+</div>
