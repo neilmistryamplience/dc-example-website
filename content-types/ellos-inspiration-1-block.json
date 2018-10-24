@@ -2,7 +2,7 @@
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ellos-inspiration-1-block.json",
   "title": "Ellos: Inspiration 1 - Block",
-  "description": "",
+  "description": "Block of shoppable inspiration content",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
