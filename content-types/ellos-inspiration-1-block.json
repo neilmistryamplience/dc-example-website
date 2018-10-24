@@ -1,0 +1,56 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ellos-inspiration-1-block.json",
+  "title": "Ellos: Inspiration 1 - Block",
+  "description": "",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "titleimg": {
+      "type": "object",
+      "title": "Title Image",
+      "description": "The Title Image for this section",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/image.json"
+        }
+      ]
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Description text for the banner",
+      "validation": "Please enter less than 2000 characters",
+      "minLength": 0,
+      "maxLength": 2000
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Description text for the banner",
+      "validation": "Please enter less than 2000 characters",
+      "minLength": 0,
+      "maxLength": 2000
+    },
+    "images": {
+      "type": "array",
+      "title": "Images",
+      "description": "Choose Shoppable Images",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+          }
+        ]
+      },
+      "minItems": 1,
+      "maxItems": 8
+    }
+  },
+  "propertyOrder": [],
+  "required":[]
+}
