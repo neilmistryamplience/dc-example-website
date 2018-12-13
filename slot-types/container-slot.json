@@ -11,16 +11,6 @@
   "type": "object",
   "properties": {
     "content": {
-      "allOf": [
-        {
-          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-        },
-        {
-  "properties": {
-    "values": {
-      "items": {
-       "properties": {
-         "value": {  
       "title": "Content",
       "allOf": [
         {
