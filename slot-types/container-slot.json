@@ -5,7 +5,7 @@
   "description": "A Slot that can accept a container (full page)",
   "allOf": [
     {
-      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
     }
   ],
   "type": "object",
