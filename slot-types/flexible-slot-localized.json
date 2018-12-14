@@ -1,6 +1,6 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/slot-types/flexible-slot.json",
+  "id": "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/slot-types/flexible-slot-localized.json",
   "title": "Flexible Slot",
   "description": "Slot that allows a number of any content type",
   "allOf":[
