@@ -5,7 +5,7 @@
   "description": "A Blog Post",
   "allOf": [
     {
-      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
     }
   ],
   "type": "object",
@@ -43,8 +43,7 @@
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/cardList.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/banner.json",
                   "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/ugc.json",
-                  "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/promoList.json",
-                  "https://raw.githubusercontent.com/challerbach/dc-example-website/notebooksbilliger/content-types/nb-banner.json"
+                  "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/promoList.json"
                 ]
               }
             }
