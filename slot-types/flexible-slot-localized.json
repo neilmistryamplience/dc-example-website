@@ -4,23 +4,39 @@
 	"title": "Flexible Slot",
 	"description": "Slot that allows a number of any content type",
 	"allOf": [{
-		"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+		"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
 	}],
-
 	"type": "object",
 	"properties": {
 		"contentTypes": {
 			"type": "array",
-			"title": "Content type",
+			"title": "Content Type",
 			"description": "Select and order content to display in the page",
-			"allOf": [{
-					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-				},
-				{
-					"properties": {
-						"contentType": {
-							"title": "",
-							"enum": [
+			"content": {
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+		},
+		{
+			"properties": {
+				"values": {
+					"items": {
+						"properties": {
+							"value": {
+								"title": "Localized Content",
+								"type": "object",
+
+
+
+				"allOf": [
+					{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"title": "",
+                "enum": [
 								"https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/slider.json",
 								"https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
 								"https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
@@ -40,3 +56,4 @@
 		}
 	}
 }
+}}}
