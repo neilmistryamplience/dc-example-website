@@ -32,8 +32,8 @@
     },
     "contentImg": {
       "type": "object",
-      "title": "Content Image",
-      "description": "The image to display with the textual content for this banner",
+      "title": "Text as Image",
+      "description": "The image to display as the textual content for this banner",
       "allOf": [
         {
           "$ref": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/image.json"
