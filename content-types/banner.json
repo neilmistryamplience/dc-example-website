@@ -137,7 +137,6 @@
   "propertyOrder": [
     "metadata",
     "img",
-    "contentImg",
     "header",
     "header_fr-FR",
     "header_de-DE",
@@ -148,6 +147,7 @@
     "percH",
     "percV",
     "style",
-    "stackMobileLayout"
+    "stackMobileLayout",
+    "contentImg"
   ]
 }
