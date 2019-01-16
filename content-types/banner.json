@@ -132,7 +132,6 @@
   },
   "propertyOrder": [
     "img",
-    "contentImg",
     "header",
     "subheader",
     "analyticsEventLabel",
@@ -142,7 +141,8 @@
     "percH",
     "percV",
     "style",
-    "stackMobileLayout"
+    "stackMobileLayout",
+    "contentImg"
   ],
   "required": ["analyticsEventLabel"]
 }
