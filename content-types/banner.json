@@ -142,6 +142,7 @@
     "percV",
     "style",
     "stackMobileLayout",
+    "hideBG",
     "contentImg"
   ],
   "required": ["analyticsEventLabel"]
