@@ -43,9 +43,7 @@
                   "contentType": {
                     "title": "contentType",
                     "enum": [
-                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/container.json",
-                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/banner.json",
-                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/slider.json"
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/container.json"
                     ]
                   }
                 }
