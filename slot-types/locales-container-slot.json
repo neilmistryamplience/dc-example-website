@@ -1,0 +1,63 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/slot-types/locales-container-slot.json",
+  "title": "Locales Container Slot",
+  "description": "A Slot that can accept multiple containers (full page) for different locales",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "segments": {
+      "type": "array",
+      "title": "Content",
+
+      "items": {
+        "type": "object",
+        "properties": {
+          "localechooser": {
+            "type": "string",
+            "title": "Locale",
+            "enum": [
+              "en-GB",
+              "fr-FR",
+              "fr-CH",
+              "fr-BE",
+              "nl-BE",
+              "de-DE",
+              "nl-NL",
+              "zh-CN",
+              "zh-HK"
+            ]
+          },
+          "content": {
+            "title": "Content",
+            "allOf": [
+              {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+              },
+              {
+                "properties": {
+                  "contentType": {
+                    "title": "contentType",
+                    "enum": [
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/container.json",
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/banner.json",
+                      "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/slider.json"
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "propertyOrder": [
+          "localechooser",
+          "content"
+        ]
+      }
+    }
+  }
+}
