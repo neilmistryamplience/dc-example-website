@@ -16,8 +16,8 @@
 	"allOf": [
 		{
 			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-		},
-		{
+		}],
+
 			"properties": {
 				"values": {
 					"items": {
@@ -31,7 +31,8 @@
 					}
 				}
 			}
-		},
+		}
+		,
 				"allOf": [
 					{
 						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
