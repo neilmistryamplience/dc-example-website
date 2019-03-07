@@ -25,9 +25,13 @@
 							"value": {
 								"title": "Localized Content",
 								"type": "object",
-
-
-
+								"format": "text",
+							}
+						}
+					}
+				}
+			}
+		},
 				"allOf": [
 					{
 						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
@@ -53,7 +57,3 @@
 					}
 				}
 			]
-		}
-	}
-}
-}}}
