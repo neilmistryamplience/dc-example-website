@@ -10,62 +10,51 @@
   ],
   "type": "object",
   "properties": {
-    "segments": {
-      "type": "array",
-      "title": "Content",
-
-      "items": {
-        "type": "object",
-        "properties": {
-          "localechooser": {
-            "type": "string",
-            "title": "Locale",
-            "enum": [
-              "en-GB",
-              "fr-FR",
-              "fr-CH",
-              "fr-BE",
-              "nl-BE",
-              "de-DE",
-              "nl-NL",
-              "zh-CN",
-              "zh-HK"
-            ]
-          },
-          "content": {
-            "title": "Content",
-            "allOf": [
-              {
-                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
-              },
-              {
-                "properties": {
-                  "contentType": {
-                    "title": "contentType",
-                    "enum": [
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/slider.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/externalBlock.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/splitBlock.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/cardList.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/banner.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/ugc.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/nb-banner.json",
-                        "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/blog.json"
-                    ]
-                  }
-                }
+  "content":{
+        "allOf":[
+           {
+              "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+           },
+           {
+              "properties":{
+                 "values":{
+                    "items":{
+                       "properties":{
+                          "value":{
+                             "title":"Localized Content",
+                             "type":"object",
+                             "allOf":[
+                                {
+                                   "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                                },
+                                {
+                                   "properties":{
+                                      "contentType":{
+                                         "title":"Slot Content",
+                                         "enum":[
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/slider.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/video.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/text.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/externalBlock.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/splitBlock.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/image.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/cardList.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/banner.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/ugc.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/nb-banner.json",
+                                         "https://raw.githubusercontent.com/challerbach/dc-example-website/anyafinn/content-types/blog.json"
+                                         ]
+                                      }
+                                   }
+                                }
+                             ]
+                          }
+                       }
+                    }
+                 }
               }
-            ]
-          }
-        },
-        "propertyOrder": [
-          "localechooser",
-          "content"
+           }
         ]
-      }
-    }
+     }
   }
 }
