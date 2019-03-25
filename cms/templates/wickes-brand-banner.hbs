@@ -1,0 +1,12 @@
+<div class="amp-ca-wickes-brand-banner">
+    <div class="container pt-4 pb-0">
+        <div class="page-header">
+            <div class="how-to-media d-flex justify-content-center">
+                {{#with brandlogo}}
+                    <img class="img-fluid" src="//{{defaultHost}}/i/{{endpoint}}/{{name}}?&upscale=false&fmt.jpeg.interlaced=true">
+                {{/with}}
+            </div>
+            <div class="page-header__intro">{{#markdown}}{{branddescription}}{{/markdown}}</div>
+        </div>
+    </div>
+</div>
