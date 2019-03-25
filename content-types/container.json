@@ -36,7 +36,8 @@
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ugc.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/promoList.json",
                   "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/notebooksbilliger/content-types/nb-banner.json",
-                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ellos-inspiration-1.json"
+                  "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/anyafinn/content-types/ellos-inspiration-1.json",
+                  "https://www.amplienceschema.com/wickes-brand-banner"
                 ]
               }
             }

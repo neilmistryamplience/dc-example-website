@@ -17,7 +17,7 @@ ContentDeliveryClient.prototype.getById = function(id) {
     return this.query({"sys.iri":"http://content.cms.amplience.com/" + id});
 };
 
-ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
+ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject, locale) {
     if(scope === undefined) {
         scope = "tree";
     }
@@ -29,7 +29,8 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject) {
             '?query=' + encodeURIComponent(JSON.stringify(query)) +
             '&store=' + encodeURIComponent(this.account) +
             '&scope=' + encodeURIComponent(scope) +
-            '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + '&locale=en-GB,de-DE,*';
+            '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + 
+            '&locale=' + this.locale;
     console.log(url)
 
     return new Promise(function(resolve, reject) {
