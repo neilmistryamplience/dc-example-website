@@ -65,7 +65,10 @@ drawAmpImageMeta = function() {
             	}
         	}
     	});
-
     }
 }
 drawAmpImageMeta();
+
+doAmplienceAction = function(data){
+	window.open(data.target, "_self");
+}

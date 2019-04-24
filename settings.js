@@ -10,9 +10,11 @@ module.exports = {
         },
         {
             route: "/womens",
-            layout: "landing",
+            layout: "multislotlanding",
             slots: {
-                "content": "77b984af-43fd-4806-b823-9b9a6a56b8c1"
+                "top": "9cc48139-1321-4048-b6d7-0c6d8cd9a7ee",
+                "middle": "0784e429-e97a-4bf9-b85d-39c330482285",
+                "bottom": "c69be7e0-13f9-43d9-bbe9-8738b8ff74bd",
             }
         },
         {
