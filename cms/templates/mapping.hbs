@@ -50,10 +50,6 @@
     {{> splitBlock }}
 {{/if}}
 
-{{#if (test this.[@type] (toRegex ".*/slider")) ~}}
-    {{> slider }}
-{{/if}}
-
 {{#if (test this.[@type] (toRegex "(.*/card$)|(.*/card.json)")) ~}}
     {{> card }}
 {{/if}}
