@@ -1,8 +1,9 @@
 const request = require('request');
 
-function ContentDeliveryClient(baseUrl, account) {
+function ContentDeliveryClient(baseUrl, account, locale) {
     this.baseUrl = baseUrl;
     this.account = account;
+    this.locale = locale
 
     if(this.baseUrl.indexOf('://') == -1) {
         this.baseUrl = 'http://' + this.baseUrl;
@@ -30,8 +31,7 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject, l
             '&store=' + encodeURIComponent(this.account) +
             '&scope=' + encodeURIComponent(scope) +
             '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + 
-            '&locale=' + locale + ',*';
-    console.log(url)
+            '&locale=' + this.locale;
 
     return new Promise(function(resolve, reject) {
         request(url, function (error, response, body) {

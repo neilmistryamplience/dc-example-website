@@ -44,10 +44,12 @@
             {{#if description}}
                 <div class="amp-ca-banner-description">{{description}}</div>
             {{/if}}
-            {{#if button.label}}
-                <a href="{{button.url}}"
-                   class="amp-ca-banner-button readMore {{#if style}}{{style}}{{else}}black{{/if}}">{{button.label}}</a>
-            {{/if}}
+            {{#each links}}
+                {{#if label}}
+                    <a href="{{url}}"
+                       class="amp-ca-banner-button readMore {{#if ../style}}{{../style}}{{else}}black{{/if}}">{{label}}</a>
+                {{/if}}
+            {{/each}}
         </div>
     </div>
 </div>

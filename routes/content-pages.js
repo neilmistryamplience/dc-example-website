@@ -11,12 +11,10 @@ const templateService = require('../cms/services/template-service');
 
 function registerPage(page) {
   router.get(page.route, function(req, res, next) {
-    console.log("req - ")
-    console.log(req.query.neiltest)
     var slotMap = getSlotMap(page, req);
     var slotIds = _.values(slotMap);
 
-    var client = new ContentDeliveryClient(req.cookies['amplience-host'] || settings.cms, settings.cmsAccount);
+    var client = new ContentDeliveryClient(req.cookies['amplience-host'] || settings.cms, settings.cmsAccount, req.query.locale);
 
     Promise.resolve(slotIds)
         .then(client.getByIds.bind(client))
