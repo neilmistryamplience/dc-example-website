@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressLess = require('express-less');
 var markoExpress = require('marko/express');
+var helpers = require('handlebars-helpers')();
 
 var contentPages = require('./routes/content-pages');
 var visualization = require('./routes/visualization');

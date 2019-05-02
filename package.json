@@ -6,7 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "bower": "^1.8.8",
     "cms-javascript-sdk": "github:amplience/cms-javascript-sdk",
     "cookie-parser": "^1.4.4",
@@ -14,12 +14,12 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-less": "^0.1.0",
-    "handlebars": "^4.1.1",
+    "handlebars": "^4.1.2",
     "handlebars-helpers": "^0.10.0",
     "jszip": "3.1.5",
     "lodash": "^4.17.11",
     "lory.js": "2.2.1",
-    "marko": "^4.16.3",
+    "marko": "^4.16.13",
     "moment": "^2.24.0",
     "morgan": "^1.9.1",
     "nom": "0.0.3",

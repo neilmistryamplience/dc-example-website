@@ -8732,3 +8732,29 @@ amp-video-block {
 .amp-modal-grey-out{
   z-index: 100 !important;
 }
+
+.af-button {
+  display: inline-block;
+  padding: .84615em 1.3em;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  height: auto;
+  min-height: 3.15385em;
+  -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0, 1);
+  transition: all 0.3s cubic-bezier(0.6, 0, 0, 1);
+  border: 1px solid transparent;
+  position: relative; }
+  .af-button-dark {
+    background-color: #000;
+    border-color: #000;
+    color: #fff; }
+  .af-button-light {
+    border-color: currentColor;
+    color: #000;
+    background-color: #fff; }

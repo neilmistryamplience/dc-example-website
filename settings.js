@@ -3,9 +3,11 @@ module.exports = {
     cmsAccount: "nmdemo",
     sitemap: [{
             route: "/",
-            layout: "landing",
+            layout: "homepage",
             slots: {
-                "content": "63113fc1-741c-425e-afc0-0ce861618808"
+                "hero": "307cff5d-6c1e-4fd6-9c96-f58721ef3c08",
+                "body": "b615b798-67f3-4649-8056-be25838962fb",
+                "stack": "d7001901-c0b2-4e88-94f8-9b790538849d"
             }
         },
         {
