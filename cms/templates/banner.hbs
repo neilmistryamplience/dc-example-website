@@ -36,13 +36,13 @@
             {{/with}}
 
             {{#if header}}
-                <div class="amp-ca-banner-header">{{header}}</div>
+                <div class="amp-ca-banner-header" {{#if txtCol}}style="color:{{txtCol}}"{{/if}}>{{header}}</div>
             {{/if}}
             {{#if subheader}}
-                <div class="amp-ca-banner-subheader">{{subheader}}</div>
+                <div class="amp-ca-banner-subheader" {{#if txtCol}}style="color:{{txtCol}}"{{/if}}>{{subheader}}</div>
             {{/if}}
             {{#if description}}
-                <div class="amp-ca-banner-description">{{description}}</div>
+                <div class="amp-ca-banner-description" {{#if txtCol}}style="color:{{txtCol}}"{{/if}}>{{description}}</div>
             {{/if}}
             {{#each links}}
                 {{#if label}}
