@@ -62,12 +62,16 @@
     {{> externalBlock }}
 {{/if}}
 
-{{#if (test this.[@type] (toRegex ".*/promo")) ~}}
+{{#if (test this.[@type] (toRegex "(.*/promo$)|(.*/promo.json)")) ~}}
     {{> promo }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/promoList")) ~}}
     {{> promoList }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/promotion")) ~}}
+    {{> promotion }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/blogSnippet")) ~}}
