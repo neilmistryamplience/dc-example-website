@@ -30,7 +30,8 @@ function registerHelpers(Handlebars){
             'regex',
             'string',
             'url',
-            'markdown'
+            'markdown',
+            'replace'
         ],
         {
             handlebars: Handlebars
