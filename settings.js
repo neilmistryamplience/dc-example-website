@@ -14,8 +14,7 @@ module.exports = {
             slots: {
                 "top": "9cc48139-1321-4048-b6d7-0c6d8cd9a7ee",
                 "middle": "0784e429-e97a-4bf9-b85d-39c330482285",
-                "bottom": "c69be7e0-13f9-43d9-bbe9-8738b8ff74bd",
-                "footer": "f6645782-b074-4af8-a49f-3f75e1e8a5e0",
+                "footer": "f6645782-b074-4af8-a49f-3f75e1e8a5e0"
             }
         },
         {
