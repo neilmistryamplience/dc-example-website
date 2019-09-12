@@ -2,22 +2,32 @@
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/emily/content-types/text.json",
   "title": "Text",
-  "description": "Re-usable content type which allows for rich text",
-  "allOf": [
-    {
-      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
-    }
-  ],
-  "type": "object",
-  "properties": {
-    "text": {
-      "type": "string",
-      "title": "Text",
-      "description": "Enter textual content here",
-      "validation": "Please enter less than 6000 characters",
-      "format": "markdown",
-      "minLength": 0,
-      "maxLength": 6000
-    }
+"description": "Re-usable content type which allows for rich text",
+"allOf": [
+  {
+    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
   }
+],
+"type": "object",
+"properties": {
+  "text": {
+    "type": "string",
+    "title": "Text",
+    "description": "Enter textual content here",
+    "validation": "Please enter less than 6000 characters",
+    "format": "markdown",
+    "minLength": 0,
+    "maxLength": 6000
+  },
+"textAlign": {
+  "title": "Text Alignment",
+  "description": "Aligning text",
+  "type": "string",
+  "enum": [
+    "left",
+    "center",
+    "right"
+  ]
+}
+}
 }
