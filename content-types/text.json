@@ -28,6 +28,16 @@
     "center",
     "right"
   ]
+},
+"padding": {
+  "title": "Distance from border",
+  "description":"Vertical padding from border",
+  "type": "string",
+  "enum": [
+    "10%",
+    "25%",
+    "50%"
+  ]
 }
 }
 }
