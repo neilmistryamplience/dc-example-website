@@ -9,6 +9,17 @@ var debug = require('debug')('cms-generator:server');
 var http = require('http');
 
 /**
+* https configuration for localhost
+*/
+var path = require('path')
+var fs = require('fs')
+var https = require ('https')
+
+var certOptions = {
+	key: fs.readFileSync(path.resolve('build/cert/server.key')),
+	cert: fs.readFileSync(path.resolve('build/cert/server.crt'))
+}
+/**
  * Get port from environment and store in Express.
  */
 
@@ -19,7 +30,9 @@ app.set('port', port);
  * Create HTTP server.
  */
 
-var server = http.createServer(app);
+/*var server = http.createServer(app);
+*/
+var server = https.createServer(certOptions, app);
 
 /**
  * Listen on provided port, on all network interfaces.
