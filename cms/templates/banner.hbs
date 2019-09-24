@@ -1,6 +1,6 @@
 <div class="amp-ca-banner js_ca_banner">
     {{#with img}}
-        <div class="amp-ca-banner-pic-wrap">
+        <div class="amp-ca-banner-pic-wrap" data-aos="fade">
             {{> image this }}
         </div>
     {{/with}}
@@ -36,18 +36,18 @@
             {{/with}}
 
             {{#if header}}
-                <div class="amp-ca-banner-header" {{#if txtCol}}style="color:{{txtCol}}"{{/if}}>{{header}}</div>
+                <div class="amp-ca-banner-header" {{#if txtCol}}style="color:{{txtCol}}"{{/if}} data-aos="fade-up" data-aos-delay="50">{{header}}</div>
             {{/if}}
             {{#if subheader}}
-                <div class="amp-ca-banner-subheader" {{#if txtCol}}style="color:{{txtCol}}"{{/if}}>{{subheader}}</div>
+                <div class="amp-ca-banner-subheader" {{#if txtCol}}style="color:{{txtCol}}"{{/if}} data-aos="fade-up" data-aos-delay="100">{{subheader}}</div>
             {{/if}}
             {{#if description}}
-                <div class="amp-ca-banner-description" {{#if txtCol}}style="color:{{txtCol}}"{{/if}}>{{description}}</div>
+                <div class="amp-ca-banner-description" {{#if txtCol}}style="color:{{txtCol}}"{{/if}} data-aos="fade-up" data-aos-delay="150">{{description}}</div>
             {{/if}}
             {{#each links}}
                 {{#if label}}
                     <a href="{{url}}"
-                       class="amp-ca-banner-button readMore {{#if ../style}}{{../style}}{{else}}black{{/if}}">{{label}}</a>
+                       class="amp-ca-banner-button readMore {{#if ../style}}{{../style}}{{else}}black{{/if}}" data-aos="fade-up" data-aos-delay="200">{{label}}</a>
                 {{/if}}
             {{/each}}
         </div>

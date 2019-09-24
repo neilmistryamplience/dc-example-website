@@ -33,6 +33,7 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject, l
             '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + 
             '&locale=' + this.locale;
 
+    console.log(url)
     return new Promise(function(resolve, reject) {
         request(url, function (error, response, body) {
             if(error) {

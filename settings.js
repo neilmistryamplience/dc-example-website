@@ -14,14 +14,14 @@ module.exports = {
             route: "/womens",
             layout: "landing",
             slots: {
-                "content": "ede4c53e-12a0-40e8-882f-ab292f60a900"
+                "content": "7b9fa538-c2ac-4090-837b-2f2f5f46f4d5"
             }
         },
         {
             route: "/mens",
             layout: "landing",
             slots: {
-                "content": "04b17fa1-f492-401a-bc49-68b66ccbb6a9"
+                "content": "2f6a845a-fc02-4cc3-b75b-9e982891188a"
             }
         },
         {
@@ -57,7 +57,7 @@ module.exports = {
             route: "/inspiration",
             layout: "landing",
             slots: {
-                "content": "f5c8e533-f6d9-4e01-afeb-7ef9c558ff7d"
+                "content": "5d5d41c7-5766-490e-b185-d6c7ee2673e6"
             }
         }
     ]
