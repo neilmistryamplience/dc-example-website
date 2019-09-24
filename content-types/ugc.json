@@ -71,10 +71,9 @@
     "header",
     "description",
     "stream",
-    "type",
+    "displayType",
     "hashtag",
     "clientName",
-    "type",
     "total"
   ]
 }
