@@ -13,3 +13,5 @@ public/js/app/shared/i18n/lang/*.json
 dist
 .DS_Store
 Archive.zip
+public/images/logo_cebu.jpeg
+views/components/navigation_cebu.ejs
