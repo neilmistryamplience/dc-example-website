@@ -4,6 +4,7 @@
             {{> image this }}
         </div>
     {{/with}}
+
     <div class="amp-ca-banner-info-wrap
     {{#if stackMobileLayout}}amp-ca-info-bottom{{else}}amp-ca-info-normal{{/if}}
         {{#unless header}}
@@ -24,25 +25,27 @@
             style="right:{{percH}}%;top:{{percV}}%";
          {{/compare}}
          {{#compare alignment '==' 'center'}}
-            style="left:{{percH}}%;top:{{percV}}%";
+            style="left:{{percH}}%;top:{{perc
+                V}}%";
          {{/compare}}
          >
 
         <div class="amp-ca-banner-info {{#if style}}{{style}}{{else}}black{{/if}} {{#if hideBG}}hideBG{{/if}}">
             {{#with contentImg}}
+                {{#if image}}
                 <div class="amp-ca-banner-pic-wrap">
                     {{> image this }}
                 </div>
+                {{/if}}
             {{/with}}
-
             {{#if header}}
-                <div class="amp-ca-banner-header" {{#if txtCol}}style="color:{{txtCol}}"{{/if}} data-aos="fade-up" data-aos-delay="50">{{header}}</div>
+                <div class="amp-ca-banner-header" style="{{#if txtCol}}color:{{txtCol}};{{/if}}{{#with headerFont}}{{#if font}}font-family:{{font}};{{/if}}{{#if size}}font-size:{{size}};{{/if}}{{/with}}"data-aos="fade-up" data-aos-delay="50">{{header}}</div>
             {{/if}}
             {{#if subheader}}
-                <div class="amp-ca-banner-subheader" {{#if txtCol}}style="color:{{txtCol}}"{{/if}} data-aos="fade-up" data-aos-delay="100">{{subheader}}</div>
+                <div class="amp-ca-banner-subheader" style="{{#if txtCol}}color:{{txtCol}};{{/if}}" data-aos="fade-up" data-aos-delay="100">{{subheader}}</div>
             {{/if}}
             {{#if description}}
-                <div class="amp-ca-banner-description" {{#if txtCol}}style="color:{{txtCol}}"{{/if}} data-aos="fade-up" data-aos-delay="150">{{description}}</div>
+                <div class="amp-ca-banner-description" style="{{#if txtCol}}color:{{txtCol}};{{/if}}" data-aos="fade-up" data-aos-delay="150">{{description}}</div>
             {{/if}}
             {{#each links}}
                 {{#if label}}

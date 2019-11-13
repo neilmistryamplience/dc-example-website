@@ -15,7 +15,7 @@ drawAmpImageMeta = function() {
 	                    var hotspots = data.metadata.hotSpots.hotSpots.list;
 	                    // Is there a polygon in the data? If so, create a map container
 	                    if (data.metadata.hotSpots.hasPolygon) {
-	                        // PUT BACK: $(theimg).append("<map name='" + $(this).data('mapname') + "' id='" + $(this).data('mapname') + "'></map>");
+	                        $(image).append("<map name='" + $(this).data('mapname') + "' id='" + $(this).data('mapname') + "'></map>");
 	                    }
 	                    // Go through the hotspots
 	                    for (var i = 0; i < hotspots.length; i++) {

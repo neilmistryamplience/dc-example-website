@@ -34,7 +34,7 @@
     {{> text }}
 {{/if}}
 
-{{#if (test this.[@type] (toRegex ".*/image")) ~}}
+{{#if (test this.[@type] (toRegex ".*/image$")) ~}}
     {{> image }}
 {{/if}}
 
@@ -72,6 +72,10 @@
 
 {{#if (test this.[@type] (toRegex ".*/promotion")) ~}}
     {{> promotion }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/emailbanner")) ~}}
+    {{> emailbanner }}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/blogSnippet")) ~}}
@@ -128,4 +132,8 @@
 
 {{#if (test this.[@type] (toRegex ".*/wickes-brand-banner")) }}
     {{> wickes-brand-banner }}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/imagelayerholder$")) }}
+    {{> imagelayerholder }}
 {{/if}}

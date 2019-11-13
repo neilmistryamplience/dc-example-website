@@ -1,0 +1,6 @@
+<div class="amp-ca-image-holder">
+    <picture class="amp-ca-image">
+        <img src="//i8.amplience.net/i/nmdemo/lg-desktop-blank-pink?{{#each layers}}&layer{{add @index '1'}}=[src=/i//{{img.name}}{{#if anchor}}&anchor={{anchor}}{{/if}}{{#if top}}&top={{top}}%{{/if}}{{#if left}}&left={{left}}%{{/if}}{{#if right}}&right={{right}}%{{/if}}{{#if bottom}}&bottom={{bottom}}%{{/if}}{{#if rotate}}&rotate={{rotate}}{{/if}}{{#if w}}&w={{w}}{{/if}}]{{/each}}" class="amp-ca-image-pic">
+        {{#each layers}}{{JSONstringify this}}{{/each}}
+    </picture>
+</div>
