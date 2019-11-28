@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/slots/container-slot.json",
+	"title": "Banner Slot",
+	"description": "A Slot that can accept a single container",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"content": {
+			"title": "Content",
+			"allOf": [
+				{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+				},
+				{
+					"properties": {
+						"contentType": {
+							"title": "contentType",
+							"enum": [
+								"https://www.amplience.com/examples/container.json"
+							]
+						}
+					}
+				}
+			]
+		}
+	},
+	"propertyOrder": [
+		"content"
+	]
+}

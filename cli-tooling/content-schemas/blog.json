@@ -1,0 +1,54 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/blog.json",
+	"title": "Blog",
+	"description": "A Blog Post",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"snippet": {
+			"type": "object",
+			"title": "Blog Snippet",
+			"description": "Blog Snippet",
+			"allOf": [
+				{
+					"$ref": "https://www.amplience.com/examples/blogSnippet.json"
+				}
+			]
+		},
+		"contentTypes": {
+			"type": "array",
+			"title": "Content Type",
+			"description": "Select and order content to display in the page",
+			"items": {
+				"allOf": [
+					{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"title": "",
+								"enum": [
+									"https://www.amplience.com/examples/carousel.json",
+									"https://www.amplience.com/examples/video.json",
+									"https://www.amplience.com/examples/text.json",
+									"https://www.amplience.com/examples/externalBlock.json",
+									"https://www.amplience.com/examples/splitBlock.json",
+									"https://www.amplience.com/examples/image.json",
+									"https://www.amplience.com/examples/cardList.json",
+									"https://www.amplience.com/examples/banner.json",
+									"https://www.amplience.com/examples/container.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

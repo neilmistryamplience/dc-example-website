@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/font-chooser.json",
+  "schemaId": "https://www.amplience.com/examples/font-chooser.json",
+  "validationLevel": "CONTENT_TYPE"
+}

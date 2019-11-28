@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/roundel.json",
+  "schemaId": "https://www.amplience.com/examples/roundel.json",
+  "validationLevel": "CONTENT_TYPE"
+}

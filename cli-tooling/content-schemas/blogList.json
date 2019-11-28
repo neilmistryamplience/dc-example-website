@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/blogList.json",
+	"title": "Blog list",
+	"description": "A list of blog posts to be displayed",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"blogs": {
+			"title": "Blogs",
+			"description": "Please select the blogs to display in this list",
+			"type": "array",
+			"minItems": 0,
+			"maxItems": 3,
+			"items": {
+				"allOf": [
+					{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://www.amplience.com/examples/blog.json"
+								]
+							}
+						}
+					}
+				]
+			}
+		}
+	},
+	"propertyOrder": [
+		"properties"
+	]
+}

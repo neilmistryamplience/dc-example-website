@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/image.json",
+  "schemaId": "https://www.amplience.com/examples/image.json",
+  "validationLevel": "CONTENT_TYPE"
+}
