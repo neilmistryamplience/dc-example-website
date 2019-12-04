@@ -1,8 +1,8 @@
 {
-    "contentTypeUri": "https://www.amplience.com/examples/blog.json",
+    "contentTypeUri": "https://www.amplience.com/examples/slots/container-slot.json",
     "settings":
     {
-        "label": "Blog",
+        "label": "Page/Container Slot",
         "visualizations": [
         {
             "label": "Site",
@@ -12,12 +12,12 @@
         "icons": [
         {
             "size": 256,
-            "url": "https://i8.amplience.net/i/landmarkpoc/icon-blog.jpg"
+            "url": "https://i8.amplience.net/i/landmarkpoc/icon-PageContainerSlot.jpg"
         }],
         "cards": [
         {
             "templatedUri": "https://d18su739mdh1ek.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
         }]
     },
-    "repositories": ["content"]
+    "repositories": ["slots"]
 }

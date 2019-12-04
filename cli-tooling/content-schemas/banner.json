@@ -10,6 +10,16 @@
 	],
 	"type": "object",
 	"properties": {
+		"asana": {
+			"type": "object",
+			"title": "Asana Information",
+			"description": "Workflow information from Asana",
+			"allOf": [
+				{
+					"$ref": "https://www.amplience.com/examples/asana.json"
+				}
+			]
+		},
 		"metadata": {
 			"type": "object",
 			"title": "Meta Data",
@@ -154,6 +164,7 @@
 		}
 	},
 	"propertyOrder": [
+		"asana",
 		"metadata",
 		"img",
 		"header",

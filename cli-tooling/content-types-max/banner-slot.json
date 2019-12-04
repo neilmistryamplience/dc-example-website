@@ -1,8 +1,8 @@
 {
-    "contentTypeUri": "https://www.amplience.com/examples/banner.json",
+    "contentTypeUri": "https://www.amplience.com/examples/slots/banner-slot.json",
     "settings":
     {
-        "label": "Banner",
+        "label": "Banner Slot",
         "visualizations": [
         {
             "label": "Site",
@@ -12,12 +12,12 @@
         "icons": [
         {
             "size": 256,
-            "url": "https://i8.amplience.net/i/landmarkpoc/icon-banner.jpg"
+            "url": "https://i8.amplience.net/i/landmarkpoc/icon-HeroBannerSlot.jpg"
         }],
         "cards": [
         {
             "templatedUri": "https://d18su739mdh1ek.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
         }]
     },
-    "repositories": ["content"]
+    "repositories": ["slots"]
 }

@@ -1,0 +1,244 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://www.amplience.com/examples/landmark-offer.json",
+    "title": "Banner",
+    "description": "A reusable content type for banner content",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "asana":
+        {
+            "type": "object",
+            "title": "Asana Information",
+            "description": "Workflow information from Asana",
+            "allOf": [
+            {
+                "$ref": "https://www.amplience.com/examples/asana.json"
+            }]
+        },
+        "template": {
+            "type": "string",
+            "title": "Template",
+            "description": "The type of template to display content",
+            "enum": [
+                "SVG1",
+                "HTML1"
+            ]
+        },
+        "img":
+        {
+            "type": "object",
+            "title": "Image",
+            "description": "The background image for the banner",
+            "allOf": [
+            {
+                "$ref": "https://www.amplience.com/examples/image.json"
+            }]
+        },
+        "category":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Category",
+                                "description": "The Category for this offer (ie Corner Sofas)",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "offer":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Offer",
+                                "description": "The offer (ie 40)",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "currency":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Currency",
+                                "description": "The currency for the offer - can be %",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "type":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Type",
+                                "description": "The type of offer (ie, off)",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "strap":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Strap",
+                                "description": "The strapline for the offer",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "link":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "allOf": [
+                                {
+                                    "$ref": "https://www.amplience.com/examples/link.json"
+                                }]
+                            }
+                        }
+                    }   
+                }
+            }
+        },
+        "analytics": {
+            "type": "string",
+            "title": "Analytics Name",
+            "description": "The name for this content to be used in Google Analytics",
+            "validation": "Please enter less than 255 characters",
+            "minLength": 0,
+            "maxLength": 255
+        },
+        "bgCol":
+        {
+            "title": "Background Colour",
+            "description": "The colour of the text",
+            "format": "color",
+            "type": "string"
+        },
+        "offerCol":
+        {
+            "title": "Offer Colour",
+            "description": "The colour of the text",
+            "format": "color",
+            "type": "string"
+        }
+    },
+    "propertyOrder": [
+        "template",
+        "img",
+        "category",
+        "offer",
+        "currency",
+        "type",
+        "strap",
+        "btntxt",
+        "bgcol",
+        "offercol",
+        "asana"
+    ]
+}

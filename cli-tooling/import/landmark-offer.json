@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/landmark-offer.json",
+  "schemaId": "https://www.amplience.com/examples/landmark-offer.json",
+  "validationLevel": "CONTENT_TYPE"
+}

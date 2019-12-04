@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/asana.json",
+  "schemaId": "https://www.amplience.com/examples/asana.json",
+  "validationLevel": "CONTENT_TYPE"
+}

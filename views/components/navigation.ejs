@@ -1,4 +1,194 @@
 <div ui-view="topNavigation" class="ng-scope">
+    <div class="hc-nav-top" id="page-header">
+        <div id="wrapper">
+            <div class="container-fluid">
+                <ul class="nav-black">
+                    <span class="left">
+                        <li class="menu">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg">
+                                <source media="(min-width: 1367px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg">
+                                <source media="(min-width: 768px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg">
+                                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/shipping-icon.svg" alt="">
+                            </picture>
+                            <p class="tooltip">Free Shipping<span class="tooltiptext">Household orders over AED 250 | Furniture orders over AED 1,000</span>
+                            </p>
+                        </li>
+                        <li class="menu">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/clickcollect-icon.svg">
+                                <source media="(min-width: 1367px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/clickcollect-icon.svg">
+                                <source media="(min-width: 768px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/clickcollect-icon.svg">
+                                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/clickcollect-icon.svg" alt="">
+                            </picture>
+                            <p class="tooltip">Click &amp; Collect<span class="tooltiptext">Order online and collect in-store</span>
+                            </p>
+                        </li>
+                        <li class="menu">
+                            <picture>
+                                <source media="(max-width: 767px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/emi-icon.svg">
+                                <source media="(min-width: 1367px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/emi-icon.svg">
+                                <source media="(min-width: 768px)" srcset="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/emi-icon.svg">
+                                <img src="https://i1.lmsin.net/website_images/static-pages/brand_exp/images/emi-icon.svg" alt="">
+                            </picture>
+                            <p class="tooltip">Warranty<span class="tooltiptext">2 years on furniture | 1 year on household items.</span>
+                            </p>
+                        </li>
+                    </span>
+                    <span class="right">
+                        <li class="hidden" id="headerSection1">
+                            <a href="/ae/en/apps" title="Download our Apps" data-ol-has-click-handler="">Download our Apps</a></li>
+                        <li class="menu" id="headerSection2">
+                            <a href="/ae/en/storelocator" title="Store Locator" data-ol-has-click-handler="">Store Locator</a></li>
+                        <li class="menu" id="top-help-menu">
+                            <span>
+                                <a href="https://helpae.homecentre.com/en/support/home" data-ol-has-click-handler=""> Help</a>
+                            </span>
+                        </li>
+                        <li class="menu" id="country-hc">
+                            <div class="hidden-xs">
+                                <div class="change-prefs">
+                                    <div class="country-switcher">
+                                        <div class="overlay-bg"></div>
+                                        <div class="country-switch-trigger" data-ol-has-click-handler="">
+                                            <span class="select-country">
+                                                <img class="country-dropdown-logo" src="//i1.lmsin.net/website_images/icons/common/uae.svg">
+                                                United Arab Emirates
+                                            </span>
+                                            <span class="jcf-select-opener"></span>
+                                        </div>
+                                        <div class="country-dropdown-container hidden count-3">
+                                            <ul class="country-dropdown" data-ol-has-click-handler="">
+                                                <li class="country-dropdown-li" value="SA">
+                                                    <img class="country-dropdown-logo" src="//i1.lmsin.net/website_images/icons/common/ksa.svg">Saudi Arabia
+                                                </li>
+                                                <li class="country-dropdown-li" value="BH">
+                                                    <img class="country-dropdown-logo" src="//i1.lmsin.net/website_images/icons/common/bah.svg">Bahrain
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="language-switcher">
+                                        <a href="/ae/ar/" data-lang="ar" class="lang-switch--btn link ar-lang" data-ol-has-click-handler="">
+                                            <strong> العربية</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu" id="lang">
+                            <div class="lang-switch hidden-xs">
+                                <a href="/ae/ar/" data-lang="ar" class="lang-switch--btn link ar-lang" data-ol-has-click-handler="">
+                                    <strong> العربية</strong>
+                                </a>
+                            </div>
+                        </li>
+                    </span>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <header class="header nav-active" data-ol-has-click-handler="">
+        <div class="top-bar " id="hc-nav">
+            <div class="container-fluid" id="page-header">
+                <div class="hc-nav homecentreae">
+                    <span id="mob-menu" data-ol-has-click-handler="">
+                        <a href="javascript:window.history.back()" class="btn-back"></a>
+                        <a href="#" class="btn-menu btn btn-default">Menu</a>
+                    </span>
+                    <figure class="logo">
+                        <a href="/"><img title="" alt="" src="//i1.lmsin.net/website_images/ae/logos/header/logo-homecentre.svg"></a>
+                    </figure>
+                    <div class="mob">
+                        <span class="basket-txt">Basket</span>
+                        <div class="cart" id="small-cart">
+                            <a class="hidden-xs empty basketEmpty opener" id="small-cart-opener-desktop" data-mini-cart-name="Cart" data-mini-cart-empty-name="Empty Cart" data-ol-has-click-handler="">
+                                <span id="small-cart-opener-counter-desktop" class="hide"></span>
+                            </a>
+                            <a href="#" class="basketEmpty visible-xs hide-link" id="small-cart-opener-mobile" data-mini-cart-name="Cart" data-mini-cart-empty-name="Empty Cart">
+                                <span id="small-cart-opener-counter-mobile" class="hide"></span>
+                            </a>
+                            <div class="drop js-slide-hidden" id="small-cart-drop">
+                                <p class="text-center">Your basket is empty.<br>Go on, add something!</p>
+                            </div>
+                        </div>
+                        <i class="icon-search">
+                        </i>
+                    </div>
+                    <span class="scroll-tools">
+                        <span class="searchSpan">
+                            <form name="search_form_SearchBox" method="get" action="/ae/en/search/" class="search-form" _lpchecked="1">
+                                <div class="recent-search-overlay" data-ol-has-click-handler=""></div>
+                                <div class="search-box homecentreae">
+                                    <input type="text" id="js-site-search-input" class="form-control" name="q" maxlength="100" placeholder="What are you looking for?" autocomplete="off" data-options="{&quot;autocompleteUrl&quot; : &quot;/ae/en/search/autocomplete/SearchBox&quot;,&quot;minCharactersBeforeRequest&quot; : &quot;
+         3&quot;,&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,&quot;displayProductImages&quot; : true}" style="opacity: 1;">
+                                </div>
+                                <div id="recent-search" class="recent-search-list" style="display: block;">
+                                    <ul>
+                                    </ul>
+                                </div>
+                                <button type="submit">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </form>
+                            <div class="autocomplete-box" style="width: 339px; left: 0px;" data-ol-has-click-handler="">
+                                <ul data-gtm-type="search-autocomplete-category" data-gtm-name="Category" class="product-list--departments">
+                                    <li></li>
+                                </ul>
+                                <ul data-gtm-type="search-autocomplete-product" data-gtm-name="Product" class="product-list">
+                                    <li></li>
+                                </ul>
+                                <ul data-gtm-type="search-autocomplete-seeall" data-gtm-name="See All" class="see-all-search-results">
+                                    <li>
+                                        <a href="#">
+                                            <span class="link-style">See all</span>
+                                            <span class="results-count"></span>
+                                            <span class="query-word"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </span>
+                        
+                    </span>
+
+
+                    <div class="row nav js-mainNav">
+        <div class="content-container">
+            <div class="navbar yamm navbar-default">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
+                        <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/departments">
+                            Departments
+                        </a>
+                    </li>
+                    <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
+                        <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/interiordesign">
+                            Interior Design
+                        </a>
+                    </li>
+                    <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
+                        <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/more">
+                            More
+                        </a>
+                    </li>
+                    <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
+                        <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/inspiration">
+                            Inspiration
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--
     <div class="mobileNav hidden-lg hidden-md visible-sm visible-xs ng-scope">
         <nav class="top-navigation row">
             <div class="col-xs-3">
@@ -22,49 +212,7 @@
                 </div>
             </div>
         </div>
-        <div class="row nav js-mainNav">
-            <div class="content-container">
-                <div class="navbar yamm navbar-default">
-                    <ul class="nav navbar-nav">
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/womens">
-                            Womens
-                            </a>
-                        </li>
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/mens">
-                            Mens
-                            </a>
-                        </li>
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/beauty">
-                            Beauty
-                            </a>
-                        </li>
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/lighting">
-                            Lighting
-                            </a>
-                        </li>
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/furniture">
-                            Furniture
-                            </a>
-                        </li>
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/electricals">
-                            Electricals
-                            </a>
-                        </li>
-                        </li>
-                        <li ng-repeat="top_category in categories" class="dropdown yamm-fw ng-scope">
-                            <a ui-sref="base.category( {catName: top_category.slug} )" class="js-megamenutoggle mainCategory categoryLevel ng-binding" href="/inspiration">
-                            Inspiration
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    -->
+    
+</div>
 </div>

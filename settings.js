@@ -1,63 +1,41 @@
 module.exports = {
     cms: "https://c1.adis.ws",
-    cmsAccount: "nmdemo",
+    cmsAccount: "landmarkpoc",
     sitemap: [{
             route: "/",
             layout: "homepage",
             slots: {
-                "hero": "307cff5d-6c1e-4fd6-9c96-f58721ef3c08",
-                "body": "b615b798-67f3-4649-8056-be25838962fb",
-                "stack": "d7001901-c0b2-4e88-94f8-9b790538849d"
+                "hero": "7333d4dc-f7af-48f1-865c-733ecf86ad70",
+                "body": "e03c1bbd-7ff8-4f49-84df-3c384efb1260",
+                "stack": "c509e0a7-50bd-49a7-a94c-3dcad7a2e194"
             }
         },
         {
-            route: "/womens",
+            route: "/departments",
             layout: "landing",
             slots: {
-                "content": "7b9fa538-c2ac-4090-837b-2f2f5f46f4d5"
+                "content": "f5d29502-4f54-40f6-9dee-25759d90f792"
             }
         },
         {
-            route: "/mens",
+            route: "/interiordesign",
             layout: "landing",
             slots: {
-                "content": "2f6a845a-fc02-4cc3-b75b-9e982891188a"
+                "content": "8d010f07-7a49-400a-aaf9-54e0c5e6a372"
             }
         },
         {
-            route: "/beauty",
+            route: "/more",
             layout: "landing",
             slots: {
-                "content": "7e952515-8f2a-4535-a863-7b96ccb1e626"
-            }
-        },
-        {
-            route: "/lighting",
-            layout: "landing",
-            slots: {
-                "content": "76f6ef64-6fb2-4a65-b510-eb3e80374264"
-            }
-        },
-        {
-            route: "/furniture",
-            layout: "landing",
-            slots: {
-                "content": "5db62a63-00dc-4fe4-8083-11f5941135be"
-            }
-        },
-        ,
-        {
-            route: "/electricals",
-            layout: "landing",
-            slots: {
-                "content": "7e6e0cc9-e103-4d85-97fa-0dcce6240a9d"
+                "content": "7b624136-b703-48c9-a9f1-87a1068f97b2"
             }
         },
         {
             route: "/inspiration",
             layout: "landing",
             slots: {
-                "content": "5d5d41c7-5766-490e-b185-d6c7ee2673e6"
+                "content": "b76976f7-7bc0-4919-82af-307f0d6cb8ba"
             }
         }
     ]

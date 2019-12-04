@@ -19,5 +19,5 @@
             "templatedUri": "https://d18su739mdh1ek.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
         }]
     },
-    "repositories": ["content"]
+    "repositories": ["contentenaw","contentarae","contentarkw","contentatbh"]
 }

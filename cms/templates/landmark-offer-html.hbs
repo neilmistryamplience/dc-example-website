@@ -1,0 +1,31 @@
+<div class="amp-ca-landmark-offer-html">
+    <div class="amp-lmg-hc-banner large" data-promo-id="{{analytics}}">
+        {{#with link}}
+        <a href="{{value}}">
+            {{/with}}
+            <div class="amp-lmg-hc-imageholder">
+                <picture>
+                    <source media="(min-width: 768px)" type="image/webp" srcset="https://i8.amplience.net/i/landmarkpoc/161713600_01.webp?$poi$&w=740&h=280&sm=c">
+                    <source media="(min-width: 768px)" srcset="https://i8.amplience.net/i/landmarkpoc/161713600_01?$poi$&w=740&h=280&sm=c">
+                    <source media="(max-width: 767px)" type="image/webp" srcset="https://i8.amplience.net/i/landmarkpoc/161713600_01.webp?$poi$&w=397&h=336&sm=c">
+                    <source media="(max-width: 767px)" srcset="https://i8.amplience.net/i/landmarkpoc/161713600_01?$poi$&w=397&h=336&sm=c">
+                    <img src="https://i8.amplience.net/i/landmarkpoc/161713600_01?$poi$&w=397&h=336&sm=c">
+                </picture>
+                <div class="triangle-bottomright"></div>
+            </div>
+            <div class="amp-lmg-hc-text-overlay-holder">
+                <div class="text-holder">
+                    <div class="category">{{category}}</div>
+                    <div class="strap rotate">{{strap}}</div>
+                    <div class="offer">{{offer}}</div>
+                    <div class="currency">{{currency}}</div>
+                    <div class="type">off</div>
+                    {{#with link}}{{#if label}}<div class="shop-btn">{{label}}</div>{{/if}}{{/with}}
+                </div>
+            </div>
+            {{#with link}}
+        </a>
+        {{/with}}
+        </a>
+    </div>
+</div>

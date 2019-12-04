@@ -9,12 +9,14 @@ const ContentDeliveryClient = require('../cms/services/ContentDeliveryClient');
 const templateService = require('../cms/services/template-service');
 
 router.get('/', function(req, res, next) {
-    var client = new ContentDeliveryClient(req.query.vse || settings.cms, settings.cmsAccount, req.query.locale);
+
+    var client = new ContentDeliveryClient(req.query.vse || settings.cms, settings.cmsAccount);
     var contentId = req.query.content;
 
     Promise.resolve([contentId])
         .then(client.getByIds.bind(client))
-        .then(templateService.compileSlots)
+        .then(templateService.getAsanaInformation)
+
         .then(function(slots) {
             var pageModel = {content: slots[contentId] };
             return pageModel;
@@ -22,7 +24,7 @@ router.get('/', function(req, res, next) {
         .then(function(pageModel) {
             pageModel.session = {};
             pageModel.moment = moment;
-            res.render('pages/visualization', pageModel);
+            res.render('pages/asana', pageModel);
         })
         .catch(function(err) {
             res.render('pages/error', {

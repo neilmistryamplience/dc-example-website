@@ -16,7 +16,10 @@ function runWithState(state, callback){
 }
 
 function registerHelpers(Handlebars){
-    var helpers = require('handlebars-helpers')(
+    var helpers = require('handlebars-helpers')({
+            handlebars: Handlebars
+        });
+    /*var helpers = require('handlebars-helpers')(
         [
             'array',
             'collection',
@@ -36,7 +39,7 @@ function registerHelpers(Handlebars){
         {
             handlebars: Handlebars
         }
-    );
+    );*/
 }
 
 Handlebars.registerHelper('splitBlock', function (index, split) {

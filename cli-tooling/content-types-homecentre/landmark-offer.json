@@ -1,0 +1,29 @@
+{
+    "contentTypeUri": "https://www.amplience.com/examples/landmark-offer.json",
+    "settings":
+    {
+        "label": "Landmark Offer",
+        "visualizations": [
+        {
+            "label": "Site",
+            "templatedUri": "https://d1yacblltr7wf1.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-AR,en-*,*",
+            "default": true
+        },
+        {
+            "label": "Asana",
+            "templatedUri": "https://d1yacblltr7wf1.cloudfront.net/preview/asana?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-AR,en-*,*",
+            "default": false
+        }
+        ],
+        "icons": [
+        {
+            "size": 256,
+            "url": "https://i8.amplience.net/i/landmarkpoc/icon-landmarkoffer"
+        }],
+        "cards": [
+        {
+            "templatedUri": "https://d1yacblltr7wf1.cloudfront.net/preview/card?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-AR,en-*,*"
+        }]
+    },
+    "repositories": ["contentenaw","contentarae","contentarkw","contentatbh"]
+}

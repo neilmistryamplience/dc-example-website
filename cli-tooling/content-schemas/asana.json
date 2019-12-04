@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/asana.json",
+	"title": "ASANA",
+	"description": "Information for ASANA to enable links to tasks",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"taskid": {
+			"type": "string",
+			"title": "Task ID",
+			"description": "The ID of the task",
+			"minLength": 0,
+			"maxLength": 255
+		},
+		"projectid": {
+			"type": "string",
+			"title": "Project ID",
+			"description": "The ID of the project that the task is in",
+			"minLength": 0,
+			"maxLength": 255
+		},
+		"sectionid": {
+			"type": "string",
+			"title": "Section ID",
+			"description": "The ID of the section that the task is in",
+			"minLength": 0,
+			"maxLength": 255
+		},
+		"workspaceid": {
+			"type": "string",
+			"title": "Workspace ID",
+			"description": "The ID of the workspace that the task is in",
+			"minLength": 0,
+			"maxLength": 255
+		}
+	},
+	"propertyOrder": [
+		"taskid",
+		"projectid",
+		"sectionid",
+		"workspaceid"
+	]
+}

@@ -12,6 +12,7 @@ var helpers = require('handlebars-helpers')();
 var contentPages = require('./routes/content-pages');
 var visualization = require('./routes/visualization');
 var card = require('./routes/card');
+var asana = require('./routes/asana');
 //var settings = require('./routes/settings');
 var preview = require('./routes/preview');
 
@@ -36,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/preview', preview);
 app.use('/preview/snapshot', visualization);
 app.use('/preview/card', card);
+app.use('/preview/asana', asana);
 
 //app.use('/visualization', visualization);
 app.use('/', contentPages);

@@ -137,3 +137,15 @@
 {{#if (test this.[@type] (toRegex ".*/imagelayerholder$")) }}
     {{> imagelayerholder }}
 {{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/landmark-offer")) }}
+    {{#compare template '==' 'SVG1'}}
+        {{> landmark-offer }}
+    {{/compare}}
+    {{#compare template '==' 'HTML1'}}
+        {{> landmark-offer-html }}
+    {{/compare}}
+    {{#compare template '==' null}}
+        {{> landmark-offer }}
+    {{/compare}}
+{{/if}}
