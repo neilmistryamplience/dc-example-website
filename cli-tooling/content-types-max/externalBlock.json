@@ -6,7 +6,7 @@
         "visualizations": [
         {
             "label": "Site",
-            "templatedUri": "https://d18su739mdh1ek.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*",
+            "templatedUri": "d1zowszo040xcr.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*",
             "default": true
         }],
         "icons": [
@@ -16,7 +16,7 @@
         }],
         "cards": [
         {
-            "templatedUri": "https://d18su739mdh1ek.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
+            "templatedUri": "d1zowszo040xcr.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
         }]
     },
     "repositories": ["contentenaw","contentarae","contentarkw","contentatbh"]
