@@ -1,8 +1,8 @@
 {
-    "contentTypeUri": "https://www.amplience.com/examples/landmark-offer.json",
+    "contentTypeUri": "https://www.amplience.com/examples/landmark-banner.json",
     "settings":
     {
-        "label": "Landmark Offer",
+        "label": "Landmark Banner",
         "visualizations": [
         {
             "label": "Site",

@@ -14,13 +14,14 @@ function registerPage(page) {
     var slotMap = getSlotMap(page, req);
     var slotIds = _.values(slotMap);
 
-    var client = new ContentDeliveryClient(req.cookies['amplience-host'] || settings.cms, settings.cmsAccount, req.query.locale);
+    //console.log("REQUEST SEG = " + req.query.segment);
+    var client = new ContentDeliveryClient(req.cookies['amplience-host'] || settings.cms, settings.cmsAccount, req.query.locale, req.query.segment);
 
     Promise.resolve(slotIds)
         .then(client.getByIds.bind(client))
-        .then(templateService.compileSlots)
+        .then(x => templateService.compileSlots(x, {segment: req.query.segment}))
         .then(function(slots) {
-
+          console.log("SLOTS: ", slots)
           var pageModel = {};
           for(var key in slotMap) {
             pageModel[key] = slots[slotMap[key]];
@@ -31,6 +32,9 @@ function registerPage(page) {
         .then(function(pageModel) {
           pageModel.session = req.cookies;
           pageModel.moment = moment;
+          
+          pageModel.segment = req.query.segment;
+          console.log("---- ", pageModel.segment )
           res.render('layouts/' + page.layout, pageModel);
         })
         .catch(function(err) {

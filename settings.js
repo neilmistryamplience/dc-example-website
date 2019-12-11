@@ -1,41 +1,56 @@
 module.exports = {
     cms: "https://c1.adis.ws",
-    cmsAccount: "landmarkpoc",
+    cmsAccount: "presales",
     sitemap: [{
             route: "/",
             layout: "homepage",
             slots: {
-                "hero": "7333d4dc-f7af-48f1-865c-733ecf86ad70",
-                "body": "e03c1bbd-7ff8-4f49-84df-3c384efb1260",
-                "stack": "c509e0a7-50bd-49a7-a94c-3dcad7a2e194"
+                "hero": "baaac862-5d9c-419f-9af2-a2e79fee85dc",
+                "body": "755ece64-9f4e-4dcf-99b8-773a24b1bb27",
+                "content": "c1873796-212a-4a02-bf60-2e445813ff30"
+
             }
         },
         {
-            route: "/departments",
+            route: "/telefony",
             layout: "landing",
             slots: {
-                "content": "f5d29502-4f54-40f6-9dee-25759d90f792"
+                "content": "65aebb26-adf2-4d5e-97ee-8d607cdd0c1f"
             }
         },
         {
-            route: "/interiordesign",
+            route: "/oferta",
             layout: "landing",
             slots: {
-                "content": "8d010f07-7a49-400a-aaf9-54e0c5e6a372"
+                "content": "3489d182-0ad6-4fd7-b6a4-81e978a55b1e"
             }
         },
         {
-            route: "/more",
+            route: "/obsluga_klienta",
             layout: "landing",
             slots: {
-                "content": "7b624136-b703-48c9-a9f1-87a1068f97b2"
+                "content": "0cd86a68-8235-41e9-81db-76e70eb9944b"
             }
         },
         {
-            route: "/inspiration",
+            route: "/urzadzenia",
             layout: "landing",
             slots: {
-                "content": "b76976f7-7bc0-4919-82af-307f0d6cb8ba"
+                "content": "a55974e1-bb5c-4b32-9eb6-7970aff734e5"
+            }
+        },
+        {
+            route: "/play24",
+            layout: "landing",
+            slots: {
+                "content": "add4b141-70e5-48f0-8c61-b409fbb72fec"
+            }
+        },
+        {
+            route: "/about",
+            layout: "landing",
+            slots: {
+                "content": "3a3583be-34ae-4aed-b24a-e87046d88e46"
             }
         }
     ]

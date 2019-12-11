@@ -31,6 +31,7 @@
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/text")) ~}}
+    <h1>segment texts:{{@root.segment}}</h1>
     {{> text }}
 {{/if}}
 
@@ -148,4 +149,8 @@
     {{#compare template '==' null}}
         {{> landmark-offer }}
     {{/compare}}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/personalized-slot")) }}
+    <h1>segment:{{@root.segment}}</h1>
 {{/if}}

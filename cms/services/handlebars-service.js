@@ -10,6 +10,7 @@ const MARKER_SUFFIX = '))\u0001';
 
 
 var currentState = null;
+var currentSegment = null;
 function runWithState(state, callback){
     currentState = state;
     callback();
@@ -54,6 +55,22 @@ Handlebars.registerHelper('splitBlock', function (index, split) {
 
                 return 'amp-ca-size-' + splitter[1];
             });
+
+Handlebars.registerHelper('matchSegment', (context, block) => {
+
+      context = context instanceof Array ? context[0] : context;
+
+      if (!context || !context._meta || !context.segments) {
+        return '';
+      }
+      let matchedSegment = context.segments[0];
+      for (const segment of context.segments) {
+        if (segment.segment === context.addTemplateClassname.data.root.navigation[2]) {
+          matchedSegment = segment;
+        }
+      }
+      return block.fn(matchedSegment.content);
+    });
 
 function patchResolvePartial(Handlebars){
     Handlebars.VM.resolvePartial = function(partial, context, options){
@@ -134,7 +151,7 @@ function processSingleTemplate(templateName, data, state){
         });
 }
 
-function process(templateName, data, config){
+function process(templateName, data, config, segment){
     var state = {
         config: config,
         markers: {},

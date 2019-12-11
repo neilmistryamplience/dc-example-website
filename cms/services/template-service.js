@@ -19,9 +19,15 @@ function getAsanaInformation(response) {
         });
 }
 
-function compileSlots(response) {
+function compileSlots(response, extraData) {
     var contentItems = amp.inlineContent(response);
-    var compiled = contentItems.map(compile);
+
+    console.log("What is the content.....", contentItems);
+    var compiled = [];
+    contentItems.forEach(function(item){
+        compiled.push(compile(item, extraData));
+    })
+    //var compiled = contentItems.map(compile);
 
     return Promise.all(compiled)
         .then(function(outputs) {
@@ -35,9 +41,12 @@ function compileSlots(response) {
         });
 }
 
-function compile(content) {
+function compile(content, extraData) {
     return handlebarsService.process('mapping', content, {
-        getTemplate: getTemplate
+        getTemplate: getTemplate,
+        data: {
+            root: extraData
+        }
     });
 }
 

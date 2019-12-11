@@ -1,9 +1,10 @@
 const request = require('request');
 
-function ContentDeliveryClient(baseUrl, account, locale) {
+function ContentDeliveryClient(baseUrl, account, locale, segment) {
     this.baseUrl = baseUrl;
     this.account = account;
-    this.locale = locale
+    this.locale = locale;
+    this.segment = segment;
 
     if(this.baseUrl.indexOf('://') == -1) {
         this.baseUrl = 'http://' + this.baseUrl;
@@ -33,14 +34,16 @@ ContentDeliveryClient.prototype.query = function(query, scope, fullBodyObject, l
             '&fullBodyObject=' + encodeURIComponent(fullBodyObject) + 
             '&locale=' + this.locale;
 
-    console.log(url)
+    console.log(url);
+    console.log(this.segment)
+    var thesegment = this.segment;
     return new Promise(function(resolve, reject) {
         request(url, function (error, response, body) {
             if(error) {
                 reject(error);
             }else{
-                console.log(body)
-                resolve(JSON.parse(body));
+                var t = JSON.parse(body);
+                resolve(t);
             }
         });
     });
