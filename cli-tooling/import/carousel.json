@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/carousel.json",
+  "schemaId": "https://www.amplience.com/examples/carousel.json",
+  "validationLevel": "CONTENT_TYPE"
+}

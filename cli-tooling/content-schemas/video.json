@@ -1,0 +1,42 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/video.json",
+	"title": "Video",
+	"description": "A reusable component to display a video",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"video": {
+			"title": "Video",
+			"description": "The video to display",
+			"allOf": [
+				{
+					"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+				}
+			]
+		},
+		"videoTitle": {
+			"title": "Video Title",
+			"description": "The title of the video",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 255
+		},
+		"videoDescription": {
+			"title": "Video Description",
+			"description": "Description of the video",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 2000
+		}
+	},
+	"propertyOrder": [
+		"video",
+		"videoTitle",
+		"videoDescription"
+	]
+}

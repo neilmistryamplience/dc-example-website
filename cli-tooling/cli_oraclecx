@@ -1,0 +1,4 @@
+dc-cli configure --clientId=3c675fc2-6c6f-433c-9b49-2795a8cab54e --clientSecret=d3cfc7298864b3e36669cdc18a8473907acc7c1b0895d951f11c3029875dbec6 --hubId=5df0e6c752faff000124f848
+
+dc-cli content-type-schema import import
+dc-cli content-type import content-types

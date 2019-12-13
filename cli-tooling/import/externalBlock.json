@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/externalBlock.json",
+  "schemaId": "https://www.amplience.com/examples/externalBlock.json",
+  "validationLevel": "CONTENT_TYPE"
+}

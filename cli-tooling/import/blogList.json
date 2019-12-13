@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/blogList.json",
+  "schemaId": "https://www.amplience.com/examples/blogList.json",
+  "validationLevel": "CONTENT_TYPE"
+}

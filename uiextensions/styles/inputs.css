@@ -1,0 +1,56 @@
+.ampx-input__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+.ampx-input {
+  outline: none;
+  border: 0;
+  border-bottom: 1px solid #808080;
+  height: 30px;
+  flex: 1;
+  display: block;
+  margin-top: 0;
+  padding: 2px 2px 1px 2px;
+  line-height: 26px;
+  font-size: 14px;
+  height: 30px;
+  background: none;
+  width: 100%;
+}
+
+.ampx-input__label,
+.ampx-input__description {
+  font-size: 11px;
+  color: #808080;
+}
+
+.ampx-input__description {
+  margin: 4px 0 0 0;
+}
+
+.ampx-input:focus {
+  outline: none;
+  border-bottom: 2px solid #039be5;
+}
+
+.ampx-input__container--error .ampx-input__description {
+  color: #ff3366;
+}
+
+.ampx-input:invalid {
+  border-color: #ff3366;
+  box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.ampx-input__container--error .ampx-input {
+  border-color: #ff3366;
+}
+
+.ampx-input__container--disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}

@@ -15,3 +15,9 @@ dist
 Archive.zip
 public/images/logo_cebu.jpeg
 views/components/navigation_cebu.ejs
+cms/templates/video_original.hbs
+content-types/video_original.json
+bin/www_with_https_on_localhost
+bin/www_no_https_on_localhost
+content-types/imageNew.json
+icons/icon_sitemap.png

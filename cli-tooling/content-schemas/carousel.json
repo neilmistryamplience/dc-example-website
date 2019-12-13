@@ -1,0 +1,61 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/carousel.json",
+	"title": "Slider",
+	"description": "Contains Images, Videos & Banners to produce a Carousel",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"slides": {
+			"type": "array",
+			"title": "Slides",
+			"description": "Select from banners, images and videos to use in this carousel",
+			"items": {
+				"allOf": [
+					{
+						"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+					},
+					{
+						"properties": {
+							"contentType": {
+								"title": "",
+								"enum": [
+									"https://www.amplience.com/examples/banner.json",
+									"https://www.amplience.com/examples/image.json",
+									"https://www.amplience.com/examples/video.json"
+								]
+							}
+						}
+					}
+				]
+			},
+			"minItems": 1,
+			"maxItems": 8
+		},
+		"autoPlay": {
+			"type": "boolean",
+			"title": "Autoplay",
+			"description": "Autoplay slider?"
+		},
+		"loop": {
+			"type": "boolean",
+			"title": "Loop slider",
+			"description": "Infinite slide looping"
+		},
+		"navigationDots": {
+			"type": "boolean",
+			"title": "Navigation Dots",
+			"description": "Display Navigation dots?"
+		}
+	},
+	"propertyOrder": [
+		"slides",
+		"autoPlay",
+		"loop",
+		"navigationDots"
+	]
+}

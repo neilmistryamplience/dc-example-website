@@ -1,0 +1,23 @@
+{
+    "contentTypeUri": "https://www.amplience.com/examples/banner.json",
+    "settings":
+    {
+        "label": "Banner",
+        "visualizations": [
+        {
+            "label": "Site",
+            "templatedUri": "https://dpabadv9l3tpt.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*",
+            "default": true
+        }],
+        "icons": [
+        {
+            "size": 256,
+            "url": "https://i8.amplience.net/i/landmarkpoc/icon-banner.jpg"
+        }],
+        "cards": [
+        {
+            "templatedUri": "https://dpabadv9l3tpt.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
+        }]
+    },
+    "repositories": ["mastercontent"]
+}

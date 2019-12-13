@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/video.json",
+  "schemaId": "https://www.amplience.com/examples/video.json",
+  "validationLevel": "CONTENT_TYPE"
+}

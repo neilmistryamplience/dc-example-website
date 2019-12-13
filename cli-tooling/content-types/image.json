@@ -1,0 +1,23 @@
+{
+    "contentTypeUri": "https://www.amplience.com/examples/image.json",
+    "settings":
+    {
+        "label": "Image",
+        "visualizations": [
+        {
+            "label": "Site",
+            "templatedUri": "https://dpabadv9l3tpt.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*",
+            "default": true
+        }],
+        "icons": [
+        {
+            "size": 256,
+            "url": "https://i8.amplience.net/i/landmarkpoc/icon-image.jpg"
+        }],
+        "cards": [
+        {
+            "templatedUri": "https://dpabadv9l3tpt.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-GB,*"
+        }]
+    },
+    "repositories": ["mastercontent"]
+}

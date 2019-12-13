@@ -1,0 +1,38 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/font-chooser.json",
+	"title": "Font Chooser",
+	"description": "Allows a user to be able to specify a font",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"font": {
+			"type": "string",
+			"title": "Font",
+			"description": "The font to display",
+			"enum": [
+				"'Roboto', sans-serif;",
+				"'Staatliches', cursive;",
+				"'Anton', sans-serif;",
+				"'Merriweather', serif;",
+				"'Pacifico', cursive;",
+				"'Amatic SC', cursive;"
+			]
+		},
+		"size": {
+			"title": "Font Size",
+			"description": "Size of the font in px",
+			"type": "number",
+			"minimum": 0,
+			"maximum": 500
+		}
+	},
+	"propertyOrder": [
+		"font",
+		"size"
+	]
+}
