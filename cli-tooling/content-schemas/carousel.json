@@ -24,6 +24,7 @@
 							"contentType": {
 								"title": "",
 								"enum": [
+									"https://www.amplience.com/examples/landmark-main-banner.json",
 									"https://www.amplience.com/examples/banner.json",
 									"https://www.amplience.com/examples/image.json",
 									"https://www.amplience.com/examples/video.json"
@@ -50,12 +51,36 @@
 			"type": "boolean",
 			"title": "Navigation Dots",
 			"description": "Display Navigation dots?"
-		}
+		},
+		"headline":{  
+         "allOf":[  
+            {  
+               "$ref":"http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }
+         ],
+         "properties":{  
+            "values":{  
+               "items":{  
+                  "properties":{  
+                     "value":{  
+                        "title":"Headline",
+                        "description":"Optional Title for this carousel",
+                        "type":"string",
+                        "format":"text",
+                        "minLength":5,
+                        "maxLength":256
+                     }
+                  }
+               }
+            }
+         }
+      }
 	},
 	"propertyOrder": [
 		"slides",
 		"autoPlay",
 		"loop",
-		"navigationDots"
+		"navigationDots",
+		"headline"
 	]
 }

@@ -1,0 +1,5 @@
+{
+  "body": "../slot-schemas/personalised-banner-slot.json",
+  "schemaId": "https://www.amplience.com/examples/slots/personalised-banner-slot.json",
+  "validationLevel": "CONTENT_TYPE"
+}

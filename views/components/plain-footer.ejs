@@ -6,6 +6,13 @@
         	<%- include('./debugloader.ejs', {}); %>
             <%- include('./hotspotloader.ejs', {}); %>
             <%- include('./asanaloader.ejs', {}); %>
+            <script src="/js/vendor/aos/dist/aos.js"></script>
+            <script>
+                AOS.init({
+                easing: 'ease-out-back',
+                duration: 700
+            });
+            </script>
         </footer>
     </body>
 </html>

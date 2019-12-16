@@ -1,4 +1,5 @@
 <div class="amp-ca-slider js_slider" data-infinite="{{loop}}" data-autoplay="{{autoplay}}" data-navigation="{{navigationDots}}">
+    {{#if headline}}<h3>{{headline}}</h3>{{/if}}
     <div class="amp-ca-slider-frame js_frame {{#if navigationDots}}dots{{/if}}">
         <ul class="amp-ca-slider-slides js_slides">
             {{#each slides as |item|}}

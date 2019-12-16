@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/landmark-banner.json",
+  "schemaId": "https://www.amplience.com/examples/landmark-banner.json",
+  "validationLevel": "CONTENT_TYPE"
+}

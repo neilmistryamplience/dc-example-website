@@ -1,4 +1,5 @@
 <div class="amp-ca-landmark-offer-html">
+
     <div class="amp-lmg-hc-banner large" data-promo-id="{{analytics}}">
         {{#with link}}
         <a href="{{value}}">
@@ -15,6 +16,12 @@
             </div>
             <div class="amp-lmg-hc-text-overlay-holder">
                 <div class="text-holder">
+                    {{getCurrency price}}
+                    {{#if price}}
+                        {{price.[getExtraData "currency"] }}
+                    {{/if}}
+
+                    {{ getExtraData "currency" }}
                     <div class="category">{{category}}</div>
                     <div class="strap rotate">{{strap}}</div>
                     <div class="offer">{{offer}}</div>

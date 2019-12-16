@@ -1,3 +1,11 @@
+
+
+<!--{{{JSONstringify this}}}
+
+EXTRA DATA HERE
+{{{ getExtraData "currency" }}}
+{{{ getExtraData "segment" }}} -->
+
 {{#if (test this.[@type] (toRegex ".*/hero-block")) ~}}
     {{> hero-block }}
 {{/if}}
@@ -151,6 +159,19 @@
     {{/compare}}
 {{/if}}
 
-{{#if (test this.[@type] (toRegex ".*/personalized-slot")) }}
-    <h1>segment:{{@root.segment}}</h1>
+{{#if (test this.[@type] (toRegex ".*/personalised-banner-slot")) }}
+    <h1>segment:{{getExtraData "segment"}}</h1>
+    {{#each segments}}
+        {{#if (eq segment (getExtraData "segment"))}}
+            {{> mapping this.content}}
+        {{/if}}
+    {{/each}}
+
 {{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/landmark-main-banner")) }}
+    {{>landmark-main-banner}}
+{{/if}}
+
+
+

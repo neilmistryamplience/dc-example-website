@@ -42,12 +42,7 @@ function compileSlots(response, extraData) {
 }
 
 function compile(content, extraData) {
-    return handlebarsService.process('mapping', content, {
-        getTemplate: getTemplate,
-        data: {
-            root: extraData
-        }
-    });
+    return handlebarsService.process('mapping', content, {getTemplate: getTemplate},  extraData );
 }
 
 function compileasana(content) {

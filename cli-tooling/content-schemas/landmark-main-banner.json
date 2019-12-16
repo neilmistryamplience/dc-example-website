@@ -1,0 +1,157 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://www.amplience.com/examples/landmark-main-banner.json",
+    "title": "Landmark Main Banner",
+    "description": "A re-usable main banner content type",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "asana":
+        {
+            "type": "object",
+            "title": "Asana Information",
+            "description": "Workflow information from Asana",
+            "allOf": [
+            {
+                "$ref": "https://www.amplience.com/examples/asana.json"
+            }]
+        },
+        "template":
+        {
+            "type": "string",
+            "title": "Template",
+            "description": "The type of template to display content",
+            "enum": [
+                "SVG1",
+                "HTML1"
+            ]
+        },
+        "img":
+        {
+            "type": "object",
+            "title": "Image",
+            "description": "The background image for the banner",
+            "allOf": [
+            {
+                "$ref": "https://www.amplience.com/examples/image.json"
+            }]
+        },
+        "header":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Banner Header",
+                                "description": "The Header for this Banner (ie Corner Sofas)",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "headercol":
+        {
+            "title": "Header Colour",
+            "description": "The colour of the text",
+            "format": "color",
+            "type": "string"
+        },
+        "subheader":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "type": "string",
+                                "title": "Sub Header",
+                                "description": "The sub header",
+                                "validation": "Please enter less than 255 characters",
+                                "minLength": 0,
+                                "maxLength": 255
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "links":
+        {
+
+            "type": "array",
+            "title": "Links",
+            "description": "The action link(s) for the banner (maximum of 2)",
+            "items":
+            {
+                "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+                }],
+                "properties":
+                {
+                    "values":
+                    {
+                        "items":
+                        {
+                            "properties":
+                            {
+                                "value":
+                                {
+                                    "allOf": [
+                                    {
+                                        "$ref": "https://www.amplience.com/examples/link.json"
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "analytics":
+        {
+            "type": "string",
+            "title": "Analytics Name",
+            "description": "The name for this content to be used in Google Analytics",
+            "validation": "Please enter less than 255 characters",
+            "minLength": 0,
+            "maxLength": 255
+        }
+    },
+    "propertyOrder": [
+        "img",
+        "header",
+        "headercol",
+        "subheader",
+        "links",
+        "analytics"
+    ]
+}

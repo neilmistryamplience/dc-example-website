@@ -19,9 +19,8 @@ function registerPage(page) {
 
     Promise.resolve(slotIds)
         .then(client.getByIds.bind(client))
-        .then(x => templateService.compileSlots(x, {segment: req.query.segment}))
+        .then(x => templateService.compileSlots(x, {segment: req.query.segment, currency: req.query.currency, locale:req.query.locale}))
         .then(function(slots) {
-          console.log("SLOTS: ", slots)
           var pageModel = {};
           for(var key in slotMap) {
             pageModel[key] = slots[slotMap[key]];
@@ -34,7 +33,8 @@ function registerPage(page) {
           pageModel.moment = moment;
           
           pageModel.segment = req.query.segment;
-          console.log("---- ", pageModel.segment )
+          pageModel.currency = req.query.currency;
+          pageModel.locale = req.query.locale;
           res.render('layouts/' + page.layout, pageModel);
         })
         .catch(function(err) {

@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "https://www.amplience.com/examples/currency.json",
+	"title": "Currency",
+	"description": "A map of text to currencies",
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	"type": "object",
+	"properties": {
+		"AED": {
+			"type": "string",
+			"title": "AED",
+			"description": "Currency information for AED",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"USD": {
+			"type": "string",
+			"title": "USD",
+			"description": "Currency information for USD",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"GBP": {
+			"type": "string",
+			"title": "GBP",
+			"description": "Currency information for GBP",
+			"minLength": 0,
+			"maxLength": 100
+		}
+	},
+	"propertyOrder": [
+		"AED",
+		"USD",
+		"GBP"
+	]
+}

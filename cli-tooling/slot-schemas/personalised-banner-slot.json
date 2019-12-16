@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://www.amplience.com/examples/slots/personalised-banner-slot.json",
+    "title": "Personalised Banner Slot",
+    "description": "A Slot that can accept multiple banners for different segments",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "segments":
+        {
+            "type": "array",
+            "title": "Content",
+            "items":
+            {
+                "type": "object",
+                "properties":
+                {
+                    "segment":
+                    {
+                        "type": "string",
+                        "title": "Segment",
+                        "enum": [
+                            "segment1",
+                            "segment2",
+                            "segment3",
+                            "segment4",
+                            "segment5"
+                        ]
+                    },
+                    "content":
+                    {
+                        "title": "Content",
+                        "allOf": [
+                        {
+                            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                        },
+                        {
+                            "properties":
+                            {
+                                "contentType":
+                                {
+                                    "title": "contentType",
+                                    "enum": [
+                                        "https://www.amplience.com/examples/banner.json"
+                                    ]
+                                }
+                            }
+                        }]
+                    }
+                },
+                "propertyOrder": [
+                    "segment",
+                    "content"
+                ]
+            }
+        }
+    }
+}

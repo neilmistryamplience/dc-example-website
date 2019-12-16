@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/currency.json",
+  "schemaId": "https://www.amplience.com/examples/currency.json",
+  "validationLevel": "CONTENT_TYPE"
+}

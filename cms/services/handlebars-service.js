@@ -43,6 +43,26 @@ function registerHelpers(Handlebars){
     );*/
 }
 
+Handlebars.registerHelper('isArabic', function(param) {
+    const mylanguage = currentState.extraData.locale || 'en-AE';
+    var flip = false;
+    if( mylanguage.substring(0,2) == 'ar'){
+        flip = true;
+    }
+
+    return flip;
+});
+
+Handlebars.registerHelper('getExtraData', function(param) {
+    const extraData = currentState.extraData || {};
+    return param ? extraData[param] : extraData;
+});
+
+Handlebars.registerHelper('getCurrency', function(context) {
+    if(currentState.extraData.currency == null) currentState.extraData.currency = "AED";
+    return context[currentState.extraData.currency];
+});
+
 Handlebars.registerHelper('splitBlock', function (index, split) {
                 if (typeof split === 'undefined') {
                     return ''
@@ -116,7 +136,7 @@ function processSingleTemplate(templateName, data, state){
 
     return state.config.getTemplate(templateName)
         .then(function(template){
-            
+
             var output;
             runWithState(state, function(){
                 var compiled = Handlebars.compile(template, {srcName: templateName});
@@ -151,11 +171,12 @@ function processSingleTemplate(templateName, data, state){
         });
 }
 
-function process(templateName, data, config, segment){
+function process(templateName, data, config, extraData){
     var state = {
         config: config,
         markers: {},
-        includes: 0
+        includes: 0,
+        extraData
     };
     return processSingleTemplate(templateName, data, state);
 }

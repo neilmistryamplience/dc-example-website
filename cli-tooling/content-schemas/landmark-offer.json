@@ -95,6 +95,16 @@
                 }
             }
         },
+        "price": {
+            "type": "object",
+            "title": "Price",
+            "description": "Pricing Information",
+            "allOf": [
+                {
+                    "$ref": "https://www.amplience.com/examples/currency.json"
+                }
+            ]
+        },
         "currency":
         {
             "allOf": [
@@ -233,6 +243,7 @@
         "img",
         "category",
         "offer",
+        "price",
         "currency",
         "type",
         "strap",
