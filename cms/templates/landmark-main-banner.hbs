@@ -28,14 +28,30 @@
             {{#if subheader}}
             <div class="landmark-main-banner-subheader" style="" data-aos="fade-up" data-aos-delay="125">{{subheader}}</div>
             {{/if}}
+            {{#if (equalsLength links 1)}}
             <div class="landmark-buttons-holder">
-                <div class="landmark-main-banner-button alignleft" data-aos="fade-right" data-aos-delay="200">Shop Women</div>
-                <div class="landmark-main-banner-button alignright" data-aos="fade-left" data-aos-delay="200">Shop Men</div>
+                <div class="landmark-main-banner-button" data-aos="fade-up" data-aos-delay="200">{{links.[0].label}}</div>
             </div>
+            {{/if}}
+            {{#if (equalsLength links 2)}}
+                <div class="landmark-buttons-holder">
+                <div class="landmark-main-banner-button {{#if (isArabic)}}alignright{{else}}alignleft{{/if}}" data-aos="fade-right" data-aos-delay="200">{{links.[0].label}}</div>
+                <div class="landmark-main-banner-button {{#if (isArabic)}}alignleft{{else}}alignright{{/if}}" data-aos="fade-left" data-aos-delay="200">{{links.[1].label}}</div>
+            </div>
+            {{/if}}
+
         </div>
+        {{#if (equalsLength links 1)}}
         <div class="landmark-main-banner-links">
-            <a href="/ae/en/c/cpbaby-clothing?q=allPromotions.en%3ASale" class="split_banner_url alignleft"></a>
-            <a href="/ae/en/c/cpbaby-clothing?q=allPromotions.en%3ASale" class="split_banner_url alignright"></a>
+            <a href="{{links.[0].value}}" class="split_banner_url"></a>
         </div>
+        {{/if}}
+        {{#if (equalsLength links 2)}}
+        <div class="landmark-main-banner-links">
+            <a href="{{links.[0].value}}" class="split_banner_url {{#if (isArabic)}}alignright{{else}}alignleft{{/if}}"></a>
+            <a href="{{links.[1].value}}" class="split_banner_url {{#if (isArabic)}}alignleft{{else}}alignright{{/if}}"></a>
+            
+        </div>
+        {{/if}}
     </div>
 </div>

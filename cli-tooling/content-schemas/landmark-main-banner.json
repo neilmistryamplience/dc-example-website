@@ -103,38 +103,20 @@
                 }
             }
         },
-        "links":
-        {
-
+        "links": {
             "type": "array",
             "title": "Links",
             "description": "The action link(s) for the banner (maximum of 2)",
-            "items":
-            {
+            "items": {
                 "allOf": [
-                {
-                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
-                }],
-                "properties":
-                {
-                    "values":
                     {
-                        "items":
-                        {
-                            "properties":
-                            {
-                                "value":
-                                {
-                                    "allOf": [
-                                    {
-                                        "$ref": "https://www.amplience.com/examples/link.json"
-                                    }]
-                                }
-                            }
-                        }
+                        "$ref": "https://www.amplience.com/examples/landmark-link.json"
                     }
-                }
-            }
+                ],
+                "_interpolate": true
+            },
+            "minItems": 0,
+            "maxItems": 2
         },
         "analytics":
         {
