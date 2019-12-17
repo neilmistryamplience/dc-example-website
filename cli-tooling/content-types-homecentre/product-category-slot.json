@@ -1,0 +1,23 @@
+{
+    "contentTypeUri": "https://www.amplience.com/examples/slots/product-category-slot.json",
+    "settings":
+    {
+        "label": "Product Category Slot",
+        "visualizations": [
+        {
+            "label": "Site",
+            "templatedUri": "https://d1yacblltr7wf1.cloudfront.net/preview/snapshot?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-AR,en-*,*",
+            "default": true
+        }],
+        "icons": [
+        {
+            "size": 256,
+            "url": "https://i8.amplience.net/i/landmarkpoc/icon-HeroBannerSlot.jpg"
+        }],
+        "cards": [
+        {
+            "templatedUri": "https://d1yacblltr7wf1.cloudfront.net/preview/card?vse={{vse.domain}}&content={{content.sys.id}}&timestamp={{context.timestamp}}&locale={{locales}},en-AR,en-*,*"
+        }]
+    },
+    "repositories": ["slots"]
+}

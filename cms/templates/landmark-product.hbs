@@ -1,0 +1,18 @@
+<div class="amp-ca-card amp-ca-card-{{add index 1}} landmark-product">
+    <div class="amp-ca-card-wrap">
+        {{#if link}}
+        <a style="cursor:pointer;"href="{{link.value}}">
+            {{/if}}
+            <div class="landmark-product-image-holder" data-aos="fade">
+                <picture class="landmark-image">
+                    {{#with image}}
+                    <img src="https://{{defaultHost}}/i/{{endpoint}}/product-template-bg-01.jpg?&layer0=[w=380]&layer1=[src=/i//{{name}}&w=280&right=10&top=10&anchor=TR]&{{#if isArabic}}fliph=true{{/if}}&$product-category$">
+                    {{/with}}
+                </picture>
+                <div class="landmark-product-text">{{link.label}}</div>
+            </div>
+            {{#if link}}
+        </a>
+        {{/if}}
+    </div>
+</div>

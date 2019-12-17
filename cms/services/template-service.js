@@ -21,8 +21,6 @@ function getAsanaInformation(response) {
 
 function compileSlots(response, extraData) {
     var contentItems = amp.inlineContent(response);
-
-    console.log("What is the content.....", contentItems);
     var compiled = [];
     contentItems.forEach(function(item){
         compiled.push(compile(item, extraData));

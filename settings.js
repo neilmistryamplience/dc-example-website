@@ -6,8 +6,8 @@ module.exports = {
             layout: "homepage",
             slots: {
                 "hero": "7333d4dc-f7af-48f1-865c-733ecf86ad70",
-                "body": "e03c1bbd-7ff8-4f49-84df-3c384efb1260",
-                "stack": "c509e0a7-50bd-49a7-a94c-3dcad7a2e194"
+                "products": "0a60e062-cce4-432d-b61d-cddd94300857",
+                "localisedhero": "8a19c65f-3a97-4bb1-8bcd-a802a70aa18d"
             }
         },
         {

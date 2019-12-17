@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
-	"id": "https://www.amplience.com/examples/slots/banner-slot.json",
-	"title": "Banner Slot",
+	"id": "https://www.amplience.com/examples/slots/product-category-slot.json",
+	"title": "Product Category Slot",
 	"description": "A Slot that can accept a single banner",
 	"allOf": [
 		{
@@ -21,10 +21,7 @@
 						"contentType": {
 							"title": "contentType",
 							"enum": [
-								"https://www.amplience.com/examples/carousel.json",
-								"https://www.amplience.com/examples/landmark-image.json",
-								"https://www.amplience.com/examples/landmark-main-banner.json",
-								"https://www.amplience.com/examples/banner.json"
+								"https://www.amplience.com/examples/landmark-product-category-carousel.json"
 							]
 						}
 					}

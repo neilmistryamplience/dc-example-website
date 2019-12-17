@@ -1,0 +1,171 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://www.amplience.com/examples/landmark-image.json",
+    "title": "Landmark Image",
+    "description": "Image with SEO information",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "image":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            },
+            {
+                "properties":
+                {
+                    "values":
+                    {
+                        "items":
+                        {
+                            "properties":
+                            {
+                                "value":
+                                {
+                                    "title": "Image or Video",
+                                    "description": "The media of this banner",
+                                    "type": "object",
+                                    "anyOf": [
+                                    {
+                                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                                    },
+                                    {
+                                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }
+            }]
+        },
+        "mobimg":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            },
+            {
+                "properties":
+                {
+                    "values":
+                    {
+                        "items":
+                        {
+                            "properties":
+                            {
+                                "value":
+                                {
+                                    "title": "Mobile specific Image or Video",
+                                    "description": "The mobile media of this banner",
+                                    "type": "object",
+                                    "anyOf": [
+                                    {
+                                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                                    },
+                                    {
+                                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/video-link"
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }
+            }]
+        },
+        "imageAltText":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "title": "Image alt text",
+                                "description": "Alternative text for image for SEO",
+                                "type": "string",
+                                "format": "text",
+                                "minLength": 0,
+                                "maxLength": 100
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "seoText":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            }],
+            "properties":
+            {
+                "values":
+                {
+                    "items":
+                    {
+                        "properties":
+                        {
+                            "value":
+                            {
+                                "title": "SEO Text",
+                                "description": "SEO Text for the image name",
+                                "type": "string",
+                                "format": "text",
+                                "minLength": 0,
+                                "maxLength": 100
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "links":
+        {
+            "type": "array",
+            "title": "Links",
+            "description": "The action link(s) for the banner (maximum of 2)",
+            "items":
+            {
+                "allOf": [
+                {
+                    "$ref": "https://www.amplience.com/examples/landmark-link.json"
+                }],
+                "_interpolate": true
+            },
+            "minItems": 0,
+            "maxItems": 2
+        },
+        "analytics":
+        {
+            "type": "string",
+            "title": "Analytics Name",
+            "description": "The name for this content to be used in Google Analytics",
+            "validation": "Please enter less than 255 characters",
+            "minLength": 0,
+            "maxLength": 255
+        }
+    },
+    "propertyOrder": [
+        "image",
+        "mobimg",
+        "imageAltText",
+        "seoText",
+        "links",
+        "analytics"
+    ]
+}

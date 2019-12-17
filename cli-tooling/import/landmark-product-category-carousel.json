@@ -1,0 +1,5 @@
+{
+  "body": "../content-schemas/landmark-product-category-carousel.json",
+  "schemaId": "https://www.amplience.com/examples/landmark-product-category-carousel.json",
+  "validationLevel": "CONTENT_TYPE"
+}

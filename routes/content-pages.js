@@ -14,12 +14,16 @@ function registerPage(page) {
     var slotMap = getSlotMap(page, req);
     var slotIds = _.values(slotMap);
 
-    //console.log("REQUEST SEG = " + req.query.segment);
-    var client = new ContentDeliveryClient(req.cookies['amplience-host'] || settings.cms, settings.cmsAccount, req.query.locale, req.query.segment);
+    var host = req.cookies['amplience-host'] || settings.cms;
+    var account = settings.cmsAccount;
+    var locale = req.cookies['locale'] || req.query.locale;
+    var segment = req.cookies['segment'] || req.query.segment;
+
+    var client = new ContentDeliveryClient(host, account, locale, segment);
 
     Promise.resolve(slotIds)
         .then(client.getByIds.bind(client))
-        .then(x => templateService.compileSlots(x, {segment: req.query.segment, currency: req.query.currency, locale:req.query.locale}))
+        .then(x => templateService.compileSlots(x, {segment: req.query.segment, currency: req.query.currency, locale:locale}))
         .then(function(slots) {
           var pageModel = {};
           for(var key in slotMap) {

@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "https://www.amplience.com/examples/slots/localised-banner-slot.json",
+    "title": "Localised Banner Slot",
+    "description": "A Slot that can accept a single banner (localised)",
+    "allOf": [
+    {
+        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }],
+    "type": "object",
+    "properties":
+    {
+        "content":
+        {
+            "allOf": [
+            {
+                "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/localized-value"
+            },
+            {
+                "properties":
+                {
+                    "values":
+                    {
+                        "items":
+                        {
+                            "properties":
+                            {
+                                "value":
+                                {
+                                    "title": "Localised Content",
+                                    "type": "object",
+                                    "allOf": [
+                                    {
+                                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                                    },
+                                    {
+                                        "properties":
+                                        {
+                                            "contentType":
+                                            {
+                                                "title": "Slot Content",
+                                                "enum": [
+                                                    "https://www.amplience.com/examples/carousel.json",
+                                                    "https://www.amplience.com/examples/landmark-image.json",
+                                                    "https://www.amplience.com/examples/landmark-main-banner.json",
+                                                    "https://www.amplience.com/examples/banner.json"
+                                                ]
+                                            }
+                                        }
+                                    }]
+                                }
+                            }
+                        }
+                    }
+                }
+            }]
+        }
+    },
+    "propertyOrder": [
+        "content"
+    ]
+}
