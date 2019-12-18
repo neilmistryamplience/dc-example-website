@@ -23,20 +23,20 @@
     <div class="landmark-text-container">
         <div class="landmark-text-holder">
             {{#if header}}
-            <div class="landmark-main-banner-header" style="{{#if headercol}}color:{{headercol}}{{/if}}" data-aos="fade" data-aos-delay="50">{{header}}</div>
+            <div class="landmark-main-banner-header" style="{{#if headercol}}color:{{headercol}}{{/if}}" data-aos="fade-up" data-aos-delay="50">{{header}}</div>
             {{/if}}
             {{#if subheader}}
-            <div class="landmark-main-banner-subheader" style="" data-aos="fade" data-aos-delay="125">{{subheader}}</div>
+            <div class="landmark-main-banner-subheader" style="" data-aos="fade-up" data-aos-delay="125">{{subheader}}</div>
             {{/if}}
             {{#if (equalsLength links 1)}}
             <div class="landmark-buttons-holder">
-                <div class="landmark-main-banner-button" data-aos="fade" data-aos-delay="200">{{links.[0].label}}</div>
+                <div class="landmark-main-banner-button" data-aos="fade" data-aos-delay="250">{{links.[0].label}}</div>
             </div>
             {{/if}}
             {{#if (equalsLength links 2)}}
                 <div class="landmark-buttons-holder">
-                <div class="landmark-main-banner-button {{#if (isArabic)}}alignright{{else}}alignleft{{/if}}" data-aos="fade" data-aos-delay="200">{{links.[0].label}}</div>
-                <div class="landmark-main-banner-button {{#if (isArabic)}}alignleft{{else}}alignright{{/if}}" data-aos="fade" data-aos-delay="200">{{links.[1].label}}</div>
+                <div class="landmark-main-banner-button {{#if (isArabic)}}alignright{{else}}alignleft{{/if}}" data-aos="fade" data-aos-delay="250">{{links.[0].label}}</div>
+                <div class="landmark-main-banner-button {{#if (isArabic)}}alignleft{{else}}alignright{{/if}}" data-aos="fade" data-aos-delay="250">{{links.[1].label}}</div>
             </div>
             {{/if}}
 
