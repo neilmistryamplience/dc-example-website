@@ -25,6 +25,7 @@
 								"title": "",
 								"enum": [
 									"https://www.amplience.com/examples/landmark-main-banner.json",
+									"https://www.amplience.com/examples/landmark-main-banner-2.json",
 									"https://www.amplience.com/examples/banner.json",
 									"https://www.amplience.com/examples/image.json",
 									"https://www.amplience.com/examples/video.json"

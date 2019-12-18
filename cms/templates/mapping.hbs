@@ -169,8 +169,12 @@ EXTRA DATA HERE
     {{>landmark-image}}
 {{/if}}
 
-{{#if (test this.[@type] (toRegex ".*/landmark-main-banner")) }}
+{{#if (test this.[@type] (toRegex ".*/landmark-main-banner.json")) }}
     {{>landmark-main-banner}}
+{{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/landmark-main-banner-2.json")) }}
+    {{>landmark-main-banner-2}}
 {{/if}}
 
 {{#if (test this.[@type] (toRegex ".*/landmark-product-category-carousel")) }}
