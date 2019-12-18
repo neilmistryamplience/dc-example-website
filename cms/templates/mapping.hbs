@@ -177,6 +177,10 @@ EXTRA DATA HERE
     {{>landmark-product-category-carousel}}
 {{/if}}
 
+{{#if (test this.[@type] (toRegex ".*/landmark-product")) }}
+    {{>landmark-product}}
+{{/if}}
+
 {{#if (test this.[@type] (toRegex ".*/product-category-slot")) ~}}
     {{> product-category-slot }}
 {{/if}}
