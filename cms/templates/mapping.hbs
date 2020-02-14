@@ -109,3 +109,10 @@
 {{#if (test this.[@type] (toRegex ".*/footer.json")) }}
     {{> footer-slot }}
 {{/if}}
+
+{{#if (test this.[@type] (toRegex ".*/richtexteditor.json")) }}
+    {{#each text}}
+        {{#if (test type (toRegex "markdown")) ~}} {{{markdown this.data}}} {{~/if}}
+        {{#if (test type (toRegex "dc-content-link")) ~}} {{> mapping this.data }} {{~/if}}
+    {{/each}}
+{{/if}}
