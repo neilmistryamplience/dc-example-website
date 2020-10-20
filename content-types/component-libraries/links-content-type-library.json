@@ -4,6 +4,11 @@
     "title": "Core type schema for links",
     "description": "Core content type components to build content types",
     "id": "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/component-libraries/links-content-type-library.json",
+    "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+    ],
     "definitions": {
         "relative-link": {
             "type": "object",
