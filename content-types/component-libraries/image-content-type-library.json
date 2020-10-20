@@ -4,6 +4,11 @@
     "type": "object",
     "title": "Core type schema for dealing with images",
     "description": "schemas to wrap the image object",
+    "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+    ],
     "definitions": {
         "descriptive-image": {
             "type": "object",
