@@ -4,6 +4,11 @@
     "type": "object",
     "title": "Core type schema",
     "description": "core content type definitions to for brief specific content types",
+    "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+    ],
     "definitions": {
         "content-brief-type": {
             "title": "Type of content brief",
