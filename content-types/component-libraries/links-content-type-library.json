@@ -93,7 +93,7 @@
             },
             "propertyOrder": [
                 "link-descriptiont",
-                "text",
+                "link-text",
                 "url"
             ]
         }
